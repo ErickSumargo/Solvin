@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/welcome2_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome2">
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/welcome2_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/circle_indicator_container_default_height"
+        android:layout_above="@+id/welcome2_content"
+        android:layout_marginBottom="@dimen/default_margin_16m"
+        android:orientation="horizontal"
+        app:ci_width="@dimen/circle_indicator_default_radius"
+        app:ci_height="@dimen/circle_indicator_default_radius"
+        app:ci_margin="@dimen/circle_indicator_default_margin" />
+
+    <LinearLayout
+        android:id="@+id/welcome2_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/default_padding_24m"
+            android:paddingTop="@dimen/default_padding_16m"
+            android:paddingRight="@dimen/default_padding_24m"
+            android:paddingBottom="@dimen/default_padding_16m"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="SOLVE AT BEST"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/welcome_header_default_font_size"
+                style="@style/SourceSansPro_Light" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/default_padding_24m"
+            android:paddingTop="@dimen/default_padding_16m"
+            android:paddingRight="@dimen/default_padding_24m"
+            android:paddingBottom="@dimen/default_padding_36m"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="Terhubung dengan mentor berkualitas dalam menghadirkan solusi terbaik, tercepat, dan terlengkap."
+                android:textAlignment="center"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/welcome_sub_header_default_font_size"
+                style="@style/SourceSansPro_Light" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

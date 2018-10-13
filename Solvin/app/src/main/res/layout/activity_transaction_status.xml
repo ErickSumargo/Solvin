@@ -1,0 +1,591 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/transaction_status_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    android:fitsSystemWindows="true"
+    tools:context="id.solvin.dev.view.activities.ActivityTransactionStatus">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_default_height"
+            android:minHeight="@dimen/action_bar_default_height"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextAppearance="@style/ToolbarTextStyle" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/transaction_status_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/status_total_cost_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/default_margin_16m"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/default_font_size_18m"
+                style="@style/SourceSansPro_Regular" />
+
+            <TextView
+                android:id="@+id/status_total_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/default_font_size_42m"
+                style="@style/SourceSansPro_Light" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:layout_marginTop="@dimen/default_margin_20m"
+                android:background="@color/darkGray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_16m"
+                android:layout_marginTop="@dimen/default_margin_12m"
+                android:text="Rincian Transaksi"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/default_font_size_18m"
+                style="@style/SourceSansPro_Regular" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:paddingLeft="@dimen/default_padding_16m"
+                android:paddingRight="@dimen/default_padding_16m"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="No. Transaksi"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:id="@+id/status_transaction_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_8m"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:paddingLeft="@dimen/default_padding_16m"
+                android:paddingRight="@dimen/default_padding_16m"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Status"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:id="@+id/status_transaction_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_8m"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/default_padding_8m"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_font_size_18m"
+                    android:background="@drawable/custom_transaction_status_pending"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:layout_marginTop="@dimen/default_margin_12m"
+                android:background="@color/darkGray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_16m"
+                android:layout_marginTop="@dimen/default_margin_12m"
+                android:text="Rincian Pembayaran"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/default_font_size_18m"
+                style="@style/SourceSansPro_Regular" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:paddingLeft="@dimen/default_padding_16m"
+                android:paddingRight="@dimen/default_padding_16m"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/status_package_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:id="@+id/status_cost_package"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_8m"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:paddingLeft="@dimen/default_padding_16m"
+                android:paddingRight="@dimen/default_padding_16m"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Kode Unik"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:id="@+id/status_cost_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_8m"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/default_margin_8m"-->
+            <!--android:paddingLeft="@dimen/default_padding_16m"-->
+            <!--android:paddingRight="@dimen/default_padding_16m"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="Lama Aktivasi"-->
+            <!--android:textColor="@color/colorHeader"-->
+            <!--android:textSize="@dimen/default_font_size_18m"-->
+            <!--style="@style/SourceSansPro_Regular" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/status_package_valid_until"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/default_margin_8m"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textColor="@color/colorHeader"-->
+            <!--android:textSize="@dimen/default_font_size_18m"-->
+            <!--style="@style/SourceSansPro_Regular" />-->
+
+            <!--</LinearLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:layout_marginTop="@dimen/default_margin_12m"
+                android:background="@color/darkGray" />
+
+            <TextView
+                android:id="@+id/status_media_transfer_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_16m"
+                android:layout_marginTop="@dimen/default_margin_16m"
+                android:text="Rincian Transfer"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/default_font_size_18m"
+                style="@style/SourceSansPro_Regular" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:paddingLeft="@dimen/default_padding_16m"
+                android:paddingRight="@dimen/default_padding_16m"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="Tujuan Transfer"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m"
+                    style="@style/SourceSansPro_Regular" />
+
+                <ImageView
+                    android:id="@+id/status_media_transfer_logo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/default_margin_8m"
+                    android:layout_weight="1"
+                    android:scaleType="fitStart" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:paddingLeft="@dimen/default_padding_16m"
+                android:paddingRight="@dimen/default_padding_16m"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/status_media_transfer_detail_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:id="@+id/status_media_transfer_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_8m"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/status_bank_account_owner_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:paddingLeft="@dimen/default_padding_16m"
+                android:paddingRight="@dimen/default_padding_16m"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="A/N Rekening"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:id="@+id/status_bank_account_owner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_8m"
+                    android:layout_weight="1"
+                    android:text="Erick Sumargo"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:layout_marginTop="@dimen/default_margin_12m"
+                android:background="@color/darkGray" />
+
+            <LinearLayout
+                android:id="@+id/transaction_status_advice_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_16m"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="PESAN TRANSAKSI"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m"
+                    style="@style/SourceSansPro_Regular" />
+
+                <View
+                    android:layout_width="@dimen/primary_line_default_width"
+                    android:layout_height="@dimen/primary_line_default_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/default_margin_8m"
+                    android:background="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_margin_16m"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1."
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/default_font_size_14m"
+                            style="@style/SourceSansPro_Regular" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/default_margin_8m"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Segera lakukan pembayaran dengan tepat sesuai pada total harga di atas dan sebelum batas waktu:"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/default_font_size_14m"
+                                style="@style/SourceSansPro_Regular" />
+
+                            <TextView
+                                android:id="@+id/status_due_date_transaction"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/default_margin_16m"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/default_font_size_18m"
+                                style="@style/SourceSansPro_Regular" />
+
+                            <Button
+                                android:id="@+id/status_open_dial_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/default_margin_16m"
+                                android:paddingLeft="@dimen/default_padding_16m"
+                                android:paddingTop="@dimen/default_padding_0m"
+                                android:paddingRight="@dimen/default_padding_16m"
+                                android:paddingBottom="@dimen/default_padding_0m"
+                                android:text="TRANSFER SEKARANG"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/default_font_size_16m"
+                                android:background="@drawable/primary_button"
+                                android:stateListAnimator="@null"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin_16m"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2."
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/default_font_size_14m"
+                            style="@style/SourceSansPro_Regular" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/default_margin_8m"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Keterlambatan atau ketidaksesuaian dalam mentransfer sejumlah nominal uang dengan total harga yang tercantum di atas akan membuat proses verifikasi status transaksi menjadi terhambat."
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/default_font_size_14m"
+                                style="@style/SourceSansPro_Regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/default_margin_16m"
+                                android:text="Solusi: lihat poin 3."
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/default_font_size_18m"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin_16m"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3."
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/default_font_size_14m"
+                            style="@style/SourceSansPro_Regular" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/default_margin_8m"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bila telah melakukan pembayaran namun status transaksi belum juga berubah dalam kurun waktu \u003e 6 jam terhitung sejak waktu transfer pembayaran, maka silahkan lakukan:"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/default_font_size_14m"
+                                style="@style/SourceSansPro_Regular" />
+
+                            <Button
+                                android:id="@+id/status_payment_confirmation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/default_margin_16m"
+                                android:paddingLeft="@dimen/default_padding_16m"
+                                android:paddingTop="@dimen/default_padding_0m"
+                                android:paddingRight="@dimen/default_padding_16m"
+                                android:paddingBottom="@dimen/default_padding_0m"
+                                android:text="KONFIRMASI PEMBAYARAN"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/default_font_size_16m"
+                                android:background="@drawable/primary_button"
+                                android:stateListAnimator="@null"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:background="@color/darkGray" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_margin_16m">
+
+                <Button
+                    android:id="@+id/status_cancel_transaction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/default_padding_0m"
+                    android:text="BATAL"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_font_size_16m"
+                    android:background="@drawable/custom_transaction_button_cancel"
+                    android:stateListAnimator="@null"
+                    style="@style/SourceSansPro_Regular" />
+
+                <Button
+                    android:id="@+id/status_done_transaction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/default_padding_0m"
+                    android:text="SELESAI"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_font_size_16m"
+                    android:background="@drawable/primary_button"
+                    android:stateListAnimator="@null"
+                    android:visibility="gone"
+                    style="@style/SourceSansPro_Regular" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <fr.castorflex.android.circularprogressbar.CircularProgressBar
+        android:id="@+id/transaction_status_progress_view"
+        android:layout_width="@dimen/progress_dialog_medium_circle_default_radius"
+        android:layout_height="@dimen/progress_dialog_medium_circle_default_radius"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        app:cpb_color="@color/colorPrimary"
+        app:cpb_rotation_speed="2.0"
+        app:cpb_stroke_width="@dimen/cpb_stroke_width" />
+
+    <View
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_default_elevation"
+        android:background="@drawable/custom_shadow" />
+
+</android.support.design.widget.CoordinatorLayout>

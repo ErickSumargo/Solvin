@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/default_padding_16m"
+        android:paddingTop="@dimen/default_padding_16m"
+        android:paddingRight="@dimen/default_padding_16m"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tebus Saldo"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/default_font_size_20m"
+            style="@style/SourceSansPro_Regular" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/redeem_balance_security_code_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_20m"
+            android:hint="Kode Pengaman"
+            app:errorTextAppearance="@style/TextInputErrorTextAppearance">
+
+            <AutoCompleteTextView
+                android:id="@+id/redeem_balance_security_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/default_font_size_18m"
+                android:maxLines="1"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                style="@style/SourceSansPro_Regular" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/redeem_balance_security_code_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_4m"
+            android:text="*Harap hubungi admin terkait dalam perolehan kode pengaman di atas"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/default_font_size_12m"
+            style="@style/SourceSansPro_Regular" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/redeem_balance_nominal_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_20m"
+            android:hint="Nominal Tebusan (min. Rp. 20.000,-)"
+            app:errorTextAppearance="@style/TextInputErrorTextAppearance">
+
+            <AutoCompleteTextView
+                android:id="@+id/redeem_balance_nominal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/default_font_size_18m"
+                android:maxLength="6"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                style="@style/SourceSansPro_Regular" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/redeem_balance_nominal_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_4m"
+            android:text="*Nominal tebusan maksimal &lt; Rp. 1.000.000,-"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/default_font_size_12m"
+            style="@style/SourceSansPro_Regular" />
+
+    </LinearLayout>
+
+</ScrollView>

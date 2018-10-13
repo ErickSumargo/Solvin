@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/history_question_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/history_question_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/history_question_null_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/history_question_null_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/default_margin_16m"
+                android:layout_marginRight="@dimen/default_margin_16m"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColor="@color/darkLightGray"
+                android:textSize="@dimen/default_font_size_24m"
+                style="@style/SourceSansPro_Regular" />
+
+            <TextView
+                android:id="@+id/history_question_null_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/default_margin_24m"
+                android:layout_marginTop="@dimen/default_margin_2m"
+                android:layout_marginRight="@dimen/default_margin_24m"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/default_font_size_16m"
+                style="@style/SourceSansPro_Light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/history_question_back_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:scaleType="center"
+        android:src="@drawable/ic_arrow_upward_light"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorPrimary" />
+
+    <id.solvin.dev.view.widget.ClassRichEditText
+        android:id="@+id/temp_rt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_default_elevation"
+        android:background="@drawable/custom_shadow" />
+
+</android.support.design.widget.CoordinatorLayout>

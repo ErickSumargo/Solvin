@@ -1,0 +1,287 @@
+<resources>
+    <string name="app_name">Solvin AP (Dev)</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_search">Cari anggota...</string>
+    <string name="action_notification">Notifikasi</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="action_text_format">Format Teks</string>
+    <string name="action_block_user">Blok Akun</string>
+    <string name="action_change_photo">Ganti Foto</string>
+    <string name="action_presentation">Presentasi</string>
+    <string name="action_select_year">Pilih Tahun</string>
+
+    <string name="text_no_internet">Tidak Ada Koneksi Internet</string>
+    <string name="text_no_item">Permintaan tidak ditemukan</string>
+
+    <string name="text_no_student">Belum ada murid yang bergabung sementara</string>
+    <string name="text_no_mentor">Belum ada mentor yang bergabung sementara</string>
+
+    <string name="text_no_feedback">Belum ada feedback sementara</string>
+    <string name="text_no_report">Belum ada laporan bulanan sementara</string>
+
+    <string name="text_no_question">Belum ada pertanyaan dari murid sementara</string>
+    <string name="text_no_history_transaction">Belum ada histori pembelian paket pertanyaan dari murid sementara</string>
+    <string name="text_no_comment">Belum ada komentar dari</string>
+    <string name="text_no_solution">Belum ada solusi dari mentor sementara</string>
+    <string name="text_no_history_redeem_balance">Belum ada histori tebusan saldo dari mentor sementara</string>
+    <string name="text_no_history_balance_bonus">Belum ada histori bonus saldo dari mentor sementara</string>
+
+    <string name="text_no_priority_vote_solution">Belum ada solusi untuk divote admin sementara</string>
+    <string name="text_no_priority_transaction">Belum ada permintaan pembelian paket pertanyaan sementara</string>
+    <string name="text_no_priority_redeem_balance">Belum ada permintaan tebusan saldo sementara</string>
+
+    <string name="text_sample">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie magna risus, quis egestas ligula imperdiet non. Suspendisse enim dui, euismod ut urna ac, euismod eleifend ipsum. Sed euismod rhoncus placerat. Fusce ornare, purus vel mattis elementum, neque enim tincidunt turpis, sit amet feugiat neque leo ut diam. Integer eget libero eget nunc pulvinar tincidunt. Proin velit tellus, sollicitudin sit amet magna id, vehicula viverra leo. In eu ex vel ex venenatis pharetra. Suspendisse mollis mi auctor metus sagittis, sit amet posuere tortor elementum. Curabitur in sodales magna.
+Quisque porttitor nisl quis tristique feugiat. Pellentesque eget nisi vehicula, posuere odio dictum, euismod diam. Morbi sit amet tincidunt sapien, vitae mollis mauris. Praesent faucibus, dolor ornare euismod pellentesque, nulla risus cursus neque, in dapibus metus ante in lectus. Aenean pretium augue nec feugiat efficitur. Mauris tempus sem sed libero faucibus, ac ultrices enim rhoncus. Maecenas feugiat elementum risus sit amet condimentum.
+Sed facilisis vel nulla ac consequat. Morbi egestas tellus quis est egestas dictum. Suspendisse commodo dui ornare, lobortis est laoreet, faucibus erat. Nullam commodo vehicula ipsum, eget egestas mi tempor elementum. Praesent iaculis quam leo, non accumsan nibh ornare ac. Sed sodales eros sit amet faucibus sollicitudin. Etiam orci nisl, iaculis in lacus nec, imperdiet tincidunt nunc.
+Sed quis diam sed magna fermentum malesuada. Donec dolor dui, ornare sit amet rutrum sit amet, malesuada ut lacus. Cras eu leo felis. Donec feugiat nisi et diam dictum, et pellentesque ipsum ultrices. Etiam venenatis augue ut orci ultrices luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus convallis felis egestas tincidunt tincidunt. Cras rutrum porttitor bibendum. Maecenas mauris felis, imperdiet eu arcu non, consequat euismod velit. Vivamus et risus in sapien vehicula interdum non eu velit. Nam id enim et quam pharetra faucibus eget sit amet sapien. Donec maximus dictum libero, a tincidunt augue porta sit amet. Nulla ante sem, vestibulum vitae sodales at, vehicula nec mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur vehicula metus, sed facilisis urna. Ut et justo viverra est molestie ultrices ac sit amet purus.
+Nam id egestas leo. Aenean egestas luctus pharetra. Quisque at tincidunt magna, vitae porta tellus. Duis sit amet gravida enim, a iaculis leo. Integer suscipit sollicitudin ornare. Duis lectus ante, finibus quis sem at, laoreet fringilla neque. Pellentesque gravida id mi eget tincidunt. Nam rhoncus libero vel diam eleifend mollis vitae eget est. Sed molestie ipsum ac dui commodo vulputate. Ut eget massa urna. Maecenas eu lorem est. Curabitur eget volutpat lectus. Praesent non nunc eu quam imperdiet cursus id eu nibh. Nam ut lorem imperdiet, varius tortor in, rutrum risus. Nulla maximus metus et nisl accumsan, non volutpat dolor semper. Aliquam posuere turpis non ullamcorper rhoncus.
+    </string>
+
+    <string-array name="gradeList">
+        <item>PILIH TINGKATAN</item>
+        <item>SD</item>
+        <item>SMP</item>
+        <item>SMA</item>
+    </string-array>
+
+    <string-array name="subjectListDefault">
+        <item>PILIH MATA PELAJARAN</item>
+    </string-array>
+
+    <string-array name="subjectListElementary">
+        <item>PILIH MATA PELAJARAN</item>
+        <item>Matematika</item>
+    </string-array>
+
+    <string-array name="subjectListJunior">
+        <item>PILIH MATA PELAJARAN</item>
+        <item>Matematika</item>
+        <item>Fisika</item>
+    </string-array>
+
+    <string-array name="subjectListSenior">
+        <item>PILIH MATA PELAJARAN</item>
+        <item>Matematika</item>
+        <item>Fisika</item>
+    </string-array>
+
+    <!--DataMaterial-->
+    <string-array name="materialListDefault">
+        <item>PILIH MATERI</item>
+    </string-array>
+
+    <!--<string-array name="materialListMathematicsElementary">-->
+        <!--<item>PILIH MATERI</item>-->
+        <!--<item>Bangun Datar</item>-->
+        <!--<item>Bangun Ruang</item>-->
+        <!--<item>Bidang Koordinat</item>-->
+        <!--<item>Bilangan</item>-->
+        <!--<item>Debit</item>-->
+        <!--<item>Faktor &amp; Kelipatan</item>-->
+        <!--<item>Pangkat &amp; Akar Bilangan Bulat</item>-->
+        <!--<item>Pecahan</item>-->
+        <!--<item>Pengukuran</item>-->
+        <!--<item>Penyajian &amp; Pengolahan Data</item>-->
+        <!--<item>Lainnya</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="materialListMathematicsJunior">-->
+        <!--<item>PILIH MATERI</item>-->
+        <!--<item>Aljabar</item>-->
+        <!--<item>Aritmatika Sosial</item>-->
+        <!--<item>Bangun Datar</item>-->
+        <!--<item>Bangun Ruang</item>-->
+        <!--<item>Bilangan</item>-->
+        <!--<item>Eksponen</item>-->
+        <!--<item>Fungsi</item>-->
+        <!--<item>Garis Segitiga</item>-->
+        <!--<item>Garis Sejajar</item>-->
+        <!--<item>Garis Singgung Lingkaran</item>-->
+        <!--<item>Himpunan</item>-->
+        <!--<item>Kesebangunan &amp; Kekongruenan</item>-->
+        <!--<item>Peluang</item>-->
+        <!--<item>Perbandingan</item>-->
+        <!--<item>Persamaan Garis Lurus</item>-->
+        <!--<item>Persamaan Kuadrat</item>-->
+        <!--<item>Persamaan Linear</item>-->
+        <!--<item>Pertidaksamaan</item>-->
+        <!--<item>Pola Bilangan &amp; Deret</item>-->
+        <!--<item>Statistika</item>-->
+        <!--<item>Sudut</item>-->
+        <!--<item>Teorema Pythagoras</item>-->
+        <!--<item>Lainnya</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="materialListMathematicsSenior">-->
+        <!--<item>PILIH MATERI</item>-->
+        <!--<item>Barisan &amp; Deret</item>-->
+        <!--<item>Dimensi Tiga</item>-->
+        <!--<item>Eksponen</item>-->
+        <!--<item>Integral</item>-->
+        <!--<item>Komposisi &amp; Invers Fungsi</item>-->
+        <!--<item>Limit Fungsi</item>-->
+        <!--<item>Lingkaran</item>-->
+        <!--<item>Logaritma</item>-->
+        <!--<item>Logika Matematika</item>-->
+        <!--<item>Matriks</item>-->
+        <!--<item>Peluang</item>-->
+        <!--<item>Persamaan Kuadrat</item>-->
+        <!--<item>Persamaan Linear</item>-->
+        <!--<item>Pertidaksamaan</item>-->
+        <!--<item>Program Linear</item>-->
+        <!--<item>Statistika</item>-->
+        <!--<item>Sukubanyak (Polinomial)</item>-->
+        <!--<item>Transformasi Geometri</item>-->
+        <!--<item>Trigonometri</item>-->
+        <!--<item>Turunan</item>-->
+        <!--<item>Vektor</item>-->
+        <!--<item>Lainnya</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="materialListPhysicsJunior">-->
+        <!--<item>PILIH MATERI</item>-->
+        <!--<item>Alat Optik</item>-->
+        <!--<item>Bunyi</item>-->
+        <!--<item>Cahaya</item>-->
+        <!--<item>Daya Listrik</item>-->
+        <!--<item>Energi Listrik</item>-->
+        <!--<item>Gerak Lurus</item>-->
+        <!--<item>Getaran &amp; Gelombang</item>-->
+        <!--<item>Hukum Newton</item>-->
+        <!--<item>Induksi Elektromagnetik</item>-->
+        <!--<item>Kalor</item>-->
+        <!--<item>Kemagnetan</item>-->
+        <!--<item>Listrik Dinamis</item>-->
+        <!--<item>Listrik Statis</item>-->
+        <!--<item>Pemuaian</item>-->
+        <!--<item>Pengukuran</item>-->
+        <!--<item>Sistem Tata Surya</item>-->
+        <!--<item>Suhu</item>-->
+        <!--<item>Sumber Arus Listrik</item>-->
+        <!--<item>Tekanan</item>-->
+        <!--<item>Usaha &amp; Energi</item>-->
+        <!--<item>Zat &amp; Wujudnya</item>-->
+        <!--<item>Lainnya</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="materialListPhysicsSenior">-->
+        <!--<item>PILIH MATERI</item>-->
+        <!--<item>Besaran &amp; Satuan</item>-->
+        <!--<item>Dinamika Rotasi</item>-->
+        <!--<item>Elastisitas</item>-->
+        <!--<item>Fisika Atom</item>-->
+        <!--<item>Fisika Inti</item>-->
+        <!--<item>Gelombang</item>-->
+        <!--<item>Gerak Harmonik Sederhana</item>-->
+        <!--<item>Gerak Lurus</item>-->
+        <!--<item>Gerak Melingkar</item>-->
+        <!--<item>Hukum Newton</item>-->
+        <!--<item>Impuls</item>-->
+        <!--<item>Induksi Elektromagnetik</item>-->
+        <!--<item>Kalor</item>-->
+        <!--<item>Keseimbangan Benda Tegar</item>-->
+        <!--<item>Listrik Dinamis</item>-->
+        <!--<item>Listrik Statis</item>-->
+        <!--<item>Medan Magnetik</item>-->
+        <!--<item>Mekanika Fluida</item>-->
+        <!--<item>Momentum</item>-->
+        <!--<item>Optik</item>-->
+        <!--<item>Radiasi Benda Hitam</item>-->
+        <!--<item>Suhu</item>-->
+        <!--<item>Teori Kinetik Gas</item>-->
+        <!--<item>Teori Kuantum</item>-->
+        <!--<item>Teori Relativitas Khusus</item>-->
+        <!--<item>Termodinamika</item>-->
+        <!--<item>Usaha &amp; Energi</item>-->
+        <!--<item>Vektor</item>-->
+        <!--<item>Lainnya</item>-->
+    <!--</string-array>-->
+
+    <string-array name="materialListMathematicsSenior">
+        <item>PILIH MATERI</item>
+        <item>Aljabar</item>
+        <item>Aritmatika Sosial</item>
+        <item>Bangun Datar</item>
+        <item>Bangun Ruang</item>
+        <item>Barisan &amp; Deret</item>
+        <item>Bidang Koordinat</item>
+        <item>Bilangan</item>
+        <item>Dimensi Tiga</item>
+        <item>Eksponen</item>
+        <item>Fungsi</item>
+        <item>Garis Segitiga</item>
+        <item>Garis Sejajar</item>
+        <item>Garis Singgung Lingkaran</item>
+        <item>Himpunan</item>
+        <item>Integral</item>
+        <item>Kesebangunan &amp; Kekongruenan</item>
+        <item>Komposisi &amp; Invers Fungsi</item>
+        <item>Limit Fungsi</item>
+        <item>Lingkaran</item>
+        <item>Logaritma</item>
+        <item>Logika Matematika</item>
+        <item>Matriks</item>
+        <item>Peluang</item>
+        <item>Pengukuran</item>
+        <item>Perbandingan</item>
+        <item>Persamaan Garis Lurus</item>
+        <item>Persamaan Kuadrat</item>
+        <item>Persamaan Linear</item>
+        <item>Pertidaksamaan</item>
+        <item>Program Linear</item>
+        <item>Statistika</item>
+        <item>Sudut</item>
+        <item>Sukubanyak (Polinomial)</item>
+        <item>Teorema Pythagoras</item>
+        <item>Transformasi Geometri</item>
+        <item>Trigonometri</item>
+        <item>Turunan</item>
+        <item>Vektor</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="materialListPhysicsSenior">
+        <item>PILIH MATERI</item>
+        <item>Alat Optik</item>
+        <item>Besaran &amp; Satuan</item>
+        <item>Bunyi</item>
+        <item>Cahaya</item>
+        <item>Dinamika Rotasi</item>
+        <item>Elastisitas</item>
+        <item>Fisika Atom</item>
+        <item>Fisika Inti</item>
+        <item>Gerak Harmonik Sederhana</item>
+        <item>Gerak Lurus</item>
+        <item>Gerak Melingkar</item>
+        <item>Getaran &amp; Gelombang</item>
+        <item>Hukum Newton</item>
+        <item>Impuls</item>
+        <item>Induksi Elektromagnetik</item>
+        <item>Kalor</item>
+        <item>Keseimbangan Benda Tegar</item>
+        <item>Listrik Dinamis</item>
+        <item>Listrik Statis</item>
+        <item>Medan Magnetik</item>
+        <item>Mekanika Fluida</item>
+        <item>Momentum</item>
+        <item>Pemuaian</item>
+        <item>Pengukuran</item>
+        <item>Radiasi Benda Hitam</item>
+        <item>Sistem Tata Surya</item>
+        <item>Suhu</item>
+        <item>Tekanan</item>
+        <item>Teori Kinetik Gas</item>
+        <item>Teori Kuantum</item>
+        <item>Teori Relativitas Khusus</item>
+        <item>Termodinamika</item>
+        <item>Usaha &amp; Energi</item>
+        <item>Vektor</item>
+        <item>Zat &amp; Wujudnya</item>
+        <item>Lainnya</item>
+    </string-array>
+
+</resources>

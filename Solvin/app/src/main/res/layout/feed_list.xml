@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/feed_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/default_margin_4m"
+        android:layout_marginRight="@dimen/default_margin_4m"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardCornerRadius="@dimen/card_default_corner_radius"
+        card_view:cardElevation="@dimen/card_default_elevation"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:contentPadding="@dimen/default_padding_12m">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/feed_user_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/feed_attr_container">
+
+                    <RelativeLayout
+                        android:id="@+id/feed_user_photo_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/feed_user_photo"
+                            android:layout_width="@dimen/circle_image_view_radius"
+                            android:layout_height="@dimen/circle_image_view_radius" />
+
+                        <RelativeLayout
+                            android:id="@+id/feed_avatar_layout"
+                            android:layout_width="@dimen/circle_image_view_radius"
+                            android:layout_height="@dimen/circle_image_view_radius"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:background="@drawable/circle">
+
+                            <TextView
+                                android:id="@+id/feed_avatar_initial"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/default_font_size_20m"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/feed_user_photo_container"
+                        android:layout_marginLeft="@dimen/default_margin_12m">
+
+                        <TextView
+                            android:id="@+id/feed_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/default_font_size_16m"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            style="@style/SourceSansPro_Regular" />
+
+                        <TextView
+                            android:id="@+id/feed_question_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/feed_user_name"
+                            android:textColor="@color/colorSubHeader"
+                            android:textSize="@dimen/default_font_size_14m"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            style="@style/SourceSansPro_Regular" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/feed_attr_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/feed_question_attachment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_attach_file_dark"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/feed_question_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/feed_question_attachment"
+                        android:scaleType="centerCrop" />
+
+                    <com.github.ybq.android.spinkit.SpinKitView
+                        android:id="@+id/feed_loading_indicator_view"
+                        android:layout_width="@dimen/loading_indicator_default_radius"
+                        android:layout_height="@dimen/loading_indicator_default_radius"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/feed_question_status"
+                        android:layout_marginLeft="@dimen/default_margin_8m"
+                        app:SpinKit_Style="ThreeBounce"
+                        app:SpinKit_Color="@color/colorPrimary" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:layout_marginTop="@dimen/default_margin_16m"
+                android:background="@color/darkGray" />
+
+            <TextView
+                android:id="@+id/feed_question_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_12m"
+                android:paddingTop="@dimen/default_padding_6m"
+                android:paddingRight="@dimen/default_padding_6m"
+                android:paddingBottom="@dimen/default_padding_6m"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/default_font_size_16m"
+                android:maxLines="3"
+                android:ellipsize="end"
+                style="@style/SourceSansPro_Regular" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_12m"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/feed_question_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/default_margin_8m"
+                    android:paddingLeft="@dimen/default_padding_8m"
+                    android:paddingTop="@dimen/default_padding_4m"
+                    android:paddingRight="@dimen/default_padding_8m"
+                    android:paddingBottom="@dimen/default_padding_4m"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_font_size_12m"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:id="@+id/feed_question_material"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/feed_question_subject"
+                    android:paddingLeft="@dimen/default_padding_8m"
+                    android:paddingTop="@dimen/default_padding_4m"
+                    android:paddingRight="@dimen/default_padding_8m"
+                    android:paddingBottom="@dimen/default_padding_4m"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_font_size_12m"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    style="@style/SourceSansPro_Regular" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/feed_mentor_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_16m">
+
+                <RelativeLayout
+                    android:id="@+id/feed_mentor_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/feed_mentor_attr_container">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/feed_mentor_photo"
+                        android:layout_width="@dimen/circle_image_view_radius"
+                        android:layout_height="@dimen/circle_image_view_radius"
+                        android:layout_centerVertical="true" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/feed_mentor_photo"
+                        android:layout_marginLeft="@dimen/default_margin_12m">
+
+                        <TextView
+                            android:id="@+id/feed_mentor_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/default_font_size_16m"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            style="@style/SourceSansPro_Regular" />
+
+                        <TextView
+                            android:id="@+id/feed_best_solution_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/feed_mentor_name"
+                            android:textColor="@color/colorSubHeader"
+                            android:textSize="@dimen/default_font_size_14m"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            style="@style/SourceSansPro_Regular" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/feed_mentor_attr_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/feed_best_solution_attachment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_attach_file_dark"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

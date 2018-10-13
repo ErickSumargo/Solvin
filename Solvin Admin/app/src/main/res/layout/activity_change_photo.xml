@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_16rs"
+        android:paddingTop="@dimen/padding_16rs"
+        android:paddingRight="@dimen/padding_16rs"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ganti Foto"
+            android:textColor="@color/colorHeader"
+            android:textSize="@dimen/text_size_20rs"
+            style="@style/SourceSansPro_Regular" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16rs">
+
+            <ProgressBar
+                android:id="@+id/change_photo_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:progressDrawable="@drawable/circular_progress_bar"
+                android:rotation="-90"
+                android:visibility="invisible"
+                style="?android:attr/progressBarStyleHorizontal" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/photo"
+                    android:layout_width="@dimen/photo_mentor_radius"
+                    android:layout_height="@dimen/photo_mentor_radius"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

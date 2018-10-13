@@ -1,0 +1,13 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?attr/colorControlHighlight">
+    <!--normal state-->
+    <item>
+        <inset xmlns:android="http://schemas.android.com/apk/res/android">
+            <shape android:shape="oval">
+                <solid android:color="@color/white" />
+                <stroke android:width="@dimen/stroke_dash_default_width" android:color="@color/colorHeader"
+                    android:dashWidth="@dimen/dash_default_width" android:dashGap="@dimen/dash_default_gap" />
+            </shape>
+        </inset>
+    </item>
+</ripple>

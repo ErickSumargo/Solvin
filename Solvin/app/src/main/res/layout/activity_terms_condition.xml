@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    android:fitsSystemWindows="true"
+    tools:context="id.solvin.dev.view.activities.ActivityPrivacyPolicy">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_default_height"
+            android:minHeight="@dimen/action_bar_default_height"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextAppearance="@style/ToolbarTextStyle" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/default_padding_16m"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/terms_condition_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/InfoTextAppearance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_16m"
+                android:text="Murid"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/default_font_size_18m"
+                style="@style/Montserrat_Bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:background="@color/colorPrimary" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_12m"
+                android:shrinkColumns="1,2">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="1."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/terms_condition_student_point_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="2."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/terms_condition_student_point_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="3."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/terms_condition_student_point_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="4."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/terms_condition_student_point_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="5."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/terms_condition_student_point_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="6."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/terms_condition_student_point_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="7."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/terms_condition_student_point_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="8."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/terms_condition_student_point_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="9."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/terms_condition_student_point_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="10."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/terms_condition_student_point_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="11."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/terms_condition_student_point_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_16m"
+                android:text="Mentor"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/default_font_size_18m"
+                style="@style/Montserrat_Bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:background="@color/colorPrimary" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_12m"
+                android:shrinkColumns="1,2">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="1."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/terms_condition_mentor_point_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="2."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/terms_condition_mentor_point_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="3."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/terms_condition_mentor_point_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="4."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/terms_condition_mentor_point_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="5."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/terms_condition_mentor_point_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="6."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/terms_condition_mentor_point_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="7."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/terms_condition_mentor_point_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="8."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/terms_condition_mentor_point_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/terms_condition_call_us_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_12m"
+                style="@style/InfoTextAppearance" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:shrinkColumns="2,3">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="Email"
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text=":"
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/terms_condition_call_us_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/terms_condition_latest_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_24m"
+                style="@style/InfoTextAppearance" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

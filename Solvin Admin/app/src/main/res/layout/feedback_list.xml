@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/feedback_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="@dimen/card_default_corner_radius"
+    card_view:cardElevation="@dimen/card_default_elevation"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_8rs">
+
+            <RelativeLayout
+                android:id="@+id/feedback_photo_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_4rs">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/feedback_photo"
+                    android:layout_width="@dimen/circle_image_view_radius"
+                    android:layout_height="@dimen/circle_image_view_radius" />
+
+                <RelativeLayout
+                    android:id="@+id/feedback_avatar_layout"
+                    android:layout_width="@dimen/circle_image_view_radius"
+                    android:layout_height="@dimen/circle_image_view_radius"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/circle">
+
+                    <TextView
+                        android:id="@+id/feedback_avatar_initial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_20rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/feedback_content_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/feedback_photo_container"
+                android:layout_marginTop="@dimen/margin_4rs"
+                android:layout_marginBottom="@dimen/margin_2rs">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/feedback_new_flag"
+                    android:layout_marginLeft="@dimen/margin_12rs"
+                    android:layout_marginRight="@dimen/margin_12rs"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/feedback_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_4rs"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_20rs"
+                        android:maxLines="3"
+                        android:ellipsize="end"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:id="@+id/feedback_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_8rs"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_16rs"
+                        android:maxLines="3"
+                        android:ellipsize="end"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_20rs"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_person_primary_mini" />
+
+                        <TextView
+                            android:id="@+id/feedback_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_4rs"
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/text_size_14rs"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            style="@style/SourceSansPro_Regular" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_8rs"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_today_primary_mini" />
+
+                        <TextView
+                            android:id="@+id/feedback_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_4rs"
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/text_size_14rs"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            style="@style/SourceSansPro_Regular" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/feedback_new_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/margin_2rs"
+                    android:layout_marginTop="@dimen/margin_4rs"
+                    android:paddingLeft="@dimen/padding_4rs"
+                    android:paddingTop="@dimen/padding_2rs"
+                    android:paddingRight="@dimen/padding_4rs"
+                    android:paddingBottom="@dimen/padding_2rs"
+                    android:text="N"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12rs"
+                    android:background="@drawable/notification_new_flag" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

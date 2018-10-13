@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notification_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    android:fitsSystemWindows="true"
+    tools:context="id.solvin.dev.view.activities.ActivityNotification">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_default_height"
+            android:minHeight="@dimen/action_bar_default_height"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextAppearance="@style/ToolbarTextStyle" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/notification_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <LinearLayout
+        android:id="@+id/notification_loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <fr.castorflex.android.circularprogressbar.CircularProgressBar
+            android:id="@+id/transaction_progress_view"
+            android:layout_width="@dimen/progress_dialog_medium_circle_default_radius"
+            android:layout_height="@dimen/progress_dialog_medium_circle_default_radius"
+            android:indeterminate="true"
+            app:cpb_color="@color/colorPrimary"
+            app:cpb_rotation_speed="2.0"
+            app:cpb_stroke_width="@dimen/cpb_stroke_width" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notification_null_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_notification_null" />
+
+            <TextView
+                android:id="@+id/notification_null_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/default_margin_16m"
+                android:layout_marginRight="@dimen/default_margin_16m"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColor="@color/darkLightGray"
+                android:textSize="@dimen/default_font_size_24m"
+                style="@style/SourceSansPro_Regular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/default_margin_24m"
+                android:layout_marginTop="@dimen/default_margin_2m"
+                android:layout_marginRight="@dimen/default_margin_24m"
+                android:gravity="center_horizontal"
+                android:text="Segera memulai aktivitas utama yang tersedia dalam aplikasi ini"
+                android:textAlignment="center"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/default_font_size_16m"
+                style="@style/SourceSansPro_Light" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,208 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.solvin.dev.view.fragments.FragmentCodeConfirmation">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/default_margin_32m"
+                android:text="DAFTAR"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/montserrat_default_font_size"
+                style="@style/Montserrat_Bold" />
+
+            <View
+                android:layout_width="@dimen/primary_line_default_width"
+                android:layout_height="@dimen/primary_line_default_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_24m">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/step_line_default_height"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/step_line_default_height"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/step2" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_24m"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cconfirmation_mobile_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/default_font_size_24m"
+                    android:textStyle="bold"
+                    style="@style/SourceSansPro_Light" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_16m"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Masukkan Kode Verifikasi"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_font_size_22m"
+                    style="@style/Montserrat_Bold" />
+
+                <EditText
+                    android:id="@+id/cconfirmation_code_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_16m"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/default_font_size_26m"
+                    android:textStyle="bold"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:background="@android:color/transparent"
+                    style="@style/SourceSansPro_Light" />
+
+                <LinearLayout
+                    android:id="@+id/cconfirmation_error_message_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_16m"
+                    android:layout_marginTop="@dimen/default_margin_8m"
+                    android:layout_marginRight="@dimen/default_margin_16m"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_default_height"
+                        android:background="@color/red_500" />
+
+                    <TextView
+                        android:id="@+id/cconfirmation_error_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin_8m"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/red_500"
+                        android:textSize="@dimen/default_font_size_14m"
+                        style="@style/SourceSansPro_Regular" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_16m"
+                    android:layout_marginTop="@dimen/default_margin_16m"
+                    android:layout_marginRight="@dimen/default_margin_16m"
+                    android:gravity="center_horizontal"
+                    android:text="@string/text_code_confirmation"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/default_font_size_16m"
+                    android:textColor="@color/colorSubHeader"
+                    style="@style/SourceSansPro_Light" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_16m"
+                    android:gravity="center_horizontal"
+                    android:text="@string/text_yet_code_received"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorSubHeader"
+                    android:textSize="@dimen/default_font_size_16m"
+                    style="@style/SourceSansPro_Light" />
+
+                <TextView
+                    android:id="@+id/cconfirmation_timer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_4m"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/default_font_size_16m"
+                    android:visibility="gone"
+                    style="@style/SourceSansPro_Light" />
+
+                <TextView
+                    android:id="@+id/cconfirmation_resend_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_4m"
+                    android:gravity="center_horizontal"
+                    android:text="Kirim ulang"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/default_font_size_16m"
+                    android:textStyle="bold"
+                    style="@style/SourceSansPro_Light" />
+
+                <Button
+                    android:id="@+id/cconfirmation_confirmation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_24m"
+                    android:layout_marginBottom="@dimen/default_margin_8m"
+                    android:text="KONFIRMASI"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_font_size_16m"
+                    android:stateListAnimator="@null"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

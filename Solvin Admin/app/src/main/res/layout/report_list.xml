@@ -1,0 +1,1584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/report_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/margin_8rs"
+    android:layout_marginTop="@dimen/margin_8rs"
+    android:layout_marginRight="@dimen/margin_8rs"
+    android:clickable="false"
+    card_view:cardCornerRadius="@dimen/default_corner_radius_4m"
+    card_view:cardElevation="@dimen/card_default_elevation"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:contentPadding="@dimen/padding_12rs">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/report_monthly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/report_action_container"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/text_size_16rs"
+                android:maxLines="1"
+                android:ellipsize="end"
+                style="@style/SourceSansPro_Regular" />
+
+            <LinearLayout
+                android:id="@+id/report_action_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/report_toggle_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_2rs"
+                    android:src="@drawable/ic_menu_down_dark_trim"
+                    android:background="?selectableItemBackgroundBorderless" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/report_content_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16rs"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:background="@color/semiLightGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_16rs"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengguna"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_16rs"
+                    style="@style/SourceSansPro_Regular" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Murid"
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/text_size_16rs"
+                            style="@style/SourceSansPro_Regular" />
+
+                        <TextView
+                            android:id="@+id/report_total_student"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4rs"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size_32rs"
+                            style="@style/SourceSansPro_Light" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/divider_default_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/darkGray" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Mentor"
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/text_size_16rs"
+                            style="@style/SourceSansPro_Regular" />
+
+                        <TextView
+                            android:id="@+id/report_total_mentor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4rs"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size_32rs"
+                            style="@style/SourceSansPro_Light" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_16rs"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Finansial"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_16rs"
+                    style="@style/SourceSansPro_Regular" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:paddingRight="@dimen/padding_4rs"
+                            android:text="Pemasukan"
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/text_size_16rs"
+                            style="@style/SourceSansPro_Regular" />
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/report_list_currency_sign_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="Rp."
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_16rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                            <TextView
+                                android:id="@+id/report_total_income"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_toRightOf="@+id/report_list_currency_sign_1"
+                                android:paddingLeft="@dimen/padding_4rs"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_size_24rs"
+                                android:gravity="right"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_8rs"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:paddingRight="@dimen/padding_4rs"
+                            android:text="Tebusan Saldo"
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/text_size_16rs"
+                            style="@style/SourceSansPro_Regular" />
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/report_list_currency_sign_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="Rp."
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_16rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                            <TextView
+                                android:id="@+id/report_total_balance_redeemed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_toRightOf="@+id/report_list_currency_sign_2"
+                                android:paddingLeft="@dimen/padding_4rs"
+                                android:textColor="@color/colorCancel"
+                                android:textSize="@dimen/text_size_24rs"
+                                android:gravity="right"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_4rs"
+                        android:layout_marginTop="@dimen/margin_8rs"
+                        android:layerType="software"
+                        android:background="@drawable/custom_line_dashed" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_8rs"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:paddingRight="@dimen/padding_4rs"
+                            android:text="Profit"
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/text_size_16rs"
+                            style="@style/SourceSansPro_Regular" />
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/report_list_currency_sign_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="Rp."
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_16rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                            <TextView
+                                android:id="@+id/report_total_profit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_toRightOf="@+id/report_list_currency_sign_3"
+                                android:paddingLeft="@dimen/padding_4rs"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_size_24rs"
+                                android:gravity="right"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_16rs"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aktivitas"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_16rs"
+                    style="@style/SourceSansPro_Regular" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_menu_right_primary_trim" />
+
+                    <TextView
+                        android:id="@+id/report_total_question"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Pertanyaan"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_16rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_4rs"
+                    android:background="@color/semiLightGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="Matematika"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_16rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <View
+                        android:layout_width="@dimen/divider_default_width"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_8rs"
+                        android:background="@color/darkGray" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_pending" />
+
+                            <TextView
+                                android:id="@+id/report_mathematics_question_pending"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_4rs"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_18rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_discussion" />
+
+                            <TextView
+                                android:id="@+id/report_mathematics_question_discussion"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_4rs"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_18rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_complete" />
+
+                            <TextView
+                                android:id="@+id/report_mathematics_question_complete"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_4rs"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_18rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/divider_default_width"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_8rs"
+                        android:layout_marginRight="@dimen/margin_8rs"
+                        android:background="@color/darkGray" />
+
+                    <TextView
+                        android:id="@+id/report_total_mathematics_question"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_18rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_4rs"
+                    android:background="@color/semiLightGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="Fisika"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_16rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <View
+                        android:layout_width="@dimen/divider_default_width"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_8rs"
+                        android:background="@color/darkGray" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_pending" />
+
+                            <TextView
+                                android:id="@+id/report_physics_question_pending"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_4rs"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_18rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_discussion" />
+
+                            <TextView
+                                android:id="@+id/report_physics_question_discussion"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_4rs"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_18rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_complete" />
+
+                            <TextView
+                                android:id="@+id/report_physics_question_complete"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_4rs"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_18rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/divider_default_width"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_8rs"
+                        android:layout_marginRight="@dimen/margin_8rs"
+                        android:background="@color/darkGray" />
+
+                    <TextView
+                        android:id="@+id/report_total_physics_question"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_18rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_4rs"
+                    android:background="@color/semiLightGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_menu_right_primary_trim" />
+
+                    <TextView
+                        android:id="@+id/report_total_solution"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Solusi"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_16rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_4rs"
+                    android:background="@color/semiLightGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="Matematika"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_16rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <View
+                        android:layout_width="@dimen/divider_default_width"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_8rs"
+                        android:layout_marginRight="@dimen/margin_8rs"
+                        android:background="@color/darkGray" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.5"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:paddingLeft="@dimen/padding_8rs"
+                                android:paddingTop="@dimen/padding_4rs"
+                                android:paddingRight="@dimen/padding_8rs"
+                                android:paddingBottom="@dimen/padding_4rs"
+                                android:text="Terbaik"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_size_14rs"
+                                android:background="@drawable/best_vote"
+                                style="@style/Montserrat_Bold" />
+
+                            <TextView
+                                android:id="@+id/report_mathematics_best_solution"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_8rs"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_18rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:paddingLeft="@dimen/padding_8rs"
+                                android:paddingTop="@dimen/padding_4rs"
+                                android:paddingRight="@dimen/padding_8rs"
+                                android:paddingBottom="@dimen/padding_4rs"
+                                android:text="Total"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_14rs"
+                                android:background="@drawable/total_solution"
+                                style="@style/Montserrat_Bold" />
+
+                            <TextView
+                                android:id="@+id/report_mathematics_total_solution"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_8rs"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_18rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:background="@color/semiLightGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="Fisika"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_16rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <View
+                        android:layout_width="@dimen/divider_default_width"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_8rs"
+                        android:layout_marginRight="@dimen/margin_8rs"
+                        android:background="@color/darkGray" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.5"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:paddingLeft="@dimen/padding_8rs"
+                                android:paddingTop="@dimen/padding_4rs"
+                                android:paddingRight="@dimen/padding_8rs"
+                                android:paddingBottom="@dimen/padding_4rs"
+                                android:text="Terbaik"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_size_14rs"
+                                android:background="@drawable/best_vote"
+                                style="@style/Montserrat_Bold" />
+
+                            <TextView
+                                android:id="@+id/report_physics_best_solution"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_8rs"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_18rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:paddingLeft="@dimen/padding_8rs"
+                                android:paddingTop="@dimen/padding_4rs"
+                                android:paddingRight="@dimen/padding_8rs"
+                                android:paddingBottom="@dimen/padding_4rs"
+                                android:text="Total"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_14rs"
+                                android:background="@drawable/total_solution"
+                                style="@style/Montserrat_Bold" />
+
+                            <TextView
+                                android:id="@+id/report_physics_total_solution"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_8rs"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_18rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:background="@color/semiLightGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_menu_right_primary_trim" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Komentar"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_16rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_4rs"
+                    android:background="@color/semiLightGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Matematika"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_16rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:id="@+id/report_mathematics_total_comment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_16rs"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_18rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:background="@color/semiLightGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Fisika"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_16rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:id="@+id/report_physics_total_comment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_16rs"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_18rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:background="@color/semiLightGray" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16rs"
+                    android:text="Transaksi"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_16rs"
+                    style="@style/SourceSansPro_Regular" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_menu_right_primary_trim" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Paket Pertanyaan"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_16rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_4rs"
+                    android:background="@color/semiLightGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/report_transaction_package_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_16rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <View
+                        android:layout_width="@dimen/divider_default_width"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_8rs"
+                        android:background="@color/darkGray" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <View
+                                android:layout_width="@dimen/transaction_status_radius"
+                                android:layout_height="@dimen/transaction_status_radius"
+                                android:background="@drawable/circle_1" />
+
+                            <TextView
+                                android:id="@+id/report_transaction_package_1_pending"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_8rs"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_18rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <View
+                                android:layout_width="@dimen/transaction_status_radius"
+                                android:layout_height="@dimen/transaction_status_radius"
+                                android:background="@drawable/circle_2" />
+
+                            <TextView
+                                android:id="@+id/report_transaction_package_1_actived"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_8rs"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_18rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <View
+                                android:layout_width="@dimen/transaction_status_radius"
+                                android:layout_height="@dimen/transaction_status_radius"
+                                android:background="@drawable/circle_0" />
+
+                            <TextView
+                                android:id="@+id/report_transaction_package_1_canceled"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_8rs"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_18rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:background="@color/semiLightGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/report_transaction_package_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_16rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <View
+                        android:layout_width="@dimen/divider_default_width"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_8rs"
+                        android:background="@color/darkGray" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <View
+                                android:layout_width="@dimen/transaction_status_radius"
+                                android:layout_height="@dimen/transaction_status_radius"
+                                android:background="@drawable/circle_1" />
+
+                            <TextView
+                                android:id="@+id/report_transaction_package_2_pending"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_8rs"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_18rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <View
+                                android:layout_width="@dimen/transaction_status_radius"
+                                android:layout_height="@dimen/transaction_status_radius"
+                                android:background="@drawable/circle_2" />
+
+                            <TextView
+                                android:id="@+id/report_transaction_package_2_actived"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_8rs"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_18rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <View
+                                android:layout_width="@dimen/transaction_status_radius"
+                                android:layout_height="@dimen/transaction_status_radius"
+                                android:background="@drawable/circle_0" />
+
+                            <TextView
+                                android:id="@+id/report_transaction_package_2_canceled"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_8rs"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_18rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:background="@color/semiLightGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/report_transaction_package_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_16rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <View
+                        android:layout_width="@dimen/divider_default_width"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_8rs"
+                        android:background="@color/darkGray" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <View
+                                android:layout_width="@dimen/transaction_status_radius"
+                                android:layout_height="@dimen/transaction_status_radius"
+                                android:background="@drawable/circle_1" />
+
+                            <TextView
+                                android:id="@+id/report_transaction_package_3_pending"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_8rs"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_18rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <View
+                                android:layout_width="@dimen/transaction_status_radius"
+                                android:layout_height="@dimen/transaction_status_radius"
+                                android:background="@drawable/circle_2" />
+
+                            <TextView
+                                android:id="@+id/report_transaction_package_3_actived"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_8rs"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_18rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <View
+                                android:layout_width="@dimen/transaction_status_radius"
+                                android:layout_height="@dimen/transaction_status_radius"
+                                android:background="@drawable/circle_0" />
+
+                            <TextView
+                                android:id="@+id/report_transaction_package_3_canceled"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_8rs"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_18rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:background="@color/semiLightGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_menu_right_primary_trim" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tebusan Saldo"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_16rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_4rs"
+                    android:background="@color/semiLightGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <View
+                                android:layout_width="@dimen/transaction_status_radius"
+                                android:layout_height="@dimen/transaction_status_radius"
+                                android:background="@drawable/circle_1" />
+
+                            <TextView
+                                android:id="@+id/report_transaction_redeem_balance_pending"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_8rs"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_18rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <View
+                                android:layout_width="@dimen/transaction_status_radius"
+                                android:layout_height="@dimen/transaction_status_radius"
+                                android:background="@drawable/circle_2" />
+
+                            <TextView
+                                android:id="@+id/report_transaction_redeem_balance_actived"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_8rs"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_18rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <View
+                                android:layout_width="@dimen/transaction_status_radius"
+                                android:layout_height="@dimen/transaction_status_radius"
+                                android:background="@drawable/circle_0" />
+
+                            <TextView
+                                android:id="@+id/report_transaction_redeem_balance_canceled"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_8rs"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_18rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/divider_default_width"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_8rs"
+                        android:layout_marginRight="@dimen/margin_8rs"
+                        android:background="@color/darkGray" />
+
+                    <TextView
+                        android:id="@+id/report_transaction_redeem_balance"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_18rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:background="@color/semiLightGray" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16rs"
+                    android:text="Lainnya"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_16rs"
+                    style="@style/SourceSansPro_Regular" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:background="@color/semiLightGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Total Keluhan Masuk"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_16rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:id="@+id/report_total_feedback"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_16rs"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_18rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:background="@color/semiLightGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Bonus SKT (Kode Membership)"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_16rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:id="@+id/report_total_extra_credit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_16rs"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_18rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:background="@color/semiLightGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:paddingRight="@dimen/padding_4rs"
+                        android:text="Bonus Saldo"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_16rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/report_list_currency_sign_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Rp."
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/text_size_16rs"
+                            style="@style/SourceSansPro_Regular" />
+
+                        <TextView
+                            android:id="@+id/report_total_balance_bonus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/report_list_currency_sign_4"
+                            android:paddingLeft="@dimen/padding_4rs"
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/text_size_18rs"
+                            android:gravity="right"
+                            style="@style/SourceSansPro_Regular" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

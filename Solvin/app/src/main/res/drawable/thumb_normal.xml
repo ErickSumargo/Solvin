@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/colorSwitchShadow" />
+                </shape>
+            </item>
+            <item android:left="0dp" android:top="0dp" android:right="0dp" android:bottom="@dimen/shadow_default_radius">
+                <shape android:shape="oval">
+                    <size
+                        android:width="@dimen/thumb_default_radius"
+                        android:height="@dimen/thumb_default_radius" />
+                    <solid
+                        android:color="@color/colorSwitchThumbNormal" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

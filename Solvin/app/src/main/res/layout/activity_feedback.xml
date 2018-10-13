@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/feedback_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="id.solvin.dev.view.fragments.FragmentFeedback">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/action_bar_default_height"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding_16m"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/feedback_send_to_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kepada Admin:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/default_font_size_12m"
+                style="@style/SourceSansPro_Regular" />
+
+            <TextView
+                android:id="@+id/feedback_admin_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:paddingLeft="@dimen/default_padding_8m"
+                android:paddingTop="@dimen/default_padding_2m"
+                android:paddingRight="@dimen/default_padding_8m"
+                android:paddingBottom="@dimen/default_padding_2m"
+                android:text="feedback@solvin.id"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_font_size_16m"
+                android:maxLines="1"
+                android:background="@drawable/custom_admin_email"
+                style="@style/SourceSansPro_Regular" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:layout_marginTop="@dimen/default_margin_12m"
+                android:background="@color/darkGray" />
+
+            <TextView
+                android:id="@+id/feedback_title_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_12m"
+                android:text="Subjek"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/default_font_size_12m"
+                style="@style/SourceSansPro_Regular" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/feedback_title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextInputHintTextAppearance"
+                app:errorTextAppearance="@style/TextInputErrorTextAppearance">
+
+                <AutoCompleteTextView
+                    android:id="@+id/feedback_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="mis. Upload Gambar Sering Error"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_20m"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:lineSpacingMultiplier="1"
+                    style="@style/SourceSansPro_Regular" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/feedback_content_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_12m"
+                android:text="Isi"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/default_font_size_12m"
+                style="@style/SourceSansPro_Regular" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/feedback_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextInputHintTextAppearance"
+                app:errorTextAppearance="@style/TextInputErrorTextAppearance">
+
+                <AutoCompleteTextView
+                    android:id="@+id/feedback_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_20m"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingMultiplier="1"
+                    style="@style/SourceSansPro_Regular" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/feedback_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_16m"
+                android:padding="@dimen/default_padding_0m"
+                android:text="KIRIM"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_font_size_16m"
+                android:background="@drawable/primary_button"
+                android:stateListAnimator="@null"
+                style="@style/SourceSansPro_Regular" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_default_elevation"
+        android:background="@drawable/custom_shadow" />
+
+</android.support.design.widget.CoordinatorLayout>

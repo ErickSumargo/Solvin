@@ -1,0 +1,799 @@
+<resources>
+    <string name="app_name">Solvin (Dev)</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_search">Cari</string>
+    <string name="action_notification">Notifikasi</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="action_new_file">Draft Baru</string>
+    <string name="action_open_file">Buka Draft</string>
+    <string name="action_save_file">Simpan Draft</string>
+    <string name="action_text_format">Format Teks</string>
+
+    <string name="text_no_internet">Tidak Ada Koneksi Internet</string>
+
+    <string name="registration_error_message1">No. HP yang dimasukkan telah terdaftar sebelumnya</string>
+    <string name="registration_error_message2_mobile">Perangkat smartphone yang sedang digunakan telah terdaftar di dalam sistem sebelumnya</string>
+    <string name="registration_error_message2_tablet">Perangkat tablet yang sedang digunakan telah terdaftar di dalam sistem sebelumnya</string>
+    <string name="registration_error_message3">Kode verifikasi yang dimasukkan tidak sesuai dengan yang kami kirimkan</string>
+
+    <string name="text_sample">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie magna risus, quis egestas ligula imperdiet non. Suspendisse enim dui, euismod ut urna ac, euismod eleifend ipsum. Sed euismod rhoncus placerat. Fusce ornare, purus vel mattis elementum, neque enim tincidunt turpis, sit amet feugiat neque leo ut diam. Integer eget libero eget nunc pulvinar tincidunt. Proin velit tellus, sollicitudin sit amet magna id, vehicula viverra leo. In eu ex vel ex venenatis pharetra. Suspendisse mollis mi auctor metus sagittis, sit amet posuere tortor elementum. Curabitur in sodales magna.
+Quisque porttitor nisl quis tristique feugiat. Pellentesque eget nisi vehicula, posuere odio dictum, euismod diam. Morbi sit amet tincidunt sapien, vitae mollis mauris. Praesent faucibus, dolor ornare euismod pellentesque, nulla risus cursus neque, in dapibus metus ante in lectus. Aenean pretium augue nec feugiat efficitur. Mauris tempus sem sed libero faucibus, ac ultrices enim rhoncus. Maecenas feugiat elementum risus sit amet condimentum.
+Sed facilisis vel nulla ac consequat. Morbi egestas tellus quis est egestas dictum. Suspendisse commodo dui ornare, lobortis est laoreet, faucibus erat. Nullam commodo vehicula ipsum, eget egestas mi tempor elementum. Praesent iaculis quam leo, non accumsan nibh ornare ac. Sed sodales eros sit amet faucibus sollicitudin. Etiam orci nisl, iaculis in lacus nec, imperdiet tincidunt nunc.
+Sed quis diam sed magna fermentum malesuada. Donec dolor dui, ornare sit amet rutrum sit amet, malesuada ut lacus. Cras eu leo felis. Donec feugiat nisi et diam dictum, et pellentesque ipsum ultrices. Etiam venenatis augue ut orci ultrices luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus convallis felis egestas tincidunt tincidunt. Cras rutrum porttitor bibendum. Maecenas mauris felis, imperdiet eu arcu non, consequat euismod velit. Vivamus et risus in sapien vehicula interdum non eu velit. Nam id enim et quam pharetra faucibus eget sit amet sapien. Donec maximus dictum libero, a tincidunt augue porta sit amet. Nulla ante sem, vestibulum vitae sodales at, vehicula nec mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur vehicula metus, sed facilisis urna. Ut et justo viverra est molestie ultrices ac sit amet purus.
+Nam id egestas leo. Aenean egestas luctus pharetra. Quisque at tincidunt magna, vitae porta tellus. Duis sit amet gravida enim, a iaculis leo. Integer suscipit sollicitudin ornare. Duis lectus ante, finibus quis sem at, laoreet fringilla neque. Pellentesque gravida id mi eget tincidunt. Nam rhoncus libero vel diam eleifend mollis vitae eget est. Sed molestie ipsum ac dui commodo vulputate. Ut eget massa urna. Maecenas eu lorem est. Curabitur eget volutpat lectus. Praesent non nunc eu quam imperdiet cursus id eu nibh. Nam ut lorem imperdiet, varius tortor in, rutrum risus. Nulla maximus metus et nisl accumsan, non volutpat dolor semper. Aliquam posuere turpis non ullamcorper rhoncus.
+    </string>
+
+    <string name="text_question_detail_sample">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie magna risus, quis egestas ligula imperdiet non. Suspendisse enim dui, euismod ut urna ac, euismod eleifend ipsum. Sed euismod rhoncus placerat. Fusce ornare, purus vel mattis elementum, neque enim tincidunt turpis, sit amet feugiat neque leo ut diam. Integer eget libero eget nunc pulvinar tincidunt. Proin velit tellus, sollicitudin sit amet magna id, vehicula viverra leo. In eu ex vel ex venenatis pharetra. Suspendisse mollis mi auctor metus sagittis, sit amet posuere tortor elementum. Curabitur in sodales magna.
+Quisque porttitor nisl quis tristique feugiat.
+    </string>
+
+    <string name="text_answer_detail_sample">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie magna risus, quis egestas ligula imperdiet non. Suspendisse enim dui, euismod ut urna ac, euismod eleifend ipsum. Sed euismod rhoncus placerat. Fusce ornare, purus vel mattis elementum, neque enim tincidunt turpis, sit amet feugiat neque leo ut diam. Integer eget libero eget nunc pulvinar tincidunt. Proin velit tellus, sollicitudin sit amet magna id, vehicula viverra leo. In eu ex vel ex venenatis pharetra. Suspendisse mollis mi auctor metus sagittis, sit amet posuere tortor elementum. Curabitur in sodales magna.
+Quisque porttitor nisl quis tristique feugiat.
+    </string>
+
+    <string name="text_comment_sample">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie magna risus, quis egestas ligula imperdiet non. Suspendisse enim dui, euismod ut urna ac, euismod eleifend ipsum. Sed euismod rhoncus placerat. Fusce ornare, purus vel mattis elementum, neque enim tincidunt turpis, sit amet feugiat neque leo ut diam.
+    </string>
+
+    <string name="text_terms">
+        <![CDATA[
+        Sesuai dengan berlakunya <font color=\"#2191D0\"><u>Syarat & Ketentuan</u></font> penggunaan aplikasi beserta bagian dari <font color=\"#2191D0\"><u>Kebijakan Privasi</u></font>,
+        harap masukkan nomor handphone anda sebelum dapat bergabung dengan komunitas <b>Solvin</b> kami.
+        ]]>
+    </string>
+
+    <string name="text_code_confirmation">
+        Harap masukkan kode verifikasi yang telah kami kirimkan melalui SMS pada nomor di atas.
+    </string>
+
+    <string name="text_reset_password_code_confirmation">
+        Harap masukkan kode verifikasi yang telah kami kirimkan melalui SMS pada nomor yang dimasukkan sebelumnya.
+    </string>
+
+    <string name="text_yet_code_received">
+        Belum mendapatkan kode konfirmasi?
+    </string>
+
+    <string-array name="gradeList">
+        <item>PILIH TINGKATAN</item>
+        <item>SD</item>
+        <item>SMP</item>
+        <item>SMA</item>
+    </string-array>
+
+    <string-array name="subjectListDefault">
+        <item>PILIH MATA PELAJARAN</item>
+    </string-array>
+
+    <string-array name="subjectListElementary">
+        <item>PILIH MATA PELAJARAN</item>
+        <item>Matematika</item>
+    </string-array>
+
+    <string-array name="subjectListJunior">
+        <item>PILIH MATA PELAJARAN</item>
+        <item>Matematika</item>
+        <item>Fisika</item>
+    </string-array>
+
+    <string-array name="subjectListSenior">
+        <item>PILIH MATA PELAJARAN</item>
+        <item>Matematika</item>
+        <item>Fisika</item>
+    </string-array>
+
+                                                <!--Material-->
+    <string-array name="materialListDefault">
+        <item>PILIH MATERI</item>
+    </string-array>
+
+    <string-array name="materialListMathematicsElementary">
+        <item>PILIH MATERI</item>
+        <item>Bangun Datar</item>
+        <item>Bangun Ruang</item>
+        <item>Bidang Koordinat</item>
+        <item>Bilangan</item>
+        <item>Debit</item>
+        <item>Faktor &amp; Kelipatan</item>
+        <item>Pangkat &amp; Akar Bilangan Bulat</item>
+        <item>Pecahan</item>
+        <item>Pengukuran</item>
+        <item>Penyajian &amp; Pengolahan Data</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="materialListMathematicsJunior">
+        <item>PILIH MATERI</item>
+        <item>Aljabar</item>
+        <item>Aritmatika Sosial</item>
+        <item>Bangun Datar</item>
+        <item>Bangun Ruang</item>
+        <item>Bilangan</item>
+        <item>Eksponen</item>
+        <item>Fungsi</item>
+        <item>Garis Segitiga</item>
+        <item>Garis Sejajar</item>
+        <item>Garis Singgung Lingkaran</item>
+        <item>Himpunan</item>
+        <item>Kesebangunan &amp; Kekongruenan</item>
+        <item>Peluang</item>
+        <item>Perbandingan</item>
+        <item>Persamaan Garis Lurus</item>
+        <item>Persamaan Kuadrat</item>
+        <item>Persamaan Linear</item>
+        <item>Pertidaksamaan</item>
+        <item>Pola Bilangan &amp; Deret</item>
+        <item>Statistika</item>
+        <item>Sudut</item>
+        <item>Teorema Pythagoras</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="materialListMathematicsSenior">
+        <item>PILIH MATERI</item>
+        <item>Barisan &amp; Deret</item>
+        <item>Dimensi Tiga</item>
+        <item>Eksponen</item>
+        <item>Integral</item>
+        <item>Komposisi &amp; Invers Fungsi</item>
+        <item>Limit Fungsi</item>
+        <item>Lingkaran</item>
+        <item>Logaritma</item>
+        <item>Logika Matematika</item>
+        <item>Matriks</item>
+        <item>Peluang</item>
+        <item>Persamaan Kuadrat</item>
+        <item>Persamaan Linear</item>
+        <item>Pertidaksamaan</item>
+        <item>Program Linear</item>
+        <item>Statistika</item>
+        <item>Sukubanyak (Polinomial)</item>
+        <item>Transformasi Geometri</item>
+        <item>Trigonometri</item>
+        <item>Turunan</item>
+        <item>Vektor</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="materialListPhysicsJunior">
+        <item>PILIH MATERI</item>
+        <item>Alat Optik</item>
+        <item>Bunyi</item>
+        <item>Cahaya</item>
+        <item>Daya Listrik</item>
+        <item>Energi Listrik</item>
+        <item>Gerak Lurus</item>
+        <item>Getaran &amp; Gelombang</item>
+        <item>Hukum Newton</item>
+        <item>Induksi Elektromagnetik</item>
+        <item>Kalor</item>
+        <item>Kemagnetan</item>
+        <item>Listrik Dinamis</item>
+        <item>Listrik Statis</item>
+        <item>Pemuaian</item>
+        <item>Pengukuran</item>
+        <item>Sistem Tata Surya</item>
+        <item>Suhu</item>
+        <item>Sumber Arus Listrik</item>
+        <item>Tekanan</item>
+        <item>Usaha &amp; Energi</item>
+        <item>Zat &amp; Wujudnya</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="materialListPhysicsSenior">
+        <item>PILIH MATERI</item>
+        <item>Besaran &amp; Satuan</item>
+        <item>Dinamika Rotasi</item>
+        <item>Elastisitas</item>
+        <item>Fisika Atom</item>
+        <item>Fisika Inti</item>
+        <item>Gelombang</item>
+        <item>Gerak Harmonik Sederhana</item>
+        <item>Gerak Lurus</item>
+        <item>Gerak Melingkar</item>
+        <item>Hukum Newton</item>
+        <item>Impuls</item>
+        <item>Induksi Elektromagnetik</item>
+        <item>Kalor</item>
+        <item>Keseimbangan Benda Tegar</item>
+        <item>Listrik Dinamis</item>
+        <item>Listrik Statis</item>
+        <item>Medan Magnetik</item>
+        <item>Mekanika Fluida</item>
+        <item>Momentum</item>
+        <item>Optik</item>
+        <item>Radiasi Benda Hitam</item>
+        <item>Suhu</item>
+        <item>Teori Kinetik Gas</item>
+        <item>Teori Kuantum</item>
+        <item>Teori Relativitas Khusus</item>
+        <item>Termodinamika</item>
+        <item>Usaha &amp; Energi</item>
+        <item>Vektor</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="statusList">
+        <item>Semua</item>
+        <item>Terjawab</item>
+        <item>Diskusi</item>
+        <item>Pending</item>
+    </string-array>
+
+    <string name="understandable_message">
+        <![CDATA[
+        Bila anda telah memahami atas solusi yang diajukan, harap melakukan vote untuk solusi terbaik melalui tombol <b>“TELAH MENGERTI”</b> di atas
+        ]]>
+    </string>
+
+    <!--Kebijakan Privasi-->
+    <string name="privacy_policy_introduction">
+        <![CDATA[
+        Kebijakan Privasi sebagaimana tercantum dalam <font color=\"#2191D0\">Syarat & Ketentuan</font> penggunaan aplikasi Solvin menguraikan bagaimana cara kami memperoleh, melindungi, dan menggunakan informasi pribadi pengguna sebagai bagian dari aktivitas operasional sistem.
+        Dengan mengakses dan memanfaatkan layanan yang terdapat dalam aplikasi Solvin, pengguna diharapkan untuk membaca Kebijakan Privasi yang diuraikan di bawah berikut secara seksama sehingga dapat memahami bagaimana Kebijakan Privasi ini kami berlakukan.
+        Bentuk penguraian Kebijakan Privasi terdiri atas:
+        ]]>
+    </string>
+
+    <string name="privacy_policy_definition_system">
+        <![CDATA[
+        Sistem yaitu seperangkat komponen/unsur yang saling padu, berkaitan, dan mendukung berjalannya aktivitas operasional dalam aplikasi.
+        ]]>
+    </string>
+
+    <string name="privacy_policy_definition_application">
+        <![CDATA[
+        Aplikasi yaitu piranti lunak berbasis <i>mobile</i> yang dikembangkan menjadi suatu <i>platform</i>/komunitas tempat bertemunya murid dan mentor agar dapat melaksanakan kegiatan layanan utama dalam aplikasi berupa tanya-jawab pertanyaan.
+        ]]>
+    </string>
+
+    <string name="privacy_policy_definition_service">
+        <![CDATA[
+        Layanan mengacu pada sejumlah layanan yang tersedia di dalam aplikasi untuk mendukung aktivitas berjalannya sistem sebagaimana mestinya agar dapat tercapai unsur kepuasan (<i>satisfication</i>) bagi para pengguna, salah satunya adalah layanan tanya-jawab pertanyaan.
+        ]]>
+    </string>
+
+    <string name="privacy_policy_definition_we">
+        <![CDATA[
+        Kami merupakan pihak operator internal yang memantau, manajemen, dan mengoperasikan sistem aplikasi.
+        ]]>
+    </string>
+
+    <string name="privacy_policy_definition_user">
+        <![CDATA[
+        Pengguna terdiri atas murid dan mentor sebagai kunci pelaksana fungsionalitas utama aplikasi.
+        ]]>
+    </string>
+
+    <string name="privacy_policy_information_type_introduction">
+        <![CDATA[
+        Informasi yang kami kumpulkan di dalam aplikasi terdiri atas 3 jenis, yaitu:
+        ]]>
+    </string>
+
+    <string name="privacy_policy_information_type_point_a">
+        <![CDATA[
+        Informasi Pribadi Pengguna, berupa: email, nama lengkap, kata sandi (<i>password</i>), no. handphone, alamat IP handphone, foto profil, alamat tempat tinggal, tanggal lahir (opsional), sisa kredit pertanyaan (murid), nama sekolah (murid/opsional), dan nama perusahaan/instansi/institusi tempat bekerja (mentor/opsional) yang kami peroleh secara langsung baik melalui saat registrasi atau melalui fitur “Edit Profil” bagian dari aplikasi.
+        ]]>
+    </string>
+
+    <string name="privacy_policy_information_type_point_b">
+        <![CDATA[
+        Informasi Sensitif Pengguna berhubungan dengan informasi tentang kepemilikan akun rekening bank pengguna, berupa: atas nama (a.n) pemilik rekening bank, nama rekening bank, bukti foto struk hasil transfer pembayaran (murid), kode nomor transaksi pembayaran yang dihasilkan (<i>generated</i>) dari sistem aplikasi (murid), dan jumlah pertanyaan yang berhasil terselesaikan (mentor).
+        ]]>
+    </string>
+
+    <string name="privacy_policy_information_type_point_c">
+        <![CDATA[
+        Informasi Umum, berupa: daftar rincian pertanyaan (teks + gambar) yang  pernah diajukan oleh murid, daftar rincian solusi (teks + gambar) yang pernah diajukan oleh mentor, daftar rincian tanggapan/komentar (teks + gambar), dan daftar keluhan yang pernah disampaikan oleh pengguna, serta hasil pencarian nama suatu individu pada kolom pencarian dalam aplikasi.
+        ]]>
+    </string>
+
+    <string name="privacy_policy_protecting_information_part_1">
+        <![CDATA[
+        Segala jenis informasi yang tercantum pada bagian Kebijakan Privasi “Jenis Informasi yang Kami Kumpulkan” akan disimpan ke dalam <i>server database</i> sistem dilengkapi pengamanan berupa enkripsi dengan menggunakan jenis algoritma kriptografi tertentu dalam menghindari/meminimalisir resiko terjadinya sejumlah peristiwa yang dapat membawa dampak kerugian baik bagi kami maupun pengguna. Sejumlah peristiwa tersebut dapat berupa pengaksesan akun/layanan aplikasi tanpa otorisasi, pencurian, pengubahan dan/atau penghapusan segala jenis informasi baik secara sengaja maupun tidak disengaja.
+        ]]>
+    </string>
+
+    <string name="privacy_policy_protecting_information_part_2">
+        <![CDATA[
+        Namun sesuai peribahasa “Tiada Gading yang Tak Retak”, seberapa tinggi tingkat keamanan suatu sistem pasti terdapat celah kelemahan untuk dapat diserang dan/atau diterobos oleh para pihak eksternal yang tidak memiliki otorisasi wewenang, sertifikasi hukum, dan tanggung jawab pribadi. Untuk itu, maka dibutuhkan kerja sama antara kami dan pengguna agar dapat saling menjaga informasi pribadi dari pihak eksternal tersebut.
+        ]]>
+    </string>
+
+    <string name="privacy_policy_using_information_part_1">
+        <![CDATA[
+        Informasi pribadi pengguna yang kami peroleh akan dimanfaatkan ke dalam bentuk penyampaian notifikasi yang perlu/wajib diketahui oleh pengguna sebagai hasil dalam penggunaan aplikasi. Notifikasi dapat mencakup sebagai berikut:
+        ]]>
+    </string>
+
+    <string name="privacy_policy_using_information_point_a">
+        <![CDATA[
+        Solusi dan tanggapan/komentar yang masuk terkait pada pertanyaan yang diajukan.
+        ]]>
+    </string>
+
+    <string name="privacy_policy_using_information_point_b">
+        <![CDATA[
+        Info pembatalan dan/atau konfirmasi sukses transfer pembayaran dalam hal aktivasi jenis paket pertanyaan.
+        ]]>
+    </string>
+
+    <string name="privacy_policy_using_information_point_c">
+        <![CDATA[
+        Segala keperluan bagi kami untuk berkomunikasi dengan pengguna yang dapat dilakukan baik melalui SMS atau email terkait halnya umpan balik (<i>feedback</i>) terhadap keluhan yang disampaikan, pelanggaran yang dilakukan, konfirmasi validitas akun kepemilikan rekening bank, dan evaluasi penilaian terhadap layanan yang diberikan.
+        ]]>
+    </string>
+
+    <string name="privacy_policy_using_information_part_2">
+        <![CDATA[
+        Kami tidak bertanggung jawab apabila terjadi permasalahan seperti notifikasi yang tidak masuk/sampai ke pengguna akibat email yang diberikan oleh pengguna tidak valid, no. handphone pengguna yang tidak aktif ketika notifikasi disampaikan, dan pilihan pengguna untuk berhenti menerima notifikasi melalui fitur “Pengaturan” dalam aplikasi. Untuk itu, kebijakan pengguna dalam menerima dan menanggapi isi notifikasi tersebut sangat diharapkan.
+        ]]>
+    </string>
+
+    <string name="privacy_policy_violation_consequences_introduction">
+        <![CDATA[
+        Kami tidak dapat mentolerir segala bentuk pelanggaran yang dilakukan oleh pengguna sebagaimana yang tercantum di bawah berikut dan kami akan segera mengambil tindakan berupa pemberian level sanksi tertentu terkecuali pengguna yang bersangkutan dapat memberikan konfirmasi alasan dilakukannya suatu pelanggaran tersebut melalui email dan dalam tempo waktu 2\u00D724 jam sehingga dapat diselesaikan secara internal kekeluargaan. Bentuk pelanggaran beserta level sanksi yang telah kami tetapkan dan berikan mencakup sebagai berikut:
+        ]]>
+    </string>
+
+    <string name="privacy_policy_violation_consequences_point_a">
+        <![CDATA[
+        Pelanggaran etika standar penulisan kalimat bahasa Indonesia yang baik dan benar.
+        <br></br>
+        Sanksi: *Level 1.
+        ]]>
+    </string>
+
+    <string name="privacy_policy_violation_consequences_point_b">
+        <![CDATA[
+        Konten isi pertanyaan, solusi, tanggapan/komentar, dan keluhan yang mengandung unsur non-legalitas (pornografi, SARA, propaganda), kekasaran & kekerasan, pemfitnaan, penghinaan, dan pencemaran nama baik suatu individu/instansi/institusi/organisasi yang berada di bawah lindungan hukum, serta segala isi konten yang dilarang menurut UU ITE Nomor 11 Tahun 2008 yang terbukti tidak memiliki relevansi atas pertanyaan, solusi, tanggapan/komentar, dan keluhan yang disampaikan.
+        <br></br>
+        Sanksi: **Level 2/***Level 3 (tergantung ringan-beratnya pelanggaran).
+        ]]>
+    </string>
+
+    <string name="privacy_policy_violation_consequences_point_c">
+        <![CDATA[
+        Pencurian, pengubahan, dan pemalsuan informasi pribadi/sensitif pengguna.
+        <br></br>
+        Sanksi: ***Level 3.
+        ]]>
+    </string>
+
+    <string name="privacy_policy_violation_consequences_description_1">
+        <![CDATA[
+        notifikasi peringatan/teguran mengenai pelanggaran yang dilakukan.
+        ]]>
+    </string>
+
+    <string name="privacy_policy_violation_consequences_description_2">
+        <![CDATA[
+        peringatan keras dan penghapusan konten yang memiliki unsur pelanggaran (dengan/tanpa ada notifikasi terlebih dahulu).
+        ]]>
+    </string>
+
+    <string name="privacy_policy_violation_consequences_description_3">
+        <![CDATA[
+        menonaktifkan akun pengguna dari aplikasi tanpa ada notifikasi terlebih dahulu.
+        ]]>
+    </string>
+
+    <string name="privacy_policy_call_us_introduction">
+        <![CDATA[
+        Jika anda memiliki pertanyaan lebih lanjut mengenai Kebijakan Privasi pengguna, silahkan hubungi kami melalui:
+        ]]>
+    </string>
+
+    <string name="privacy_policy_call_us_email">
+        <![CDATA[
+        <u>info@solvin.id</u>
+        ]]>
+    </string>
+
+    <string name="privacy_policy_latest_update">
+        <![CDATA[
+        Pembaruan terakhir: <font color=\"#2191D0\">01/01/2017</font>
+        ]]>
+    </string>
+
+    <!---->
+
+    <!--Terms & Condition-->
+    <string name="terms_condition_introduction">
+        <![CDATA[
+        Syarat & Ketentuan dalam penggunaan aplikasi Solvin ditetapkan untuk memastikan bahwa segala aktivitas di dalamnya berada dalam pengawasan, terkontrol sehingga dapat berjalan sebagaimana mestinya. Dengan mengakses dan memanfaatkan layanan yang terdapat dalam aplikasi Solvin, maka anda telah memahami serta mematuhi semua peraturan yang berlaku di dalam aplikasi ini.
+        ]]>
+    </string>
+
+    <!--Murid-->
+    <string name="terms_condition_student_point_1">
+        <![CDATA[
+        Murid diwajibkan memasukkan segala informasi yang diminta dalam aplikasi berkaitan dengan akun pribadi secara benar, sebagaimana adanya, dan dapat dipertanggungjawabkan. Kami tidak bertanggung jawab terhadap segala kerugian yang timbul bagi murid akibat masukan (<i>input</i>) informasi dengan validitas yang tidak sah dan/atau benar.
+        ]]>
+    </string>
+
+    <string name="terms_condition_student_point_2">
+        <![CDATA[
+        Murid dalam mengajukan pertanyaan, tanggapan/komentar, dan keluhan diwajibkan mengikuti etika standar penulisan kalimat bahasa Indonesia yang baik dan benar serta tidak diperkenankan mengandung konten yang memiliki unsur non-legalitas (pornografi, SARA, propaganda), kekasaran & kekerasan, pemfitnaan, penghinaan, dan pencemaran nama baik suatu individu/instansi/institusi/organisasi yang berada di bawah lindungan hukum, serta segala isi konten yang dilarang menurut UU ITE Nomor 11 Tahun 2008 yang terbukti sama sekali tidak memiliki relevansi atas pertanyaan, tanggapan/komentar, dan keluhan yang disampaikan. Konsekuensi/sanksi yang diberikan dari bentuk pelanggaran tersebut dapat dicermati sebagaimana tercantum dalam bagian Kebijakan Privasi “Bentuk Pelanggaran & Konsekuensi”.
+        ]]>
+    </string>
+
+    <string name="terms_condition_student_point_3">
+        <![CDATA[
+        Murid dalam setiap kesempatan mengajukan pertanyaan melalui “Sisa Kredit Tanya” yang dimiliki tidak diperkenankan mengandung lebih dari 1 (satu) nomor angka pertanyaan. Bila terbukti melanggar hal tersebut, maka mentor yang akan menjawab pertanyaan tersebut memiliki wewenang berdiskusi dengan murid untuk hanya memilih satu buah pertanyaan di antaranya untuk diselesaikan/diperoleh solusinya.
+        ]]>
+    </string>
+
+    <string name="terms_condition_student_point_4">
+        <![CDATA[
+        Murid diharapkan mencakup sedetil-detilnya informasi dari pertanyaan yang akan diajukan untuk mendukung validitas dan kelengkapan solusi yang akan diajukan oleh (para) mentor untuk pertanyaan tersebut. Bila pertanyaan yang diajukan terbukti mengalami kekurangan informasi di dalamnya sehingga tidak memiliki solusi mutlak sebagai bentuk penyelesaiannya, maka kami tidak bertanggung jawab akan sejumlah kerugian yang timbul bagi murid akibat permasalahan tersebut seperti tidak terjawabnya pertanyaan dan tidak ada pengembalian +1 kredit pertanyaan yang telah digunakan oleh murid untuk mengajukan pertanyaan yang bersangkutan.
+        ]]>
+    </string>
+
+    <string name="terms_condition_student_point_5">
+        <![CDATA[
+        Selama suatu pertanyaan masih berstatus “Pending” (belum ada solusi yang diajukan), murid yang mengajukan pertanyaan bersangkutan masih dapat melakukan kegiatan sunting/edit pertanyaan bila konten dari pertanyaannya mengalami kesalahan. Bila pertanyaan terkait telah berstatus “Diskusi” atau “Terjawab”, maka kegiatan edit pertanyaan oleh murid yang bersangkutan tidak dapat lagi dilakukan apapun bentuk alasannya.
+        ]]>
+    </string>
+
+    <string name="terms_condition_student_point_6">
+        <![CDATA[
+        Murid yang telah memahami solusi yang diajukan oleh (para) mentor terkait dari pertanyaan yang ditanyakan wajib melakukan vote untuk solusi terbaik melalui tombol "TELAH MENGERTI". Bila dalam tempo waktu 2\u00D724 jam terhitung sejak solusi telah diajukan oleh (para) mentor namun belum mendapatkan respons dari murid yang mengajukan pertanyaan tersebut, maka sistem akan secara otomatis memilih satu solusi terbaik di antara sejumlah solusi lainnya dari pertanyaan terkait.
+        ]]>
+    </string>
+
+    <string name="terms_condition_student_point_7">
+        <![CDATA[
+        Murid menyetujui untuk tidak salah memanfaatkan layanan yang tersedia dalam aplikasi di waktu dan/atau keadaan yang tidak tepat, seperti: berlangsungnya proses belajar-mengajar di sekolah dan segala jenis ujian di sekolah/instansi/institusi lembaga pendidikan nasional. Segala jenis kerugian yang timbul bagi murid sebagai konsekuensi dari pelanggaran hal tersebut adalah berada di luar tanggung jawab kami.
+        ]]>
+    </string>
+
+    <string name="terms_condition_student_point_8">
+        <![CDATA[
+        Murid menyetujui segala informasi pribadi, pertanyaan, tanggapan/komentar yang diajukan dapat ditampilkan/dibagikan kepada seluruh murid dan mentor lainnya sebagai bagian dari fitur dalam aplikasi, terkecuali sejumlah informasi sensitif berupa kata sandi (<i>password</i>) akun profil dan akun kepemilikan rekening bank.
+        ]]>
+    </string>
+
+    <string name="terms_condition_student_point_9">
+        <![CDATA[
+        Dalam pemesanan jenis paket pertanyaan yang dipilih, apabila murid tidak melakukan transaksi pembayaran dalam tempo waktu yang ditentukan oleh sistem, maka <i>invoice</i> pemesanan dianggap mengalami pembatalan secara otomatis oleh sistem.
+        ]]>
+    </string>
+
+    <string name="terms_condition_student_point_10">
+        <![CDATA[
+        Murid dengan berbagai bentuk alasan tidak berhak mengajukan kegiatan penukaran kembali jenis paket pertanyaan yang telah dibeli dengan sejumlah nominal uang Rupiah sebagai harga dari jenis paket pertanyaan tersebut (<i>refund</i>).
+        ]]>
+    </string>
+
+    <string name="terms_condition_student_point_11">
+        <![CDATA[
+        Penggunaan paket pertanyaan berlaku selama jangka waktu yang tertampil pada saat jenis paket dipilih dan terhitung sejak tanggal aktivasi paket pertanyaan tersebut. Melewati masa berlaku penggunaan tersebut, berapapun SKT yang dimiliki oleh murid akan hangus.
+        ]]>
+    </string>
+
+    <!--Mentor-->
+    <string name="terms_condition_mentor_point_1">
+        <![CDATA[
+        Mentor diwajibkan menyampaikan segala informasi baik berjenis pribadi atau sensitif yang dibutuhkan saat registrasi sebagai mentor dalam aplikasi secara benar, sebagaimana adanya, dan dapat dipertanggungjawabkan. Kami tidak bertanggung jawab terhadap segala kerugian yang timbul bagi mentor akibat penyampaian informasi dengan validitas yang tidak sah dan/atau benar.
+        ]]>
+    </string>
+
+    <string name="terms_condition_mentor_point_2">
+        <![CDATA[
+        Mentor dalam mengajukan solusi, tanggapan/komentar, dan keluhan diwajibkan mengikuti etika standar penulisan kalimat bahasa Indonesia yang baik dan benar serta tidak diperkenankan mengandung konten yang memiliki unsur non-legalitas (pornografi, SARA, propaganda), kekasaran & kekerasan, pemfitnaan, penghinaan, dan pencemaran nama baik suatu individu/instansi/institusi/organisasi yang berada di bawah lindungan hukum, serta segala isi konten yang dilarang menurut UU ITE Nomor 11 Tahun 2008 yang terbukti sama sekali tidak memiliki relevansi atas solusi, tanggapan/komentar, dan keluhan yang disampaikan. Konsekuensi/sanksi yang diberikan dari bentuk pelanggaran tersebut dapat dicermati sebagaimana tercantum dalam bagian Kebijakan Privasi “Bentuk Pelanggaran & Konsekuensi”.
+        ]]>
+    </string>
+
+    <string name="terms_condition_mentor_point_3">
+        <![CDATA[
+        Mentor menyetujui bahwa solusi yang diajukan untuk setiap pertanyaan dapat ditampilkan/dibagikan kepada seluruh murid dan mentor lainnya sebagai bagian dari fitur dalam aplikasi.
+        ]]>
+    </string>
+
+    <string name="terms_condition_mentor_point_4">
+        <![CDATA[
+        Mentor sebelum memilih suatu pertanyaan untuk dijawab diwajibkan dapat membaca dan memahami secara benar konten/isi yang dimaksudkan dari pertanyaan tersebut. Bila solusi yang diajukan terbukti menyimpang jauh dari solusi yang seharusnya sehingga bukan menjadi penyelesaian atas pertanyaan tersebut, maka mentor yang bersangkutan akan dikenakan sanksi berupa pengurangan -1 poin dari total kumulatif solusi yang pernah diajukannya sekaligus tervote sebagai yang terbaik.
+        ]]>
+    </string>
+
+    <string name="terms_condition_mentor_point_5">
+        <![CDATA[
+        Mentor yang telah mengajukan solusi atas suatu pertanyaan diwajibkan untuk menanggapi setiap tanggapan/komentar berupa pertanyaan lanjutan yang disampaikan oleh murid terkait solusi atas pertanyaannya dalam batas waktu 2\u00D724 jam. Bila mentor yang bersangkutan belum juga menanggapi tanggapan/komentar yang disampaikan dan telah melewati batas waktu yang ditetapkan, maka bentuk sanksi yang diberikan akan sama halnya dengan sanksi yang tercantum pada poin 4 sebelumnya.
+        ]]>
+    </string>
+
+    <string name="terms_condition_mentor_point_6">
+        <![CDATA[
+        Mentor dilarang dalam menyuruh/menugaskan/memaksakan suatu kehendak pada murid untuk melaksanakan suatu hal yang berada di luar kesepakatan bersama, seperti: permintaan kepada murid untuk vote/memilih solusi yang diajukannya sebagai yang terbaik di antara sejumlah solusi lainnya. Murid yang mengajukan pertanyaan terkait memiliki hak murni sepenuhnya dalam memilih solusi terbaik menurutnya (tanpa ada paksaan kehendak). Bila kami menerima laporan dari murid terkait kasus pelanggaran tersebut dan memang terbukti berdasarkan sejumlah analisis fakta pertimbangan dari kami, maka mentor yang bersangkutan akan langsung kami berikan sanksi level 3 sebagaimana tercantum pada bagian Kebijakan Privasi “Bentuk Pelanggaran & Konsekuensi”, dikeluarkan dari aplikasi dengan status “Mentor”, serta segala pencapaiannya dalam aplikasi tidak kami anggap.
+        ]]>
+    </string>
+
+    <string name="terms_condition_mentor_point_7">
+        <![CDATA[
+        Mentor dilarang melakukan registrasi sebagai murid di dalam aplikasi apapun bentuk alasannya. Bila mentor terbukti melanggar hal tersebut, maka bentuk sanksi yang diberikan akan sama halnya dengan sanksi yang tercantum pada poin 6 sebelumnya.
+        ]]>
+    </string>
+
+    <string name="terms_condition_mentor_point_8">
+        <![CDATA[
+        Dalam hal pembayaran kepada mentor, sistem menerbitkan laporan setiap bulannya (tertanggal 1 awal bulan – tanggal akhir bulan) berisi hasil pencapaian mentor berupa total poin (solusi tervote terbaik) yang dikumpulkan selama 1 bulan penuh dengan perolehan saldo sebesar total poin \u00D7 harga nominal Rupiah / (per) poin + bonus yang sebelumnya telah disepakati bersama saat registrasi sebagai mentor.
+        <br></br>
+        Saldo yang diperoleh serta dikumpulkan tersebut sewaktu-waktu dapat ditebuskan oleh mentor dengan mengikuti instruksi yang tertampil di dalam aplikasi. Mentor menyetujui bahwa permohonan penebusan saldo dengan besaran nominal tertentu yang diajukan akan segera kami proses (bila tidak terkendala baik secara internal atau eksternal teknis) serta dapat juga dibatalkan dengan berbagai alasan yang jelas bila kami menemukan isu keganjilan dalam kegiatan pengajuan permohonan penebusan saldo tersebut.
+        ]]>
+    </string>
+
+    <string name="terms_condition_call_us_introduction">
+        <![CDATA[
+        Syarat & Ketentuan penggunaan aplikasi di atas dapat berubah sewaktu-waktu. Bila anda memiliki pertanyaan lebih lanjut mengenai Syarat & Ketentuan penggunaan aplikasi, silahkan hubungi kami di:
+        ]]>
+    </string>
+
+    <string name="terms_condition_call_us_email">
+        <![CDATA[
+        <u>info@solvin.id</u>
+        ]]>
+    </string>
+
+    <string name="terms_condition_latest_update">
+        <![CDATA[
+        Pembaruan terakhir: <font color=\"#2191D0\">01/01/2017</font>
+        ]]>
+    </string>
+    <!---->
+                                                <!--FAQ-->
+    <!--Murid-->
+    <string name="faq_student_title1">
+        <![CDATA[
+        Apakah itu aplikasi Solvin?
+        ]]>
+    </string>
+    <string name="faq_student_content1">
+        <![CDATA[
+        Solvin merupakan sebuah aplikasi <i>mobile</i> yang memberikan layanan interaksi tanya-jawab antara murid sekolah dengan mentor. Murid dapat menanyakan segala hal, seperti: tugas rumah (PR), bahan persiapan ujian sekolah, dan sebagainya yang berhubungan dengan pelajaran sains serta mentor akan segera mengajukan solusi atas pertanyaan tersebut. Solvin secara sementara hanya menyediakan dua jenis pelajaran sains yang dapat ditanyakan, yaitu Matematika dan Fisika.
+        ]]>
+    </string>
+
+    <string name="faq_student_title2">
+        <![CDATA[
+        Bagaimana cara saya melakukan registrasi sebagai murid?
+        ]]>
+    </string>
+    <string name="faq_student_content2">
+        <![CDATA[
+        Pilih tombol “Daftar” yang tersedia di dalam aplikasi kemudian ikuti setiap langkahnya untuk menyelesaikan registrasi sebagai murid.
+        ]]>
+    </string>
+
+    <string name="faq_student_title3">
+        <![CDATA[
+        Apakah saya diperbolehkan memiliki lebih dari satu akun di dalam aplikasi?
+        ]]>
+    </string>
+    <string name="faq_student_content3">
+        <![CDATA[
+        Setiap murid hanya diperbolehkan memiliki maksimal satu buah akun di dalam aplikasi. Kami berhak menolak permintaan pendaftaran dari pengguna sebagai murid dengan berbagai alasan yang jelas.
+        ]]>
+    </string>
+
+    <string name="faq_student_title4">
+        <![CDATA[
+        Bagaimana cara saya mengajukan pertanyaan?
+        ]]>
+    </string>
+    <string name="faq_student_content4">
+        <![CDATA[
+        Pada halaman “Pertanyaan”, masukkan segala informasi mengenai kategori pertanyaan yang akan diajukan, berupa: “Tingkatan”, “Mata Pelajaran”, dan “Materi”. Pilih “Lanjut” dan silahkan masukkan pertanyaan anda secara terperinci baik melalui teks tulisan maupun gambar dengan jumlah maksimal satu buah.
+        ]]>
+    </string>
+
+    <string name="faq_student_title5">
+        <![CDATA[
+        Bagaimana bila topik dari pertanyaan yang akan saya ajukan tidak tercantum di dalam daftar materi pertanyaan?
+        ]]>
+    </string>
+    <string name="faq_student_content5">
+        <![CDATA[
+        Anda dapat memilih jenis materi “Lainnya” yang terdapat di akhir daftar materi pertanyaan.
+        ]]>
+    </string>
+
+    <string name="faq_student_title6">
+        <![CDATA[
+        Apakah saya bebas menanyakan jenis pertanyaan apapun?
+        ]]>
+    </string>
+    <string name="faq_student_content6">
+        <![CDATA[
+        Ya, dalam catatan pertanyaan yang ditanyakan masih berhubungan dengan topik pelajaran sains yang dipilih.
+        ]]>
+    </string>
+
+    <string name="faq_student_title7">
+        <![CDATA[
+        Bagaimana bila teks dari pertanyaan yang akan saya ajukan mengandung simbol-simbol khusus yang umum digunakan di dalam pelajaran sains?
+        ]]>
+    </string>
+    <string name="faq_student_content7">
+        <![CDATA[
+        Sebagai solusi dari permasalahan tersebut, Kami telah mengembangkan sebuah papan ketik (<i>keyboard</i>) yang berisikan simbol-simbol khusus yang umum digunakan di dalam pelajaran sains. Bila diperlukan, silahkan aktifkan jenis <i>keyboard</i> tersebut pada tombol menu yang mengandung ikon logo Solvin berwarna hitam yang terdapat di bawah halaman “Pertanyaan”.
+        ]]>
+    </string>
+
+    <string name="faq_student_title8">
+        <![CDATA[
+        Saya telah mengajukan pertanyaan, apa yang selanjutnya harus saya lakukan?
+        ]]>
+    </string>
+    <string name="faq_student_content8">
+        <![CDATA[
+        Anda hanya perlu menunggu untuk solusi yang akan diajukan oleh (para) mentor kami terkait dari pertanyaan anda dengan maksimal waktu < 6 jam. Cepat-lambatnya solusi yang akan diberikan tergantung dengan kompleksitas dari pertanyaan anda dan seberapa banyak pertanyaan lain yang masih berada di dalam antrian sistem untuk kami jawab.
+        ]]>
+    </string>
+
+    <string name="faq_student_title9">
+        <![CDATA[
+        Saya telah memperoleh solusi yang diajukan oleh (para) mentor terkait pertanyaan saya, apa yang selanjutnya harus saya lakukan?
+        ]]>
+    </string>
+    <string name="faq_student_content9">
+        <![CDATA[
+        Silakan dipahami dan bila perlu anda dapat menanggapi/memberikan komentar atas solusi yang diajukan melalui tombol “Tambah Komentar”. Bila anda telah memahami sepenuhnya atas (sejumlah) solusi tersebut, anda <b>diwajibkan</b> melakukan vote untuk memilih solusi terbaik di antara sejumlah solusi yang diajukan oleh mentor lainnya terkait dari pertanyaan anda melalui tombol “<b>TELAH MENGERTI</b>”.
+        ]]>
+    </string>
+
+    <string name="faq_student_title10">
+        <![CDATA[
+        Bagaimana bila solusi yang diajukan oleh mentor terkait pertanyaan saya mengalami kesalahan?
+        ]]>
+    </string>
+    <string name="faq_student_content10">
+        <![CDATA[
+        Sebelumnya mentor yang terdaftar di dalam aplikasi telah melalui serangkaian proses seleksi yang kami berikan sehingga diharapkan telah memenuhi standar berkualitas dalam menjawab. Namun setinggi apapun kualitas seorang mentor, mentor juga merupakan seorang manusia yang tidak terlepas dari bentuk kesalahannya. Bila solusi yang diajukan oleh mentor terbukti mengalami kesalahan, maka murid yang bersangkutan/lainnya dapat menyampaikan titik kesalahan dan/atau maksud pertanyaan tersebut secara lebih terperinci sehingga mentor dapat merevisi kembali solusi yang sebelumnya telah diajukannya.
+        ]]>
+    </string>
+
+    <string name="faq_student_title11">
+        <![CDATA[
+        Bagaimana cara saya menambah (<i>top-up</i>) <b>Sisa Kredit Tanya (SKT)</b> yang saya miliki?
+        ]]>
+    </string>
+    <string name="faq_student_content11">
+        <![CDATA[
+        Anda memiliki dua cara dalam menambah <b>SKT</b> yang anda miliki, yaitu:
+        <br>1.	Melalui pembelian jenis paket pertanyaan yang tersedia di halaman “Aktivasi Paket”.</br>
+<br>2.	Setiap pengguna yang terdaftar sebagai murid di dalam aplikasi akan diberikan sebuah kode <i>membership</i> yang berupa kode rujukan (<i>referral code</i>) yang dapat anda bagikan kepada calon pengguna lain yang akan mendaftar sebagai murid di dalam aplikasi. Setiap pendaftaran yang menggunakan kode <i>membership</i> dari anda, anda akan kami berikan +1 kredit tanya sesuai dengan ketentuan yang berlaku.</br>
+        ]]>
+    </string>
+
+    <string name="faq_student_title12">
+        <![CDATA[
+        Saya telah melakukan transfer pembayaran untuk jenis paket pertanyaan yang saya pilih, apa yang selanjutnya harus saya lakukan?
+        ]]>
+    </string>
+    <string name="faq_student_content12">
+        <![CDATA[
+        Anda hanya perlu menunggu respons dari kami dalam mengubah status transaksi dari “Pending” menjadi “Lunas” serta mengaktifkan jenis paket pertanyaan yang anda pilih. Anda diharapkan tetap membaca poin-poin yang tercantum di dalam “Pesan Transaksi” untuk mengantisipasi terjadinya isu kesalahan transaksi pembayaran. Bila diperlukan, kami akan segera menghubungi anda baik melalui email, SMS, atau telepon untuk kebutuhan verifikasi validitas transaksi pembayaran anda.
+        ]]>
+    </string>
+
+    <string name="faq_student_title13">
+        <![CDATA[
+        Dapatkah saya mengaktifkan jenis paket pertanyaan lain bila <b>Sisa Kredit Tanya (SKT)</b> yang saya miliki masih tersisa dan/atau masa aktif paket pertanyaan saya sebelumnya masih berlaku?
+        ]]>
+    </string>
+    <string name="faq_student_content13">
+        <![CDATA[
+        Anda bebas mengaktifkan jenis paket pertanyaan sebanyak yang anda inginkan. Sistem akan menambah (<i>top up</i>) <b>SKT</b> serta memperpanjang masa aktif paket yang anda miliki sekarang sesuai dengan rincian yang tercantum dari jenis paket pertanyaan baru yang anda aktifkan.
+        ]]>
+    </string>
+
+    <string name="faq_student_title14">
+        <![CDATA[
+        Bagaimana pemberlakuan jam operasional aplikasi?
+        ]]>
+    </string>
+    <string name="faq_student_content14">
+        <![CDATA[
+        Kami memberlakukan jam operasional aplikasi dimulai pada pukul 09.00-22.00 WIB setiap harinya dimana segala kegiatan yang berhubungan dengan fungsionalitas aplikasi, seperti: tanya-jawab, tanggap komentar, verifikasi pembayaran, dan sebagainya berlangsung di dalam rentang jam waktu tersebut. Apabila terdapat suatu kegiatan yang berlangsung di luar rentang jam waktu tersebut, maka kemungkinan besar kegiatan tersebut tidak akan ditanggapi oleh kami. Kami akan menanggapi kembali kegiatan yang bersangkutan mulai dari jam operasional aplikasi berikutnya.
+        ]]>
+    </string>
+
+    <string name="faq_student_title15">
+        <![CDATA[
+        Bagaimana cara bila saya ingin menanyakan dan/atau menyampaikan hal lain yang tidak tercantum pada FAQ di atas?
+        ]]>
+    </string>
+    <string name="faq_student_content15">
+        <![CDATA[
+        Anda dapat menanyakan dan/atau menyampaikan segala hal lainnya melalui menu “Feedback” aplikasi, seperti: keluhan, kritikan, saran/masukan selama penggunaan aplikasi yang dapat kami jadikan sebagai referensi dalam rangka memperbaiki dan meningkatkan mutu/kualitas layanan dalam aplikasi ke jenjang yang lebih baik.
+        ]]>
+    </string>
+
+    <!--Mentor-->
+    <string name="faq_mentor_title1">
+        <![CDATA[
+        Apakah itu aplikasi Solvin?
+        ]]>
+    </string>
+    <string name="faq_mentor_content1">
+        <![CDATA[
+        Solvin merupakan sebuah aplikasi <i>mobile</i> yang memberikan layanan interaksi tanya-jawab antara murid sekolah dengan mentor. Murid dapat menanyakan segala hal, seperti: tugas rumah (PR), bahan persiapan ujian sekolah, dan sebagainya yang berhubungan dengan pelajaran sains serta mentor akan segera mengajukan solusi atas pertanyaan tersebut. Solvin secara sementara hanya menyediakan dua jenis pelajaran sains yang dapat ditanyakan, yaitu Matematika dan Fisika.
+        ]]>
+    </string>
+
+    <string name="faq_mentor_title2">
+        <![CDATA[
+        Bagaimana cara saya melakukan registrasi sebagai mentor?
+        ]]>
+    </string>
+    <string name="faq_mentor_content2">
+        <![CDATA[
+        Bila anda tertarik untuk terdaftar sebagai mentor dan memiliki <i>skill</i> mengajar terhadap jenis pelajaran sains yang tersedia di dalam aplikasi, anda dapat menghubungi kami melalui email (…) dengan mencantumkan informasi kontak pribadi yang dapat kami hubungi kembali untuk memberitahukan tahapan seleksi yang perlu dilalui untuk terdaftar sebagai mentor yang memenuhi standar kualitas yang ditetapkan oleh kami.
+        ]]>
+    </string>
+
+    <string name="faq_mentor_title3">
+        <![CDATA[
+        Bagaimana cara saya menjawab pertanyaan yang diajukan oleh para murid?
+        ]]>
+    </string>
+    <string name="faq_mentor_content3">
+        <![CDATA[
+        Selama anda memiliki kapabilitas dalam menjawab, anda tinggal memilih pertanyaan apapun yang tertampil di halaman “Feed” aplikasi, berstatus “Pending” atau “Diskusi”, dan jumlah solusi sementara yang diajukan untuk pertanyaan yang hendak dipilih masih dibawah 3 (tiga) buah.
+        ]]>
+    </string>
+
+    <string name="faq_mentor_title4">
+        <![CDATA[
+        Saya menemukan terdapat lebih dari 1 (satu) nomor angka pertanyaan di dalam suatu konteks pertanyaan, apakah saya perlu menjawab kesemuanya?
+        ]]>
+    </string>
+    <string name="faq_mentor_content4">
+        <![CDATA[
+        Anda tidak perlu menjawab kesemuanya melainkan cukup satu di antaranya. Anda diwajibkan berdiskusi dengan murid yang mengajukan pertanyaan berganda tersebut untuk menghasilkan kesepakatan bersama dalam memilih satu di antara pertanyaan bergandanya untuk anda jawab.
+        ]]>
+    </string>
+
+    <string name="faq_mentor_title5">
+        <![CDATA[
+        Apakah saya dapat meminta konfirmasi kejelasan kepada murid bila konten dari pertanyaan yang diajukannya kurang jelas menurut saya?
+        ]]>
+    </string>
+    <string name="faq_mentor_content5">
+        <![CDATA[
+        Anda memiliki wewenang untuk meminta konfirmasi kejelasan soal terhadap murid yang bersangkutan sehingga anda siap mengajukan solusi yang tepat atas pertanyaan yang diajukannya.
+        ]]>
+    </string>
+
+    <string name="faq_mentor_title6">
+        <![CDATA[
+        Saya telah mengajukan solusi atas suatu pertanyaan, apa yang selanjutnya harus saya lakukan?
+        ]]>
+    </string>
+    <string name="faq_mentor_content6">
+        <![CDATA[
+        Anda hanya perlu menunggu sampai murid yang mengajukan pertanyaan tersebut mengubah status pemahamannya menjadi “TELAH MENGERTI” sekaligus vote/memilih untuk solusi terbaik di antara sejumlah solusi yang diajukan oleh mentor lainnya. Bila solusi yang diajukan oleh anda tervote sebagai yang terbaik, maka kami akan menambahkan +1 poin ke dalam total kumulatif solusi yang tervote terbaik yang pernah diajukan oleh anda. Namun, selama murid masih belum mengubah status pemahamannya, anda diwajibkan menanggapi setiap tanggapan/komentar yang disampaikannya terkait solusi yang anda ajukan tersebut.
+        ]]>
+    </string>
+
+    <string name="faq_mentor_title7">
+        <![CDATA[
+        Bagaimana cara bila saya ingin menanyakan dan/atau menyampaikan hal lain yang tidak tercantum pada FAQ di atas?
+        ]]>
+    </string>
+    <string name="faq_mentor_content7">
+        <![CDATA[
+        Anda dapat menanyakan dan/atau menyampaikan segala hal lainnya melalui menu “Feedback”, seperti: keluhan, kritikan, saran/masukan selama penggunaan aplikasi yang dapat kami jadikan sebagai referensi dalam rangka memperbaiki dan meningkatkan mutu/kualitas layanan dalam aplikasi ke jenjang yang lebih baik.
+        ]]>
+    </string>
+
+</resources>

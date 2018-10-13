@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/priority_redeem_balance_list_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/margin_4rs"
+    android:layout_marginRight="@dimen/margin_4rs"
+    card_view:cardCornerRadius="@dimen/card_default_corner_radius"
+    card_view:cardElevation="@dimen/card_default_elevation"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_12rs"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/priority_redeem_balance_list_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/priority_redeem_balance_list_photo_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/priority_redeem_balance_list_photo"
+                            android:layout_width="@dimen/circle_image_view_radius"
+                            android:layout_height="@dimen/circle_image_view_radius" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/priority_redeem_balance_list_photo_container"
+                        android:layout_marginLeft="@dimen/margin_12rs">
+
+                        <TextView
+                            android:id="@+id/priority_redeem_balance_list_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/text_size_16rs"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            style="@style/SourceSansPro_Regular" />
+
+                        <TextView
+                            android:id="@+id/priority_redeem_balance_list_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/priority_redeem_balance_list_name"
+                            android:textColor="@color/colorSubHeader"
+                            android:textSize="@dimen/text_size_14rs"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            style="@style/SourceSansPro_Regular" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:layout_marginTop="@dimen/margin_8rs"
+                android:layout_marginBottom="@dimen/margin_8rs"
+                android:background="@color/darkGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8rs"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="No. Tebusan"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_16rs"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_8rs"
+                    android:text=":"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_16rs"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:id="@+id/priority_redeem_balance_list_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_16rs"
+                    android:maxLines="1"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_4rs"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Jumlah Tebusan"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_16rs"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_8rs"
+                    android:text=":"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_16rs"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:id="@+id/priority_redeem_balance_list_balance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_16rs"
+                    android:maxLines="1"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_4rs"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Status"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_16rs"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_8rs"
+                    android:text=":"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_16rs"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:id="@+id/priority_redeem_balance_list_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/padding_4rs"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_16rs"
+                    android:maxLines="1"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_12rs"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/priority_redeem_balance_list_reject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/padding_8rs"
+                android:paddingBottom="@dimen/padding_8rs"
+                android:gravity="center"
+                android:background="@drawable/custom_background_borderless_selected"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_close_primary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_4rs"
+                    android:text="Tolak"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_16rs"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/margin_2rs"
+                android:layout_height="match_parent"
+                android:background="@color/lightGray2" />
+
+            <LinearLayout
+                android:id="@+id/priority_redeem_balance_list_approve"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/padding_8rs"
+                android:paddingBottom="@dimen/padding_8rs"
+                android:gravity="center"
+                android:background="@drawable/custom_background_borderless_selected"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_check_primary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_4rs"
+                    android:text="Setujui"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_16rs"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

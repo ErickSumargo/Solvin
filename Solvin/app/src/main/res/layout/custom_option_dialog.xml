@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/default_padding_16m"
+    android:paddingTop="@dimen/default_padding_16m"
+    android:paddingRight="@dimen/default_padding_16m"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/custom_option_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opsi Aksi"
+        android:textColor="@color/colorHeader"
+        android:textSize="@dimen/default_font_size_24m"
+        style="@style/SourceSansPro_Regular" />
+
+    <LinearLayout
+        android:id="@+id/custom_option_dialog_rename_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding_16m"
+        android:background="?attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ganti"
+            android:textColor="@color/colorHeader"
+            android:textSize="@dimen/default_font_size_16m"
+            style="@style/SourceSansPro_Regular" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/custom_option_dialog_delete_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding_16m"
+        android:background="?attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hapus"
+            android:textColor="@color/colorHeader"
+            android:textSize="@dimen/default_font_size_16m"
+            style="@style/SourceSansPro_Regular" />
+
+    </LinearLayout>
+
+</LinearLayout>

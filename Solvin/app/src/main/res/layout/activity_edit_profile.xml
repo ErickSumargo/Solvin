@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit_profile_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    android:fitsSystemWindows="true"
+    tools:context="id.solvin.dev.view.activities.ActivityEditProfile">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_default_height"
+            android:minHeight="@dimen/action_bar_default_height"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextAppearance="@style/ToolbarTextStyle" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/edit_profile_summary_container"
+                    android:layout_alignTop="@+id/edit_profile_summary_container"
+                    android:layout_alignRight="@+id/edit_profile_summary_container"
+                    android:layout_alignBottom="@+id/edit_profile_summary_container"
+                    android:src="@drawable/profile_background"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:id="@+id/edit_profile_summary_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin_24m">
+
+                        <ProgressBar
+                            android:id="@+id/edit_profile_user_photo_progress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:progressDrawable="@drawable/circular_progress_bar"
+                            android:rotation="-90"
+                            android:visibility="invisible"
+                            style="?android:attr/progressBarStyleHorizontal" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/edit_profile_user_photo"
+                            android:layout_width="@dimen/circle_image_view_big_radius"
+                            android:layout_height="@dimen/circle_image_view_big_radius"
+                            android:layout_centerInParent="true" />
+
+                        <RelativeLayout
+                            android:id="@+id/edit_profile_avatar_layout"
+                            android:layout_width="@dimen/circle_image_view_big_radius"
+                            android:layout_height="@dimen/circle_image_view_big_radius"
+                            android:layout_centerInParent="true"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:background="@drawable/circle">
+
+                            <TextView
+                                android:id="@+id/edit_profile_avatar_initial"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/initial_name_big_default_font_size"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/edit_profile_name_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin_16m"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/default_font_size_20m"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:id="@+id/edit_profile_membership_code_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin_4m"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/default_font_size_14m"
+                        style="@style/SourceSansPro_Light" />
+
+                    <TextView
+                        android:id="@+id/edit_profile_joined_time_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/default_margin_16m"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/default_font_size_14m"
+                        style="@style/SourceSansPro_Light" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_padding_16m"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/edit_profile_email_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false"
+                    app:errorTextAppearance="@style/TextInputErrorTextAppearance">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/edit_profile_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_email_primary"
+                        android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                        android:hint="Email"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_18m"
+                        android:maxLines="1"
+                        android:inputType="textEmailAddress"
+                        android:imeOptions="actionNext"
+                        style="@style/SourceSansPro_Regular" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/edit_profile_name_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_4m"
+                    app:hintEnabled="false"
+                    app:errorTextAppearance="@style/TextInputErrorTextAppearance">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/edit_profile_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_person_primary"
+                        android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                        android:hint="Nama Lengkap"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_18m"
+                        android:maxLines="1"
+                        android:inputType="textPersonName"
+                        android:imeOptions="actionDone"
+                        style="@style/SourceSansPro_Regular" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_4m">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/edit_profile_password_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false"
+                        app:passwordToggleEnabled="false">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/edit_profile_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="@dimen/password_default_padding"
+                            android:drawableLeft="@drawable/ic_lock_primary"
+                            android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                            android:hint="Password"
+                            android:text="Password"
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/default_font_size_18m"
+                            android:maxLines="1"
+                            android:inputType="textPassword"
+                            android:imeOptions="actionNext"
+                            android:enabled="false"
+                            style="@style/SourceSansPro_Regular" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <ImageButton
+                        android:id="@+id/edit_profile_edit_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_create_primary"
+                        android:background="?selectableItemBackgroundBorderless" />
+
+                </RelativeLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/edit_profile_mobile_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_4m"
+                    app:hintEnabled="false"
+                    app:errorTextAppearance="@style/TextInputErrorTextAppearance">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/edit_profile_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_call_primary"
+                        android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                        android:hint="No. HP"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_18m"
+                        android:maxLines="1"
+                        android:maxLength="13"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        style="@style/SourceSansPro_Regular" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_profile_birthdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_4m"
+                    android:drawableLeft="@drawable/ic_today_primary"
+                    android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                    android:hint="Tgl. Lahir (opsional)"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m"
+                    android:maxLines="1"
+                    style="@style/SourceSansPro_Regular" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_profile_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_4m"
+                    android:drawableLeft="@drawable/ic_person_pin_circle_primary"
+                    android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                    android:hint="Alamat Tinggal (opsional)"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    style="@style/SourceSansPro_Regular" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_4m">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/edit_profile_school"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_school_primary"
+                        android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                        android:hint="Sekolah (opsional)"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_18m"
+                        android:inputType="text"
+                        android:imeOptions="actionDone"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/edit_profile_workplace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_domain_primary"
+                        android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                        android:hint="Institusi Terakhir (opsional)"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_18m"
+                        android:inputType="text"
+                        android:imeOptions="actionDone"
+                        style="@style/SourceSansPro_Regular" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/edit_profile_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_16m"
+                    android:padding="@dimen/default_padding_0m"
+                    android:text="SIMPAN"
+                    android:textSize="@dimen/default_font_size_16m"
+                    android:textColor="@color/white"
+                    android:background="@drawable/primary_button"
+                    android:stateListAnimator="@null"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

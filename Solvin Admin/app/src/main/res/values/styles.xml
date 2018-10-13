@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="homeAsUpIndicator">@drawable/ic_arrow_back_light</item>
+        <item name="android:textSize">@dimen/text_size_16rs</item>
+        <!--<item name="actionButtonStyle">@style/ActionButtonStyle</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextInputHintTextAppearance" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/text_size_12rs</item>
+    </style>
+
+    <style name="TextInputErrorTextAppearance" parent="TextAppearance.Design.Error">
+        <item name="android:textColor">@color/red_500</item>
+        <item name="android:textSize">@dimen/text_size_12rs</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/text_size_16rs</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="InfoTextAppearance">
+        <item name="android:textColor">@color/colorHeader</item>
+        <item name="android:textSize">@dimen/text_size_16rs</item>
+        <item name="fontPath">fonts/SourceSansPro-Light.otf</item>
+    </style>
+
+    <style name="SpinnerTextViewItem" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_size_18rs</item>
+        <item name="android:textColor">@color/colorHeader</item>
+        <item name="fontPath">fonts/SourceSansPro-Regular.otf</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView.ActionBar">
+        <item name="searchIcon">@drawable/ic_notifications_light</item>
+        <item name="closeIcon">@drawable/ic_notifications_light</item>
+    </style>
+
+    <style name="ToolbarTextStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/text_size_20rs</item>
+    </style>
+
+    <style name="NavigationDrawerTheme" parent="AppTheme">
+        <item name="listPreferredItemHeightSmall">@dimen/navigation_drawer_item_default_height</item>
+        <item name="android:textSize">@dimen/text_size_16rs</item>
+    </style>
+
+    <style name="SourceSansPro_Regular">
+        <item name="fontPath">fonts/SourceSansPro-Regular.otf</item>
+    </style>
+
+    <style name="SourceSansPro_Light">
+        <item name="fontPath">fonts/SourceSansPro-Light.otf</item>
+    </style>
+
+    <style name="Montserrat_Bold">
+        <item name="fontPath">fonts/Montserrat-Bold.ttf</item>
+    </style>
+
+</resources>

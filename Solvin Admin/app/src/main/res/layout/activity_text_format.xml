@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:id="@+id/text_format_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/custom_text_format_shadow"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/text_format_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_background_text_format"
+                android:padding="@dimen/padding_8rs"
+                android:src="@drawable/ic_format_bold_dark" />
+
+            <ImageButton
+                android:id="@+id/text_format_italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_background_text_format"
+                android:padding="@dimen/padding_8rs"
+                android:src="@drawable/ic_format_italic_dark" />
+
+            <ImageButton
+                android:id="@+id/text_format_underline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_background_text_format"
+                android:padding="@dimen/padding_8rs"
+                android:src="@drawable/ic_format_underline_dark" />
+
+            <ImageButton
+                android:id="@+id/text_format_strikethrough"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_background_text_format"
+                android:padding="@dimen/padding_8rs"
+                android:src="@drawable/ic_format_strikethrough_dark" />
+
+            <ImageButton
+                android:id="@+id/text_format_highlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_background_text_format"
+                android:padding="@dimen/padding_8rs"
+                android:src="@drawable/ic_highlight_primary" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

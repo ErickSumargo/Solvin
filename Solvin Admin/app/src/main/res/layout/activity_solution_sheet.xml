@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/solution_sheet_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height= "@dimen/action_bar_default_height"
+            android:minHeight="@dimen/action_bar_default_height"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextAppearance="@style/ToolbarTextStyle" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/solution_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16rs"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_16rs"
+                    android:layout_marginRight="@dimen/margin_16rs">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/solution_question_attr_container">
+
+                        <RelativeLayout
+                            android:id="@+id/solution_student_photo_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/solution_student_photo"
+                                android:layout_width="@dimen/circle_image_view_radius"
+                                android:layout_height="@dimen/circle_image_view_radius" />
+
+                            <RelativeLayout
+                                android:id="@+id/solution_student_avatar_layout"
+                                android:layout_width="@dimen/circle_image_view_radius"
+                                android:layout_height="@dimen/circle_image_view_radius"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:background="@drawable/circle">
+
+                                <TextView
+                                    android:id="@+id/solution_student_avatar_initial"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_20rs"
+                                    style="@style/SourceSansPro_Regular" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/solution_student_photo_container"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_12rs">
+
+                            <TextView
+                                android:id="@+id/solution_student_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_16rs"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                style="@style/SourceSansPro_Regular" />
+
+                            <TextView
+                                android:id="@+id/solution_question_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/solution_student_name"
+                                android:textColor="@color/colorSubHeader"
+                                android:textSize="@dimen/text_size_14rs"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/solution_question_attr_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true">
+
+                        <ImageView
+                            android:id="@+id/solution_question_attachment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_attach_file_dark"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/solution_question_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/solution_question_attachment"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/solution_question_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_16rs"
+                    android:layout_marginTop="@dimen/margin_16rs"
+                    android:layout_marginRight="@dimen/margin_16rs"
+                    android:paddingTop="@dimen/padding_6rs"
+                    android:paddingRight="@dimen/padding_6rs"
+                    android:paddingBottom="@dimen/padding_6rs"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_18rs"
+                    style="@style/SourceSansPro_Regular" />
+
+                <RelativeLayout
+                    android:id="@+id/solution_question_image_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_16rs"
+                    android:layout_marginTop="@dimen/margin_16rs"
+                    android:layout_marginRight="@dimen/margin_16rs"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/solution_question_image"
+                        android:layout_width="@dimen/image_attached_default_width"
+                        android:layout_height="@dimen/image_attached_default_height"
+                        android:src="@drawable/image_placeholder"
+                        android:scaleType="centerCrop" />
+
+                    <RelativeLayout
+                        android:id="@+id/solution_question_image_foreground"
+                        android:layout_width="@dimen/image_attached_default_width"
+                        android:layout_height="@dimen/image_attached_default_height"
+                        android:clickable="true"
+                        android:background="?attr/selectableItemBackground" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/solution_question_category_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20rs"
+                    android:gravity="right"
+                    android:paddingLeft="@dimen/padding_16rs"
+                    android:paddingTop="@dimen/padding_8rs"
+                    android:paddingRight="@dimen/padding_16rs"
+                    android:paddingBottom="@dimen/padding_8rs">
+
+                    <TextView
+                        android:id="@+id/solution_question_subject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_8rs"
+                        android:paddingLeft="@dimen/padding_8rs"
+                        android:paddingTop="@dimen/padding_4rs"
+                        android:paddingRight="@dimen/padding_8rs"
+                        android:paddingBottom="@dimen/padding_4rs"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_14rs"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:background="@drawable/custom_border_light"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:id="@+id/solution_question_material"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/solution_question_subject"
+                        android:paddingLeft="@dimen/padding_8rs"
+                        android:paddingTop="@dimen/padding_4rs"
+                        android:paddingRight="@dimen/padding_8rs"
+                        android:paddingBottom="@dimen/padding_4rs"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_14rs"
+                        android:background="@drawable/custom_border_light"
+                        style="@style/SourceSansPro_Regular" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16rs"
+                android:layout_marginRight="@dimen/margin_16rs">
+
+                <id.solvinap.dev.view.widget.CustomRichEditText
+                    android:id="@+id/solution_sheet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="top"
+                    android:paddingTop="@dimen/padding_16rs"
+                    android:paddingBottom="@dimen/padding_16rs"
+                    android:inputType="textMultiLine|textVisiblePassword|textNoSuggestions"
+                    android:hint="Solusi anda..."
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_22rs"
+                    android:ems="10"
+                    android:lineSpacingMultiplier="1"
+                    android:scrollbars="vertical"
+                    android:background="@android:color/transparent"
+                    style="@style/SourceSansPro_Regular" />
+
+                <View
+                    android:id="@+id/solution_image_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_below="@+id/solution_sheet"
+                    android:background="@color/darkGray"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/solution_image_progress"
+                    android:layout_width="@dimen/image_attached_default_width"
+                    android:layout_height="@dimen/progress_bar_default_height"
+                    android:layout_below="@id/solution_image_divider"
+                    android:layout_marginTop="@dimen/margin_20rs"
+                    android:progressDrawable="@drawable/custom_progress_bar"
+                    android:visibility="gone"
+                    style="?android:attr/progressBarStyleHorizontal" />
+
+                <RelativeLayout
+                    android:id="@+id/solution_image_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/solution_image_progress"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/solution_image"
+                        android:layout_width="@dimen/image_attached_default_width"
+                        android:layout_height="@dimen/image_attached_default_height"
+                        android:scaleType="centerCrop" />
+
+                    <RelativeLayout
+                        android:id="@+id/solution_image_foreground"
+                        android:layout_width="@dimen/image_attached_default_width"
+                        android:layout_height="@dimen/image_attached_default_height"
+                        android:clickable="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/solution_upload_status"
+                            android:layout_width="@dimen/image_attached_default_width"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="@dimen/padding_4rs"
+                            android:paddingBottom="@dimen/padding_4rs"
+                            android:text="Terunggah"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_14rs"
+                            android:background="#80000000"
+                            android:visibility="gone"
+                            style="@style/SourceSansPro_Regular" />
+
+                    </RelativeLayout>
+
+                    <ImageButton
+                        android:id="@+id/solution_image_remove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/padding_8rs"
+                        android:src="@drawable/ic_cancel_dark"
+                        android:clickable="true"
+                        android:background="?selectableItemBackgroundBorderless" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/empty_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/solution_image_container" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <id.solvinap.dev.view.widget.CustomRichEditText
+        android:id="@+id/temp_rt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/solvin_keyboard_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <RelativeLayout
+        android:id="@+id/text_format_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16rs"
+        android:layout_marginTop="@dimen/margin_8rs"
+        android:layout_marginRight="@dimen/margin_16rs"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>

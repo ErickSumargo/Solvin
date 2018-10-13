@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_16rs"
+        android:paddingTop="@dimen/padding_16rs"
+        android:paddingRight="@dimen/padding_16rs"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pendaftaran Mentor"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_20rs"
+            style="@style/SourceSansPro_Regular" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16rs">
+
+            <ProgressBar
+                android:id="@+id/mentor_registration_photo_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:progressDrawable="@drawable/circular_progress_bar"
+                android:rotation="-90"
+                android:visibility="invisible"
+                style="?android:attr/progressBarStyleHorizontal" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/photo_mentor_radius"
+                android:layout_height="@dimen/photo_mentor_radius"
+                android:layout_centerInParent="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/mentor_registration_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:id="@+id/mentor_registration_upload_space"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:background="@drawable/custom_background_oval_dashed">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_add_primary_trim" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/mentor_registration_photo_remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/padding_8rs"
+                android:clickable="true"
+                android:src="@drawable/ic_cancel_dark"
+                android:background="?selectableItemBackgroundBorderless"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/mentor_registration_photo_error_message_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8rs"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:background="@color/red_500" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/mentor_registration_photo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8rs"
+                app:errorTextAppearance="@style/TextInputErrorTextAppearance" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/mentor_registration_email_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16rs"
+            android:hint="Email"
+            app:errorTextAppearance="@style/TextInputErrorTextAppearance">
+
+            <AutoCompleteTextView
+                android:id="@+id/mentor_registration_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/text_size_18rs"
+                android:maxLines="1"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                style="@style/SourceSansPro_Regular" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/mentor_registration_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8rs"
+            android:hint="Nama Lengkap"
+            app:errorTextAppearance="@style/TextInputErrorTextAppearance">
+
+            <AutoCompleteTextView
+                android:id="@+id/mentor_registration_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/text_size_18rs"
+                android:maxLines="1"
+                android:inputType="textPersonName"
+                android:imeOptions="actionNext"
+                style="@style/SourceSansPro_Regular" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/mentor_registration_mobile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8rs"
+            android:hint="No. HP (08xxx...)"
+            app:errorTextAppearance="@style/TextInputErrorTextAppearance">
+
+            <AutoCompleteTextView
+                android:id="@+id/mentor_registration_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/text_size_18rs"
+                android:maxLines="1"
+                android:inputType="phone"
+                android:imeOptions="actionDone"
+                style="@style/SourceSansPro_Regular" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+</ScrollView>

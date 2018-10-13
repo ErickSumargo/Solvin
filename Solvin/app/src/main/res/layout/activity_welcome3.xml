@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/welcome3_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome3">
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/welcome3_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/circle_indicator_container_default_height"
+        android:layout_above="@+id/welcome3_content"
+        android:layout_marginBottom="@dimen/default_margin_16m"
+        android:orientation="horizontal"
+        app:ci_width="@dimen/circle_indicator_default_radius"
+        app:ci_height="@dimen/circle_indicator_default_radius"
+        app:ci_margin="@dimen/circle_indicator_default_margin" />
+
+    <LinearLayout
+        android:id="@+id/welcome3_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/default_padding_24m"
+            android:paddingTop="@dimen/default_padding_16m"
+            android:paddingRight="@dimen/default_padding_24m"
+            android:paddingBottom="@dimen/default_padding_16m"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="JOIN NOW!"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/welcome_header_default_font_size"
+                style="@style/SourceSansPro_Light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/default_padding_24m"
+            android:paddingTop="@dimen/default_padding_16m"
+            android:paddingRight="@dimen/default_padding_24m"
+            android:paddingBottom="@dimen/default_padding_16m"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="Satu akun untuk solusi bantuan pembelajaran dan tingkatkan prestasi pengetahuan sains anda."
+                android:textAlignment="center"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/welcome_sub_header_default_font_size"
+                style="@style/SourceSansPro_Light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_24m"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/welcome3_registration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/default_padding_0m"
+                    android:text="DAFTAR"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_font_size_16m"
+                    android:background="@drawable/primary_button"
+                    android:stateListAnimator="@null"
+                    style="@style/SourceSansPro_Regular" />
+
+                <Button
+                    android:id="@+id/welcome3_sign_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/default_padding_0m"
+                    android:text="MASUK"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_font_size_16m"
+                    android:background="@drawable/primary_button"
+                    android:stateListAnimator="@null"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

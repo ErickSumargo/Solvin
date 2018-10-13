@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/semiBlack"
+    tools:context="id.solvin.dev.view.activities.ActivityFullScreen">
+
+    <id.solvin.dev.view.widget.ClassTouchImageView
+        android:id="@+id/full_screen_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/full_screen_save_foreground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/default_margin_16m"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/default_padding_8m"
+        android:clickable="true"
+        android:foreground="@drawable/custom_full_screen_button"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/full_screen_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_download_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_font_size_14m"
+            style="@style/SourceSansPro_Regular" />
+
+    </LinearLayout>
+
+</RelativeLayout>

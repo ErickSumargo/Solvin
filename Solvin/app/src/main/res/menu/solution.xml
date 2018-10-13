@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_new_file"
+        android:title="@string/action_new_file"
+        app:actionViewClass="android.widget.ImageButton"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_open_file"
+        android:title="@string/action_open_file"
+        app:actionLayout="@layout/menu_open_draft"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_save_file"
+        android:title="@string/action_save_file"
+        app:actionViewClass="android.widget.ImageButton"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_text_format"
+        android:title="@string/action_text_format"
+        app:actionViewClass="android.widget.ImageButton"
+        app:showAsAction="always" />
+</menu>

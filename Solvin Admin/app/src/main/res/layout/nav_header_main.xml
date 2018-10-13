@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/design_navigation_separator_vertical_padding"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <LinearLayout
+            android:id="@+id/nav_header_profile_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_36rs"
+            android:paddingBottom="@dimen/padding_16rs"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/circle_image_view_big_radius"
+                android:layout_height="@dimen/circle_image_view_big_radius"
+                android:layout_marginTop="@dimen/margin_8rs"
+                android:src="@drawable/admin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8rs"
+                android:text="Admin"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="@dimen/text_size_20rs"
+                style="@style/SourceSansPro_Regular" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_16rs"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Murid"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_18rs"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:id="@+id/nav_total_student"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_4rs"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_32rs"
+                    style="@style/SourceSansPro_Light" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/divider_default_width"
+                android:layout_height="match_parent"
+                android:background="@color/darkGray" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Mentor"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_18rs"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:id="@+id/nav_total_mentor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_4rs"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_32rs"
+                    style="@style/SourceSansPro_Light" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/navigation_drawer_divider_default_height"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_16rs"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:paddingRight="@dimen/padding_4rs"
+                    android:text="Pemasukan"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_16rs"
+                    style="@style/SourceSansPro_Regular" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/nav_currency_sign_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Rp."
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_16rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:id="@+id/nav_income"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/nav_currency_sign_1"
+                        android:paddingLeft="@dimen/padding_4rs"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_24rs"
+                        android:gravity="right"
+                        style="@style/SourceSansPro_Regular" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8rs"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:paddingRight="@dimen/padding_4rs"
+                    android:text="Tebusan Saldo"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_16rs"
+                    style="@style/SourceSansPro_Regular" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/nav_currency_sign_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Rp."
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_16rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:id="@+id/nav_balance_redeemed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/nav_currency_sign_2"
+                        android:paddingLeft="@dimen/padding_4rs"
+                        android:textColor="@color/colorCancel"
+                        android:textSize="@dimen/text_size_24rs"
+                        android:gravity="right"
+                        style="@style/SourceSansPro_Regular" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_4rs"
+                android:layout_marginTop="@dimen/margin_8rs"
+                android:layerType="software"
+                android:background="@drawable/custom_line_dashed" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8rs"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:paddingRight="@dimen/padding_4rs"
+                    android:text="Profit"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_16rs"
+                    style="@style/SourceSansPro_Regular" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/nav_currency_sign_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Rp."
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_16rs"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:id="@+id/nav_profit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/nav_currency_sign_3"
+                        android:paddingLeft="@dimen/padding_4rs"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_24rs"
+                        android:gravity="right"
+                        style="@style/SourceSansPro_Regular" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_drawer_divider_default_height"
+        android:background="@color/colorPrimary" />
+
+</LinearLayout>

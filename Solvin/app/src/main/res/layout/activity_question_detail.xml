@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/question_detail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    android:fitsSystemWindows="true"
+    tools:context="id.solvin.dev.view.activities.ActivityQuestionDetail">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height= "@dimen/action_bar_default_height"
+            android:minHeight="@dimen/action_bar_default_height"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextAppearance="@style/ToolbarTextStyle" />
+
+    </android.support.design.widget.AppBarLayout>
+    
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/question_detail_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/question_detail_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_padding_16m"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/detail_attr_container">
+
+                        <RelativeLayout
+                            android:id="@+id/detail_user_photo_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/detail_user_photo"
+                                android:layout_width="@dimen/circle_image_view_radius"
+                                android:layout_height="@dimen/circle_image_view_radius" />
+
+                            <RelativeLayout
+                                android:id="@+id/detail_avatar_layout"
+                                android:layout_width="@dimen/circle_image_view_radius"
+                                android:layout_height="@dimen/circle_image_view_radius"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:background="@drawable/circle">
+
+                                <TextView
+                                    android:id="@+id/detail_avatar_initial"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/default_font_size_20m"
+                                    style="@style/SourceSansPro_Regular" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/detail_user_photo_container"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/default_margin_12m">
+
+                            <TextView
+                                android:id="@+id/detail_user_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/default_font_size_16m"
+                                android:maxLines="1"
+                                style="@style/SourceSansPro_Regular" />
+
+                            <TextView
+                                android:id="@+id/detail_question_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/detail_user_name"
+                                android:textColor="@color/colorSubHeader"
+                                android:textSize="@dimen/default_font_size_14m"
+                                android:maxLines="1"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/detail_attr_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true">
+
+                        <ImageView
+                            android:id="@+id/detail_question_attachment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_attach_file_dark"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:id="@+id/detail_question_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/detail_question_attachment"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/detail_question_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_16m"
+                    android:paddingTop="@dimen/default_padding_6m"
+                    android:paddingRight="@dimen/default_padding_6m"
+                    android:paddingBottom="@dimen/default_padding_6m"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m"
+                    style="@style/SourceSansPro_Regular" />
+
+                <RelativeLayout
+                    android:id="@+id/detail_question_image_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_16m">
+
+                    <ImageView
+                        android:id="@+id/detail_question_image"
+                        android:layout_width="@dimen/image_attached_default_width"
+                        android:layout_height="@dimen/image_attached_default_height"
+                        android:scaleType="centerCrop" />
+
+                    <RelativeLayout
+                        android:id="@+id/detail_question_image_foreground"
+                        android:layout_width="@dimen/image_attached_default_width"
+                        android:layout_height="@dimen/image_attached_default_height"
+                        android:clickable="true"
+                        android:background="?attr/selectableItemBackground" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_20m"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/detail_question_subject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:paddingLeft="@dimen/default_padding_8m"
+                        android:paddingTop="@dimen/default_padding_4m"
+                        android:paddingRight="@dimen/default_padding_8m"
+                        android:paddingBottom="@dimen/default_padding_4m"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/default_font_size_14m"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:background="@drawable/hashtag_mathematics"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:id="@+id/detail_question_material"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/detail_question_subject"
+                        android:paddingLeft="@dimen/default_padding_8m"
+                        android:paddingTop="@dimen/default_padding_4m"
+                        android:paddingRight="@dimen/default_padding_8m"
+                        android:paddingBottom="@dimen/default_padding_4m"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/default_font_size_14m"
+                        android:background="@drawable/hashtag_mathematics"
+                        style="@style/SourceSansPro_Regular" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_16m">
+
+                    <Button
+                        android:id="@+id/detail_edit_question"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/default_padding_0m"
+                        android:text="EDIT PERTANYAAN"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/default_font_size_16m"
+                        android:background="@drawable/primary_button"
+                        android:stateListAnimator="@null"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <Button
+                        android:id="@+id/detail_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/default_padding_0m"
+                        android:text="JAWAB"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/default_font_size_16m"
+                        android:background="@drawable/primary_button"
+                        android:stateListAnimator="@null"
+                        style="@style/SourceSansPro_Regular" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/detail_solution_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_24m"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/detail_solution_header"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/default_font_size_24m"
+                            style="@style/SourceSansPro_Regular" />
+
+                        <LinearLayout
+                            android:id="@+id/detail_list_answering_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/detail_solution_header"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="right"
+                            android:orientation="horizontal" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_default_height"
+                        android:layout_marginTop="@dimen/default_margin_4m"
+                        android:background="@color/colorPrimary" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/detail_solution_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin_8m" />
+
+                    <Button
+                        android:id="@+id/detail_edit_solution"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin_16m"
+                        android:padding="@dimen/default_padding_0m"
+                        android:text="EDIT SOLUSI"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/default_font_size_16m"
+                        android:background="@drawable/primary_button"
+                        android:stateListAnimator="@null"
+                        style="@style/SourceSansPro_Regular" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/detail_comment_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_24m"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/detail_comment_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_24m"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_default_height"
+                        android:layout_marginTop="@dimen/default_margin_4m"
+                        android:background="@color/colorPrimary" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/detail_comment_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin_8m" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/detail_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_16m"
+                    android:padding="@dimen/default_padding_0m"
+                    android:text="TAMBAH KOMENTAR"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_font_size_16m"
+                    android:background="@drawable/primary_button"
+                    android:stateListAnimator="@null"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <id.solvin.dev.view.widget.ClassRichEditText
+        android:id="@+id/temp_rt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <fr.castorflex.android.circularprogressbar.CircularProgressBar
+        android:id="@+id/question_detail_progress_view"
+        android:layout_width="@dimen/progress_dialog_medium_circle_default_radius"
+        android:layout_height="@dimen/progress_dialog_medium_circle_default_radius"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        app:cpb_color="@color/colorPrimary"
+        app:cpb_rotation_speed="2.0"
+        app:cpb_stroke_width="@dimen/cpb_stroke_width" />
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/question_detail_horizontal_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/horizontal_progress_bar_default_height"
+        android:indeterminate="true"
+        app:mpb_indeterminateTint="@color/colorPrimary"
+        app:mpb_progressStyle="horizontal"
+        app:mpb_useIntrinsicPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal" />
+
+    <pl.bclogic.pulsator4droid.library.PulsatorLayout
+        android:id="@+id/detail_pulsator_layout"
+        android:layout_width="@dimen/pulse_default_radius"
+        android:layout_height="@dimen/pulse_default_radius"
+        android:layout_gravity="center|bottom"
+        app:pulse_count="2"
+        app:pulse_duration="1500"
+        app:pulse_repeat="0"
+        app:pulse_color="@color/colorAccent"
+        app:pulse_interpolator="Linear">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/detail_vote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@drawable/ic_create_light"
+            app:backgroundTint="@color/colorPrimary" />
+
+    </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+</android.support.design.widget.CoordinatorLayout>

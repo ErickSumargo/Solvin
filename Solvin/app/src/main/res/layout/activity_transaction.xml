@@ -1,0 +1,204 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/transaction_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="id.solvin.dev.view.fragments.FragmentTransaction">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/main_transaction_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/action_bar_default_height"
+        android:fillViewport="true"
+        android:visibility="gone"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding_16m"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PILIH JENIS PAKET"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/default_font_size_18m"
+                style="@style/SourceSansPro_Regular" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/transaction_package_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_12m" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_12m"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NB: "
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_16m"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aktivasi paket yang dipilih berlaku selama waktu yang tercantum di bawahnya"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_16m"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/default_margin_12m"
+                android:background="@color/darkGray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_12m"
+                android:text="PILIH METODE PEMBAYARAN"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/default_font_size_18m"
+                style="@style/SourceSansPro_Regular" />
+
+            <LinearLayout
+                android:id="@+id/transaction_payment_method_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_12m"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/transaction_bank_transfer_method_group"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/default_padding_8m"
+                    android:clickable="true"
+                    android:background="@drawable/custom_background_pressed"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/transaction_bank_transfer_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:paddingLeft="@dimen/default_padding_8m"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Transfer Bank"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_18m"
+                        style="@style/SourceSansPro_Regular" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/default_margin_16m"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+
+                <LinearLayout
+                    android:id="@+id/transaction_pulse_method_group"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/default_padding_8m"
+                    android:clickable="true"
+                    android:background="@drawable/custom_background_pressed"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/transaction_pulse_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:paddingLeft="@dimen/default_padding_8m"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Pulsa"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_18m"
+                        style="@style/SourceSansPro_Regular" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_20m">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/transaction_bank_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/transaction_mobile_network_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/transaction_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_24m"
+                android:text="LANJUT"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_font_size_16m"
+                android:stateListAnimator="@null"
+                style="@style/SourceSansPro_Regular" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <fr.castorflex.android.circularprogressbar.CircularProgressBar
+        android:id="@+id/transaction_progress_view"
+        android:layout_width="@dimen/progress_dialog_medium_circle_default_radius"
+        android:layout_height="@dimen/progress_dialog_medium_circle_default_radius"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        app:cpb_color="@color/colorPrimary"
+        app:cpb_rotation_speed="2.0"
+        app:cpb_stroke_width="@dimen/cpb_stroke_width" />
+
+    <View
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_default_elevation"
+        android:background="@drawable/custom_shadow" />
+
+</android.support.design.widget.CoordinatorLayout>

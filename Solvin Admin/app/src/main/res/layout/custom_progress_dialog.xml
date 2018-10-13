@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_20rs"
+    android:orientation="horizontal">
+
+    <!--<com.rey.material.widget.ProgressView-->
+        <!--android:layout_width="@dimen/progress_dialog_circle_default_radius"-->
+        <!--android:layout_height="@dimen/progress_dialog_circle_default_radius"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--app:pv_autostart="true"-->
+        <!--app:pv_circular="true"-->
+        <!--app:pv_progressMode="indeterminate"-->
+        <!--app:pv_progressStyle="@style/Material.Drawable.CircularProgress" />-->
+
+    <fr.castorflex.android.circularprogressbar.CircularProgressBar
+        android:layout_width="@dimen/progress_dialog_circle_default_radius"
+        android:layout_height="@dimen/progress_dialog_circle_default_radius"
+        android:layout_gravity="center_vertical"
+        android:indeterminate="true"
+        app:cpb_color="@color/colorPrimary"
+        app:cpb_rotation_speed="2.0"
+        app:cpb_stroke_width="4dp" />
+
+    <TextView
+        android:id="@+id/custom_progress_dialog_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_20rs"
+        android:textColor="@color/colorHeader"
+        android:textSize="@dimen/text_size_14rs" />
+
+</LinearLayout>

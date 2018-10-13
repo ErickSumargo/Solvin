@@ -1,0 +1,12 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/default_padding_4m"
+    android:paddingBottom="@dimen/default_padding_8m"
+    android:textAlignment="inherit"
+    android:textColor="@color/colorHeader"
+    android:textSize="@dimen/default_font_size_18m"
+    android:maxLines="1"
+    android:ellipsize="marquee"
+    style="@style/SourceSansPro_Regular" />

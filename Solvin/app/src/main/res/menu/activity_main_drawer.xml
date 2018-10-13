@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_dark"
+            android:title="Beranda" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person_dark"
+            android:title="Profil" />
+        <item
+            android:id="@+id/nav_transaction"
+            android:icon="@drawable/ic_shopping_cart_dark"
+            android:title="Aktivasi Paket" />
+        <item
+            android:id="@+id/nav_balance_info"
+            android:icon="@drawable/ic_account_balance_wallet_dark"
+            android:title="Informasi Saldo" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_tag_faces_dark"
+            android:title="Feedback" />
+        <item
+            android:id="@+id/nav_faq"
+            android:icon="@drawable/ic_live_help_dark"
+            android:title="FAQ" />
+    </group>
+</menu>

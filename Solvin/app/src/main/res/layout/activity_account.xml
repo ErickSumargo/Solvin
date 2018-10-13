@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/account_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/account_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding_16m"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimary"
+                app:hintTextAppearance="@style/TextInputHintTextAppearance">
+
+                <AutoCompleteTextView
+                    android:id="@+id/account_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/default_padding_4m"
+                    android:paddingTop="@dimen/default_padding_8m"
+                    android:paddingRight="@dimen/default_padding_4m"
+                    android:enabled="false"
+                    android:drawableLeft="@drawable/ic_email_primary"
+                    android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                    android:hint="Email"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m"
+                    android:background="@color/transparent"
+                    style="@style/SourceSansPro_Regular" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginLeft="@dimen/default_margin_4m"
+                    android:layout_marginRight="@dimen/default_margin_4m"
+                    android:background="@color/colorPrimary" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_16m"
+                android:textColorHint="@color/colorPrimary"
+                app:hintTextAppearance="@style/TextInputHintTextAppearance">
+
+                <AutoCompleteTextView
+                    android:id="@+id/account_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/default_padding_4m"
+                    android:paddingTop="@dimen/default_padding_8m"
+                    android:paddingRight="@dimen/default_padding_4m"
+                    android:enabled="false"
+                    android:drawableLeft="@drawable/ic_person_primary"
+                    android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                    android:hint="Nama Lengkap"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m"
+                    android:background="@color/transparent"
+                    style="@style/SourceSansPro_Regular"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginLeft="@dimen/default_margin_4m"
+                    android:layout_marginRight="@dimen/default_margin_4m"
+                    android:background="@color/colorPrimary" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_16m"
+                android:textColorHint="@color/colorPrimary"
+                app:hintTextAppearance="@style/TextInputHintTextAppearance">
+
+                <AutoCompleteTextView
+                    android:id="@+id/account_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/default_padding_4m"
+                    android:paddingTop="@dimen/default_padding_8m"
+                    android:paddingRight="@dimen/default_padding_4m"
+                    android:enabled="false"
+                    android:drawableLeft="@drawable/ic_cake_primary"
+                    android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                    android:hint="Usia"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m"
+                    android:background="@color/transparent"
+                    style="@style/SourceSansPro_Regular" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginLeft="@dimen/default_margin_4m"
+                    android:layout_marginRight="@dimen/default_margin_4m"
+                    android:background="@color/colorPrimary" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_16m"
+                android:textColorHint="@color/colorPrimary"
+                app:hintTextAppearance="@style/TextInputHintTextAppearance">
+
+                <AutoCompleteTextView
+                    android:id="@+id/account_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/default_padding_4m"
+                    android:paddingTop="@dimen/default_padding_8m"
+                    android:paddingRight="@dimen/default_padding_4m"
+                    android:enabled="false"
+                    android:drawableLeft="@drawable/ic_person_pin_circle_primary"
+                    android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                    android:hint="Alamat Tinggal"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m"
+                    android:background="@color/transparent"
+                    style="@style/SourceSansPro_Regular" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginLeft="@dimen/default_margin_4m"
+                    android:layout_marginRight="@dimen/default_margin_4m"
+                    android:background="@color/colorPrimary" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_16m">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/account_school_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorPrimary"
+                    app:hintTextAppearance="@style/TextInputHintTextAppearance">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/account_school"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/default_padding_4m"
+                        android:paddingTop="@dimen/default_padding_8m"
+                        android:paddingRight="@dimen/default_padding_4m"
+                        android:enabled="false"
+                        android:drawableLeft="@drawable/ic_school_primary"
+                        android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                        android:hint="Sekolah"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_18m"
+                        android:background="@color/transparent"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_default_height"
+                        android:layout_marginLeft="@dimen/default_margin_4m"
+                        android:layout_marginRight="@dimen/default_margin_4m"
+                        android:background="@color/colorPrimary" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/account_workplace_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorPrimary"
+                    app:hintTextAppearance="@style/TextInputHintTextAppearance">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/account_workplace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/default_padding_4m"
+                        android:paddingTop="@dimen/default_padding_8m"
+                        android:paddingRight="@dimen/default_padding_4m"
+                        android:enabled="false"
+                        android:drawableLeft="@drawable/ic_domain_primary"
+                        android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                        android:hint="Institusi Terakhir"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_18m"
+                        android:background="@color/transparent"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_default_height"
+                        android:layout_marginLeft="@dimen/default_margin_4m"
+                        android:layout_marginRight="@dimen/default_margin_4m"
+                        android:background="@color/colorPrimary" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/account_edit_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_16m"
+                android:padding="@dimen/default_padding_0m"
+                android:text="EDIT PROFIL"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_font_size_16m"
+                android:background="@drawable/primary_button"
+                android:stateListAnimator="@null"
+                style="@style/SourceSansPro_Regular" />
+
+            <Button
+                android:id="@+id/account_history_transaction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:padding="@dimen/default_padding_0m"
+                android:text="HISTORI TRANSAKSI"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_font_size_16m"
+                android:background="@drawable/primary_button"
+                android:stateListAnimator="@null"
+                style="@style/SourceSansPro_Regular" />
+
+            <Button
+                android:id="@+id/account_history_redeem_balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:padding="@dimen/default_padding_0m"
+                android:text="HISTORI TEBUSAN"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_font_size_16m"
+                android:background="@drawable/primary_button"
+                android:stateListAnimator="@null"
+                style="@style/SourceSansPro_Regular" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/account_loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <fr.castorflex.android.circularprogressbar.CircularProgressBar
+                android:layout_width="@dimen/progress_dialog_medium_circle_default_radius"
+                android:layout_height="@dimen/progress_dialog_medium_circle_default_radius"
+                android:indeterminate="true"
+                app:cpb_color="@color/colorPrimary"
+                app:cpb_rotation_speed="2.0"
+                app:cpb_stroke_width="@dimen/cpb_stroke_width"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_default_elevation"
+        android:background="@drawable/custom_shadow" />
+
+</android.support.design.widget.CoordinatorLayout>

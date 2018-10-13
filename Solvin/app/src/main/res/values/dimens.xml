@@ -1,0 +1,312 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Preference activity, vertical padding for the header list -->
+    <dimen name="preference_screen_header_vertical_padding_material">0dp</dimen>
+
+    <!-- Preference activity side margins -->
+    <dimen name="preference_screen_side_margin_material">0dp</dimen>
+    <!-- Preference activity side margins negative-->
+    <dimen name="preference_screen_side_margin_negative_material">0dp</dimen>
+
+    <!-- Preference fragment padding, sides -->
+    <dimen name="preference_fragment_padding_side_material">0dp</dimen>
+
+    <!-- Preference breadcrumbs padding, start padding -->
+    <dimen name="preference_breadcrumbs_padding_start_material">12dp</dimen>
+
+    <!-- Preference breadcrumbs padding, end padding -->
+    <dimen name="preference_breadcrumbs_padding_end_material">24dp</dimen>
+
+    <dimen name="preference_screen_header_padding_side_material">0dp</dimen>
+
+    <!-- Default height of an action bar. -->
+    <dimen name="action_bar_default_height_material">56dp</dimen>
+    <!-- Default start padding of an action bar. -->
+    <dimen name="action_bar_default_padding_start_material">0dp</dimen>
+    <!-- Default end padding of an action bar. -->
+    <dimen name="action_bar_default_padding_end_material">0dp</dimen>
+    <!-- Default content inset of an action bar. -->
+    <dimen name="action_bar_content_inset_material">16dp</dimen>
+    <!-- Vertical padding around action bar icons. -->
+    <dimen name="action_bar_icon_vertical_padding_material">16dp</dimen>
+    <!-- Top margin for action bar subtitles -->
+    <dimen name="action_bar_subtitle_top_margin_material">-3dp</dimen>
+    <!-- Bottom margin for action bar subtitles -->
+    <dimen name="action_bar_subtitle_bottom_margin_material">5dp</dimen>
+
+    <!-- Default padding for list items. This should match the action bar
+         content inset so that ListActivity items line up correctly. -->
+    <dimen name="list_item_padding_horizontal_material">@dimen/action_bar_content_inset_material</dimen>
+
+    <!-- Padding to add to the start of the overflow action button. -->
+    <dimen name="action_bar_overflow_padding_start_material">6dp</dimen>
+    <!-- Padding to add to the end of the overflow action button. -->
+    <dimen name="action_bar_overflow_padding_end_material">10dp</dimen>
+    <dimen name="action_bar_elevation_material">4dp</dimen>
+
+    <dimen name="action_button_min_width_overflow_material">36dp</dimen>
+    <dimen name="action_button_min_width_material">48dp</dimen>
+    <dimen name="action_button_min_height_material">48dp</dimen>
+
+    <dimen name="text_size_display_4_material">112sp</dimen>
+    <dimen name="text_size_display_3_material">56sp</dimen>
+    <dimen name="text_size_display_2_material">45sp</dimen>
+    <dimen name="text_size_display_1_material">34sp</dimen>
+    <dimen name="text_size_headline_material">24sp</dimen>
+    <dimen name="text_size_title_material">20sp</dimen>
+    <dimen name="text_size_subhead_material">16sp</dimen>
+    <dimen name="text_size_title_material_toolbar">20sp</dimen>
+    <dimen name="text_size_subtitle_material_toolbar">16sp</dimen>
+    <dimen name="text_size_menu_material">16sp</dimen>
+    <dimen name="text_size_body_2_material">14sp</dimen>
+    <dimen name="text_size_body_1_material">14sp</dimen>
+    <dimen name="text_size_caption_material">12sp</dimen>
+    <dimen name="text_size_button_material">14sp</dimen>
+
+    <dimen name="text_size_large_material">22sp</dimen>
+    <dimen name="text_size_medium_material">18sp</dimen>
+    <dimen name="text_size_small_material">14sp</dimen>
+
+    <dimen name="floating_window_z">16dp</dimen>
+    <dimen name="floating_window_margin_left">16dp</dimen>
+    <dimen name="floating_window_margin_top">8dp</dimen>
+    <dimen name="floating_window_margin_right">16dp</dimen>
+    <dimen name="floating_window_margin_bottom">32dp</dimen>
+
+    <!-- Elevation when button is pressed -->
+    <dimen name="button_elevation_material">2dp</dimen>
+    <!-- Z translation to apply when button is pressed -->
+    <dimen name="button_pressed_z_material">4dp</dimen>
+    <!-- Default insets (outer padding) around buttons -->
+    <dimen name="button_inset_vertical_material">6dp</dimen>
+    <dimen name="button_inset_horizontal_material">@dimen/control_inset_material</dimen>
+    <!-- Default inner padding within buttons -->
+    <dimen name="button_padding_vertical_material">@dimen/control_padding_material</dimen>
+    <dimen name="button_padding_horizontal_material">8dp</dimen>
+
+    <!-- Default insets (outer padding) around controls -->
+    <dimen name="control_inset_material">4dp</dimen>
+    <!-- Default inner padding within controls -->
+    <dimen name="control_padding_material">4dp</dimen>
+    <!-- Default rounded corner for controls -->
+    <dimen name="control_corner_material">2dp</dimen>
+
+    <dimen name="edit_text_inset_horizontal_material">4dp</dimen>
+    <dimen name="edit_text_inset_top_material">10dp</dimen>
+    <dimen name="edit_text_inset_bottom_material">7dp</dimen>
+
+    <dimen name="dialog_padding_material">24dp</dimen>
+    <dimen name="dialog_padding_top_material">18dp</dimen>
+
+    <!-- Dialog padding minus control padding, used to fix alignment. -->
+    <dimen name="select_dialog_padding_start_material">20dp</dimen>
+
+    <!-- Padding above and below selection dialog lists. -->
+    <dimen name="dialog_list_padding_vertical_material">8dp</dimen>
+
+    <dimen name="seekbar_track_background_height_material">2dp</dimen>
+    <dimen name="seekbar_track_progress_height_material">2dp</dimen>
+
+    <dimen name="progress_bar_height_material">4dp</dimen>
+
+    <!-- Material time picker dimensions. -->
+    <!-- Text size for the time picker header HH:MM label. This value is large
+         enough that we don't need to use scaled pixels, dp is fine. -->
+    <dimen name="timepicker_time_label_size">60dp</dimen>
+    <dimen name="timepicker_ampm_label_size">16dp</dimen>
+    <dimen name="timepicker_ampm_horizontal_padding">16dp</dimen>
+    <dimen name="timepicker_am_top_padding">4dp</dimen>
+    <dimen name="timepicker_pm_top_padding">4dp</dimen>
+    <dimen name="timepicker_separator_padding">2dp</dimen>
+    <dimen name="timepicker_header_height">96dp</dimen>
+    <dimen name="timepicker_radial_picker_dimen">296dp</dimen>
+    <dimen name="timepicker_radial_picker_top_margin">16dp</dimen>
+    <dimen name="timepicker_radial_picker_horizontal_margin">16dp</dimen>
+
+    <!-- Used by RadialTimePicker in clock-style TimePicker. -->
+    <dimen name="timepicker_selector_radius">20dp</dimen>
+    <dimen name="timepicker_selector_stroke">2dp</dimen>
+    <dimen name="timepicker_center_dot_radius">3dp</dimen>
+    <dimen name="timepicker_selector_dot_radius">2dp</dimen>
+    <dimen name="timepicker_text_inset_normal">22dp</dimen>
+    <dimen name="timepicker_text_inset_inner">58dp</dimen>
+    <dimen name="timepicker_text_size_normal">16sp</dimen>
+    <dimen name="timepicker_text_size_inner">12sp</dimen>
+
+    <!-- Material date picker dimensions. -->
+    <dimen name="datepicker_year_label_height">64dp</dimen>
+    <dimen name="datepicker_component_width">260dp</dimen>
+    <dimen name="datepicker_dialog_width">520dp</dimen>
+    <dimen name="datepicker_selected_date_day_size">88dp</dimen>
+    <dimen name="datepicker_selected_date_month_size">24dp</dimen>
+    <dimen name="datepicker_selected_date_year_size">24dp</dimen>
+    <dimen name="datepicker_header_height">30dp</dimen>
+    <dimen name="datepicker_header_text_size">14dp</dimen>
+
+    <dimen name="datepicker_list_year_label_size">16sp</dimen>
+    <dimen name="datepicker_list_year_activated_label_size">26sp</dimen>
+
+    <dimen name="date_picker_year_label_size">16sp</dimen>
+    <dimen name="date_picker_date_label_size">34dp</dimen>
+
+    <!-- Used by Material-style SimpleMonthView -->
+    <dimen name="date_picker_month_text_size">14sp</dimen>
+    <dimen name="date_picker_day_of_week_text_size">12sp</dimen>
+    <dimen name="date_picker_day_text_size">12sp</dimen>
+    <dimen name="date_picker_month_height">56dp</dimen>
+    <dimen name="date_picker_day_of_week_height">36dp</dimen>
+    <dimen name="date_picker_day_height">40dp</dimen>
+    <dimen name="date_picker_day_width">44dp</dimen>
+    <dimen name="date_picker_day_selector_radius">20dp</dimen>
+    <dimen name="day_picker_padding_horizontal">20dp</dimen>
+    <dimen name="day_picker_padding_top">6dp</dimen>
+    <dimen name="day_picker_button_margin_top">0dp</dimen>
+
+    <dimen name="datepicker_view_animator_height">226dp</dimen>
+    <dimen name="design_navigation_separator_vertical_padding">0dp</dimen>
+
+    <dimen name="navigation_drawer_vertical_padding">0dp</dimen>
+
+    <!--DEFAULT MARGINS-->
+    <dimen name="default_margin_minus">-4dp</dimen>
+    <dimen name="default_margin_0m">0dp</dimen>
+    <dimen name="default_margin_2m">2dp</dimen>
+    <dimen name="default_margin_4m">4dp</dimen>
+    <dimen name="default_margin_8m">8dp</dimen>
+    <dimen name="default_margin_12m">12dp</dimen>
+    <dimen name="default_margin_16m">16dp</dimen>
+    <dimen name="default_margin_20m">20dp</dimen>
+    <dimen name="default_margin_24m">24dp</dimen>
+    <dimen name="default_margin_32m">32dp</dimen>
+    <dimen name="default_margin_48m">48dp</dimen>
+    <dimen name="default_margin_56m">56dp</dimen>
+
+    <!--DEFAULT PADDINGS-->
+    <dimen name="default_padding_0m">0dp</dimen>
+    <dimen name="default_padding_1m">1dp</dimen>
+    <dimen name="default_padding_2m">2dp</dimen>
+    <dimen name="default_padding_4m">4dp</dimen>
+    <dimen name="default_padding_6m">6dp</dimen>
+    <dimen name="default_padding_8m">8dp</dimen>
+    <dimen name="default_padding_12m">12dp</dimen>
+    <dimen name="default_padding_16m">16dp</dimen>
+    <dimen name="default_padding_20m">20dp</dimen>
+    <dimen name="default_padding_24m">24dp</dimen>
+    <dimen name="default_padding_32m">32dp</dimen>
+    <dimen name="default_padding_36m">36dp</dimen>
+
+    <!--DEFAULT CORNER RADIUSES-->
+    <dimen name="default_corner_radius_2m">2dp</dimen>
+    <dimen name="default_corner_radius_4m">4dp</dimen>
+    <dimen name="default_corner_radius_8m">8dp</dimen>
+    <dimen name="default_corner_radius_12m">12dp</dimen>
+    <dimen name="default_corner_radius_24m">24dp</dimen>
+    <dimen name="default_corner_radius_36m">36dp</dimen>
+
+    <!--DEFAULT INSETS-->
+    <dimen name="default_inset_1m">1dp</dimen>
+    <dimen name="default_inset_2m">2dp</dimen>
+
+    <!--DEFAULT FONT SIZES-->
+    <dimen name="default_font_size_4m">10sp</dimen>
+    <dimen name="default_font_size_12m">12sp</dimen>
+    <dimen name="default_font_size_14m">14sp</dimen>
+    <dimen name="default_font_size_16m">16sp</dimen>
+    <dimen name="default_font_size_18m">18sp</dimen>
+    <dimen name="default_font_size_20m">20sp</dimen>
+    <dimen name="default_font_size_22m">22sp</dimen>
+    <dimen name="default_font_size_24m">24sp</dimen>
+    <dimen name="default_font_size_26m">26sp</dimen>
+    <dimen name="default_font_size_28m">28sp</dimen>
+    <dimen name="default_font_size_32m">32sp</dimen>
+    <dimen name="default_font_size_40m">40sp</dimen>
+    <dimen name="default_font_size_42m">42sp</dimen>
+
+    <!--DEFAULT-->
+    <dimen name="action_button_default_width">56dp</dimen>
+    <dimen name="primary_line_default_width">42dp</dimen>
+    <dimen name="image_attached_default_width">120dp</dimen>
+    <dimen name="struct_attached_default_width">90dp</dimen>
+    <dimen name="flag_default_width">8dp</dimen>
+    <dimen name="divider_default_width">1dp</dimen>
+    <dimen name="dash_default_width">8dp</dimen>
+    <dimen name="dash_default_gap">4dp</dimen>
+    <dimen name="stroke_default_width">1dp</dimen>
+    <dimen name="stroke_dash_default_width">2dp</dimen>
+    <dimen name="button_dialog_default_min_width">56dp</dimen>
+    <dimen name="cpb_stroke_width">4dp</dimen>
+
+    <dimen name="tab_indicator_default_height">2dp</dimen>
+    <dimen name="circle_indicator_container_default_height">16dp</dimen>
+    <dimen name="action_bar_default_height">56dp</dimen>
+    <dimen name="navigation_drawer_item_default_height">48dp</dimen>
+    <dimen name="preference_item_default_height">56dp</dimen>
+    <dimen name="tab_default_height">48dp</dimen>
+    <dimen name="image_attached_default_height">120dp</dimen>
+    <dimen name="struct_attached_default_height">90dp</dimen>
+    <dimen name="primary_line_default_height">2dp</dimen>
+    <dimen name="circle_indicator_default_height">16dp</dimen>
+    <dimen name="step_line_default_height">4dp</dimen>
+    <dimen name="expandable_list_view_divider_default_height">0.5dp</dimen>
+    <dimen name="divider_default_height">1dp</dimen>
+    <dimen name="navigation_drawer_divider_default_height">2dp</dimen>
+    <dimen name="spinner_divider_default_height">2dp</dimen>
+    <dimen name="progress_bar_default_height">3dp</dimen>
+    <dimen name="horizontal_progress_bar_default_height">4dp</dimen>
+    <dimen name="app_version_container_default_height">36dp</dimen>
+
+    <dimen name="badge_default_extra_margin_top">8dp</dimen>
+    <dimen name="badge_default_extra_margin_right">8dp</dimen>
+    <dimen name="progress_dialog_default_extra_margin">0dp</dimen>
+    <dimen name="alert_dialog_default_extra_margin">0dp</dimen>
+    <dimen name="circle_indicator_default_margin">8dp</dimen>
+    <dimen name="preference_default_extra_margin">24dp</dimen>
+
+    <dimen name="auto_complete_text_view_default_drawable_padding">16dp</dimen>
+    <dimen name="progress_dialog_default_extra_padding">0dp</dimen>
+    <dimen name="password_default_padding">42dp</dimen>
+
+    <dimen name="thumb_default_radius">20dp</dimen>
+    <dimen name="circle_indicator_default_radius">6dp</dimen>
+    <dimen name="badge_default_radius">20dp</dimen>
+    <dimen name="badge_default_small_radius">8dp</dimen>
+    <dimen name="button_default_corner_radius">24dp</dimen>
+    <dimen name="card_default_corner_radius">4dp</dimen>
+    <dimen name="hashtag_default_corner_radius">12dp</dimen>
+    <dimen name="circle_image_view_radius">45dp</dimen>
+    <dimen name="circle_image_view_small_radius">24dp</dimen>
+    <dimen name="circle_image_view_big_radius">96dp</dimen>
+    <dimen name="spinner_arrow_default_size">8dp</dimen>
+    <dimen name="progress_dialog_circle_default_radius">36dp</dimen>
+    <dimen name="progress_dialog_medium_circle_default_radius">54dp</dimen>
+    <dimen name="progress_dialog_big_circle_default_radius">72dp</dimen>
+    <dimen name="loading_indicator_default_radius">24dp</dimen>
+    <dimen name="feed_notification_default_radius">6dp</dimen>
+    <dimen name="pulse_default_radius">96dp</dimen>
+
+    <dimen name="card_default_elevation">4dp</dimen>
+    <dimen name="app_bar_default_elevation">4dp</dimen>
+
+    <dimen name="welcome_header_default_font_size">32sp</dimen>
+    <dimen name="welcome_sub_header_default_font_size">18sp</dimen>
+    <dimen name="initial_name_big_default_font_size">42sp</dimen>
+    <dimen name="montserrat_default_font_size">32sp</dimen>
+    <dimen name="key_default_font_size">20sp</dimen>
+
+    <dimen name="action_bar_title_default_inset_start">0dp</dimen>
+    <dimen name="shadow_default_radius">2dp</dimen>
+
+    <!--<dimen name="abc_action_button_min_width_material" tools:override="true">56dp</dimen>-->
+    <!--<dimen name="abc_action_button_min_height_material" tools:override="true">56dp</dimen>-->
+
+    <dimen name="design_navigation_icon_padding" tools:override="true">32dp</dimen>
+    <dimen name="design_navigation_icon_size" tools:override="true">32dp</dimen>
+    <dimen name="design_fab_size_normal" tools:override="true">56dp</dimen>
+</resources>

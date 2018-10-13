@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/answer_sheet_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    android:fitsSystemWindows="true"
+    tools:context="id.solvin.dev.view.activities.ActivityAnswerSheet">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height= "@dimen/action_bar_default_height"
+            android:minHeight="@dimen/action_bar_default_height"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextAppearance="@style/ToolbarTextStyle" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/answer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_16m"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_16m"
+                    android:layout_marginRight="@dimen/default_margin_16m">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/answer_attr_container">
+
+                        <RelativeLayout
+                            android:id="@+id/answer_user_photo_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/answer_user_photo"
+                                android:layout_width="@dimen/circle_image_view_radius"
+                                android:layout_height="@dimen/circle_image_view_radius" />
+
+                            <RelativeLayout
+                                android:id="@+id/answer_avatar_layout"
+                                android:layout_width="@dimen/circle_image_view_radius"
+                                android:layout_height="@dimen/circle_image_view_radius"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:background="@drawable/circle">
+
+                                <TextView
+                                    android:id="@+id/answer_avatar_initial"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/default_font_size_20m"
+                                    style="@style/SourceSansPro_Regular" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/answer_user_photo_container"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/default_margin_12m">
+
+                            <TextView
+                                android:id="@+id/answer_user_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/default_font_size_16m"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                style="@style/SourceSansPro_Regular" />
+
+                            <TextView
+                                android:id="@+id/answer_question_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/answer_user_name"
+                                android:textColor="@color/colorSubHeader"
+                                android:textSize="@dimen/default_font_size_14m"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/answer_attr_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true">
+
+                        <ImageView
+                            android:id="@+id/answer_question_attachment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_attach_file_dark"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:id="@+id/answer_question_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/answer_question_attachment"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/answer_question_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_16m"
+                    android:layout_marginTop="@dimen/default_margin_16m"
+                    android:layout_marginRight="@dimen/default_margin_16m"
+                    android:paddingTop="@dimen/default_padding_6m"
+                    android:paddingRight="@dimen/default_padding_6m"
+                    android:paddingBottom="@dimen/default_padding_6m"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m"
+                    style="@style/SourceSansPro_Regular" />
+
+                <RelativeLayout
+                    android:id="@+id/answer_question_image_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_16m"
+                    android:layout_marginTop="@dimen/default_margin_16m"
+                    android:layout_marginRight="@dimen/default_margin_16m">
+
+                    <ImageView
+                        android:id="@+id/answer_question_image"
+                        android:layout_width="@dimen/image_attached_default_width"
+                        android:layout_height="@dimen/image_attached_default_height"
+                        android:scaleType="centerCrop" />
+
+                    <RelativeLayout
+                        android:id="@+id/answer_question_image_foreground"
+                        android:layout_width="@dimen/image_attached_default_width"
+                        android:layout_height="@dimen/image_attached_default_height"
+                        android:clickable="true"
+                        android:background="?attr/selectableItemBackground" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/answer_question_category_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginTop="@dimen/default_margin_20m"
+                    android:paddingLeft="@dimen/default_padding_16m"
+                    android:paddingTop="@dimen/default_padding_8m"
+                    android:paddingRight="@dimen/default_padding_16m"
+                    android:paddingBottom="@dimen/default_padding_8m">
+
+                    <TextView
+                        android:id="@+id/answer_question_subject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:paddingLeft="@dimen/default_padding_8m"
+                        android:paddingTop="@dimen/default_padding_4m"
+                        android:paddingRight="@dimen/default_padding_8m"
+                        android:paddingBottom="@dimen/default_padding_4m"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/default_font_size_14m"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:background="@drawable/custom_border_light"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:id="@+id/answer_question_material"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/answer_question_subject"
+                        android:paddingLeft="@dimen/default_padding_8m"
+                        android:paddingTop="@dimen/default_padding_4m"
+                        android:paddingRight="@dimen/default_padding_8m"
+                        android:paddingBottom="@dimen/default_padding_4m"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/default_font_size_14m"
+                        android:background="@drawable/custom_border_light"
+                        style="@style/SourceSansPro_Regular" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_16m"
+                android:layout_marginRight="@dimen/default_margin_16m">
+
+                <id.solvin.dev.view.widget.ClassRichEditText
+                    android:id="@+id/answer_sheet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="top"
+                    android:paddingTop="@dimen/default_padding_16m"
+                    android:paddingBottom="@dimen/default_padding_16m"
+                    android:inputType="textMultiLine|textVisiblePassword|textNoSuggestions"
+                    android:hint="Solusi anda..."
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_22m"
+                    android:ems="10"
+                    android:lineSpacingMultiplier="1"
+                    android:scrollbars="vertical"
+                    android:background="@android:color/transparent"
+                    style="@style/SourceSansPro_Regular" />
+
+                <View
+                    android:id="@+id/answer_image_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_below="@+id/answer_sheet"
+                    android:background="@color/darkGray"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/answer_image_progress"
+                    android:layout_width="@dimen/image_attached_default_width"
+                    android:layout_height="@dimen/progress_bar_default_height"
+                    android:layout_below="@id/answer_image_divider"
+                    android:layout_marginTop="@dimen/default_margin_20m"
+                    android:progressDrawable="@drawable/custom_progress_bar"
+                    android:visibility="gone"
+                    style="?android:attr/progressBarStyleHorizontal" />
+
+                <RelativeLayout
+                    android:id="@+id/answer_image_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/answer_image_progress"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/answer_image"
+                        android:layout_width="@dimen/image_attached_default_width"
+                        android:layout_height="@dimen/image_attached_default_height"
+                        android:scaleType="centerCrop" />
+
+                    <RelativeLayout
+                        android:id="@+id/answer_image_foreground"
+                        android:layout_width="@dimen/image_attached_default_width"
+                        android:layout_height="@dimen/image_attached_default_height"
+                        android:clickable="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/answer_upload_status"
+                            android:layout_width="@dimen/image_attached_default_width"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="@dimen/default_padding_4m"
+                            android:paddingBottom="@dimen/default_padding_4m"
+                            android:text="Terunggah"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/default_font_size_14m"
+                            android:background="#80000000"
+                            android:visibility="gone"
+                            style="@style/SourceSansPro_Regular" />
+
+                    </RelativeLayout>
+
+                    <ImageButton
+                        android:id="@+id/answer_image_remove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/default_padding_8m"
+                        android:src="@drawable/ic_cancel_dark"
+                        android:clickable="true"
+                        android:background="?selectableItemBackgroundBorderless" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/empty_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/answer_image_container" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <id.solvin.dev.view.widget.ClassRichEditText
+        android:id="@+id/temp_rt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/solvin_keyboard_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <RelativeLayout
+        android:id="@+id/text_format_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_margin_16m"
+        android:layout_marginTop="@dimen/default_margin_8m"
+        android:layout_marginRight="@dimen/default_margin_16m"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>

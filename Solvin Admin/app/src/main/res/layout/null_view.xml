@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/null_view_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/null_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/margin_16rs"
+            android:layout_marginRight="@dimen/margin_16rs"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@color/darkLightGray"
+            android:textSize="@dimen/text_size_24rs"
+            style="@style/SourceSansPro_Regular" />
+
+        <TextView
+            android:id="@+id/null_view_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/margin_24rs"
+            android:layout_marginTop="@dimen/margin_2rs"
+            android:layout_marginRight="@dimen/margin_24rs"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@color/colorHeader"
+            android:textSize="@dimen/text_size_16rs"
+            style="@style/SourceSansPro_Light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+</LinearLayout>

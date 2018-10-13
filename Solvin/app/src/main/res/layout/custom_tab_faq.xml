@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/custom_tab_faq">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|center">
+
+        <TextView
+            android:id="@+id/tab_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textAllCaps="true"
+            android:textColor="@color/colorSubHeader"
+            android:textSize="@dimen/default_font_size_16m"
+            android:maxLines="1"
+            style="@style/SourceSansPro_Regular" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

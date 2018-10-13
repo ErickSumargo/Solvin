@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vote_solution_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height= "@dimen/action_bar_default_height"
+            android:minHeight="@dimen/action_bar_default_height"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextAppearance="@style/ToolbarTextStyle" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_16rs"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/vote_question_attr_container">
+
+                    <RelativeLayout
+                        android:id="@+id/vote_student_photo_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/vote_student_photo"
+                            android:layout_width="@dimen/circle_image_view_radius"
+                            android:layout_height="@dimen/circle_image_view_radius" />
+
+                        <RelativeLayout
+                            android:id="@+id/vote_student_avatar_layout"
+                            android:layout_width="@dimen/circle_image_view_radius"
+                            android:layout_height="@dimen/circle_image_view_radius"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:background="@drawable/circle">
+
+                            <TextView
+                                android:id="@+id/vote_student_avatar_initial"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_20rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/vote_student_photo_container"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_12rs">
+
+                        <TextView
+                            android:id="@+id/vote_student_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/text_size_16rs"
+                            android:maxLines="1"
+                            style="@style/SourceSansPro_Regular" />
+
+                        <TextView
+                            android:id="@+id/vote_question_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/vote_student_name"
+                            android:textColor="@color/colorSubHeader"
+                            android:textSize="@dimen/text_size_14rs"
+                            android:maxLines="1"
+                            style="@style/SourceSansPro_Regular" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/vote_question_attr_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/vote_question_attachment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/vote_question_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/vote_question_attachment"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerCrop" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/vote_question_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16rs"
+                android:paddingTop="@dimen/padding_6rs"
+                android:paddingRight="@dimen/padding_6rs"
+                android:paddingBottom="@dimen/padding_6rs"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/text_size_18rs"
+                style="@style/SourceSansPro_Regular" />
+
+            <RelativeLayout
+                android:id="@+id/vote_question_image_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16rs"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/vote_question_image"
+                    android:layout_width="@dimen/image_attached_default_width"
+                    android:layout_height="@dimen/image_attached_default_height"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:id="@+id/vote_question_image_foreground"
+                    android:layout_width="@dimen/image_attached_default_width"
+                    android:layout_height="@dimen/image_attached_default_height"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackground" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20rs"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/vote_question_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_8rs"
+                    android:paddingLeft="@dimen/padding_8rs"
+                    android:paddingTop="@dimen/padding_4rs"
+                    android:paddingRight="@dimen/padding_8rs"
+                    android:paddingBottom="@dimen/padding_4rs"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14rs"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:background="@drawable/hashtag_mathematics"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:id="@+id/vote_question_material"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/vote_question_subject"
+                    android:paddingLeft="@dimen/padding_8rs"
+                    android:paddingTop="@dimen/padding_4rs"
+                    android:paddingRight="@dimen/padding_8rs"
+                    android:paddingBottom="@dimen/padding_4rs"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14rs"
+                    android:background="@drawable/hashtag_mathematics"
+                    style="@style/SourceSansPro_Regular" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/vote_solution_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_24rs"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/vote_solution_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Solusi"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_24rs"
+                    style="@style/SourceSansPro_Regular" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_4rs"
+                    android:background="@color/colorPrimary" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/vote_solution_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        android:visibility="gone" />
+
+                    <include layout="@layout/loading_view" android:id="@+id/loading_view_container" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <id.solvinap.dev.view.widget.CustomRichEditText
+        android:id="@+id/temp_rt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</android.support.design.widget.CoordinatorLayout>

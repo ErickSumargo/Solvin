@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/action_button_default_width"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/notification_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/actionBarItemBackground"
+        android:src="@drawable/ic_notifications_light" />
+
+    <LinearLayout
+        android:id="@+id/badge_counter_container"
+        android:layout_width="@dimen/badge_default_radius"
+        android:layout_height="@dimen/badge_default_radius"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/badge_default_extra_margin_top"
+        android:layout_marginRight="@dimen/badge_default_extra_margin_right"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@drawable/circle_counter">
+
+        <TextView
+            android:id="@+id/badge_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_font_size_12m"
+            style="@style/SourceSansPro_Regular" />
+
+    </LinearLayout>
+
+</RelativeLayout>

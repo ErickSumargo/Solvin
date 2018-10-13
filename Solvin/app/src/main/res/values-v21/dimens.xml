@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="navigation_drawer_vertical_padding">24dp</dimen>
+    <dimen name="preference_default_extra_margin">42dp</dimen>
+</resources>

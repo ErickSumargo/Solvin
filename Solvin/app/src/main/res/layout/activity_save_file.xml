@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/default_padding_16m"
+        android:paddingTop="@dimen/default_padding_16m"
+        android:paddingRight="@dimen/default_padding_16m">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simpan Draft"
+            android:textAlignment="center"
+            android:textColor="@color/colorHeader"
+            android:textSize="@dimen/default_font_size_22m"
+            style="@style/SourceSansPro_Regular" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_20m"
+            android:hint="Nama Draft"
+            app:errorTextAppearance="@style/TextInputErrorTextAppearance">
+
+            <AutoCompleteTextView
+                android:id="@+id/save_file_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/default_font_size_18m"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                style="@style/SourceSansPro_Regular" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+</ScrollView>

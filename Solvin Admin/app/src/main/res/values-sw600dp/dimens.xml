@@ -1,0 +1,135 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="activity_horizontal_margin">32dp</dimen>
+    <dimen name="activity_vertical_margin">32dp</dimen>
+    <dimen name="fab_margin">24dp</dimen>
+
+    <!--DEFAULT MARGIN-->
+    <dimen name="margin_2rs">3dp</dimen>
+    <dimen name="margin_4rs">6dp</dimen>
+    <dimen name="margin_8rs">12dp</dimen>
+    <dimen name="margin_12rs">18dp</dimen>
+    <dimen name="margin_16rs">24dp</dimen>
+    <dimen name="margin_20rs">30dp</dimen>
+    <dimen name="margin_24rs">36dp</dimen>
+    <dimen name="margin_32rs">48dp</dimen>
+    <dimen name="margin_48rs">72dp</dimen>
+    <dimen name="margin_56rs">84dp</dimen>
+
+    <!--DEFAULT PADDING-->
+    <dimen name="padding_1rs">2dp</dimen>
+    <dimen name="padding_2rs">3dp</dimen>
+    <dimen name="padding_4rs">6dp</dimen>
+    <dimen name="padding_6rs">9dp</dimen>
+    <dimen name="padding_8rs">12dp</dimen>
+    <dimen name="padding_12rs">18dp</dimen>
+    <dimen name="padding_16rs">24dp</dimen>
+    <dimen name="padding_20rs">30dp</dimen>
+    <dimen name="padding_24rs">36dp</dimen>
+    <dimen name="padding_32rs">48dp</dimen>
+    <dimen name="padding_36rs">54dp</dimen>
+
+    <!--DEFAULT CORNER RADIUSES-->
+    <dimen name="default_corner_radius_2m">3dp</dimen>
+    <dimen name="default_corner_radius_4m">6dp</dimen>
+    <dimen name="default_corner_radius_8m">12dp</dimen>
+    <dimen name="default_corner_radius_12m">18dp</dimen>
+    <dimen name="default_corner_radius_24m">36dp</dimen>
+    <dimen name="default_corner_radius_36m">54dp</dimen>
+
+    <!--DEFAULT INSETS-->
+    <dimen name="default_inset_1m">2dp</dimen>
+    <dimen name="default_inset_2m">3dp</dimen>
+
+    <!--DEFAULT TEXT SIZE-->
+    <dimen name="text_size_4rs">6sp</dimen>
+    <dimen name="text_size_12rs">18sp</dimen>
+    <dimen name="text_size_14rs">21sp</dimen>
+    <dimen name="text_size_16rs">24sp</dimen>
+    <dimen name="text_size_18rs">27sp</dimen>
+    <dimen name="text_size_20rs">30sp</dimen>
+    <dimen name="text_size_22rs">33sp</dimen>
+    <dimen name="text_size_24rs">36sp</dimen>
+    <dimen name="text_size_26rs">39sp</dimen>
+    <dimen name="text_size_28rs">42sp</dimen>
+    <dimen name="text_size_32rs">48sp</dimen>
+    <dimen name="text_size_40rs">60sp</dimen>
+    <dimen name="text_size_42rs">63sp</dimen>
+
+    <!--DEFAULT-->
+    <dimen name="action_button_default_width">72dp</dimen>
+    <dimen name="primary_line_default_width">63dp</dimen>
+    <dimen name="image_attached_default_width">180dp</dimen>
+    <dimen name="struct_attached_default_width">135dp</dimen>
+    <dimen name="flag_default_width">12dp</dimen>
+    <dimen name="divider_default_width">2dp</dimen>
+    <dimen name="dash_default_width">12dp</dimen>
+    <dimen name="dash_default_gap">6dp</dimen>
+    <dimen name="stroke_default_width">2dp</dimen>
+    <dimen name="stroke_dash_default_width">3dp</dimen>
+    <dimen name="button_dialog_default_min_width">84dp</dimen>
+
+    <dimen name="tab_indicator_default_height">3dp</dimen>
+    <dimen name="circle_indicator_container_default_height">24dp</dimen>
+    <dimen name="action_bar_default_height">84dp</dimen>
+    <dimen name="navigation_drawer_item_default_height">72dp</dimen>
+    <dimen name="preference_item_default_height">72dp</dimen>
+    <dimen name="tab_default_height">72dp</dimen>
+    <dimen name="image_attached_default_height">180dp</dimen>
+    <dimen name="struct_attached_default_height">135dp</dimen>
+    <dimen name="primary_line_default_height">3dp</dimen>
+    <dimen name="circle_indicator_default_height">24dp</dimen>
+    <dimen name="step_line_default_height">6dp</dimen>
+    <dimen name="expandable_list_view_divider_default_height">1dp</dimen>
+    <dimen name="divider_default_height">2dp</dimen>
+    <dimen name="navigation_drawer_divider_default_height">3dp</dimen>
+    <dimen name="spinner_divider_default_height">3dp</dimen>
+    <dimen name="progress_bar_default_height">6dp</dimen>
+    <dimen name="app_version_container_default_height">54dp</dimen>
+    <dimen name="nav_background_height">180dp</dimen>
+
+    <dimen name="badge_default_extra_margin_top">4dp</dimen>
+    <dimen name="badge_default_extra_margin_right">4dp</dimen>
+    <dimen name="progress_dialog_default_extra_margin">2dp</dimen>
+    <dimen name="alert_dialog_default_extra_margin">4dp</dimen>
+    <dimen name="circle_indicator_default_margin">12dp</dimen>
+    <dimen name="preference_default_extra_margin">24dp</dimen>
+
+    <dimen name="auto_complete_text_view_default_drawable_padding">24dp</dimen>
+    <dimen name="progress_dialog_default_extra_padding">2dp</dimen>
+    <dimen name="password_default_padding">64dp</dimen>
+    <dimen name="button_padding">16dp</dimen>
+
+    <dimen name="thumb_default_radius">30dp</dimen>
+    <dimen name="circle_indicator_default_radius">9dp</dimen>
+    <dimen name="badge_default_radius">30dp</dimen>
+    <dimen name="button_default_corner_radius">36dp</dimen>
+    <dimen name="card_default_corner_radius">6dp</dimen>
+    <dimen name="hashtag_default_corner_radius">18dp</dimen>
+    <dimen name="circle_image_view_radius">64dp</dimen>
+    <dimen name="circle_image_view_small_radius">36dp</dimen>
+    <dimen name="circle_image_view_big_radius">126dp</dimen>
+    <dimen name="spinner_arrow_default_size">12dp</dimen>
+    <dimen name="progress_dialog_circle_default_radius">54dp</dimen>
+    <dimen name="progress_dialog_medium_circle_default_radius">81dp</dimen>
+    <dimen name="progress_dialog_big_circle_default_radius">108dp</dimen>
+    <dimen name="loading_indicator_default_radius">36dp</dimen>
+    <dimen name="colored_circle_radius">12dp</dimen>
+    <dimen name="photo_mentor_radius">135dp</dimen>
+    <dimen name="transaction_status_radius">30dp</dimen>
+
+    <dimen name="card_default_elevation">6dp</dimen>
+    <dimen name="app_bar_default_elevation">6dp</dimen>
+
+    <dimen name="welcome_header_default_font_size">48sp</dimen>
+    <dimen name="welcome_sub_header_default_font_size">27sp</dimen>
+    <dimen name="initial_name_big_default_font_size">63sp</dimen>
+    <dimen name="montserrat_default_font_size">48sp</dimen>
+    <dimen name="key_default_font_size">30sp</dimen>
+
+    <dimen name="action_bar_title_default_inset">0dp</dimen>
+    <dimen name="shadow_default_radius">3dp</dimen>
+
+    <dimen name="design_navigation_icon_padding" tools:override="true">48dp</dimen>
+    <dimen name="design_navigation_icon_size" tools:override="true">48dp</dimen>
+    <dimen name="design_fab_size_normal" tools:override="true">84dp</dimen>
+</resources>

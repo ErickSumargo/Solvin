@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2191D0</color>
+    <color name="halfPrimary">#4DA7D9</color>
+    <color name="colorPrimaryDark">#1A74A6</color>
+    <color name="colorAccent">#2191D0</color>
+    <color name="colorGray">#263238</color>
+    <color name="colorDisabled">#CCCCCC</color>
+    <color name="colorCancel">#EF4121</color>
+    <color name="colorCancelSubDark">#CF341A</color>
+    <color name="colorCancelDark">#BF341A</color>
+
+    <color name="colorMathematics">#ED157C</color>
+    <color name="colorPhysics">#2191D0</color>
+    <color name="colorUnderstandable">#A6CE39</color>
+    <color name="colorNotUnderstandable">#EF4121</color> <!--#666666!-->
+    <color name="colorNotUnderstandableDark">#BF341A</color> <!--#515151!-->
+    <color name="colorBorder">#D1D1D1</color>
+    <color name="colorHeader">#212121</color>
+    <color name="colorSubHeader">#828282</color>
+    <color name="colorSubHeaderDarker">#4E4E4E</color>
+    <color name="colorSwitchThumbNormal">#F1F1F1</color>
+    <color name="colorSwitchShadow">#E6D1D1D1</color>
+    <color name="colorNewNotification">#E6E6E6</color>
+    <color name="colorBadge">#ED157C</color>
+    <color name="colorNewNotificationFlag">#EF4121</color>
+    <color name="colorMainBackground">#FFFFFF</color>
+    <color name="colorSolvinKeyboardBackground">#D5D8DE</color>
+    <color name="colorTextFormatBorder">#E67D7D7D</color>
+
+    <color name="shadowLayer1">#00A3A3A3</color>
+    <color name="shadowLayer2">#10A3A3A3</color>
+    <color name="shadowLayer3">#20D5D5D5</color>
+    <color name="shadowLayer4">#30797979</color>
+    <color name="shadowLayer5">#50BABABA</color>
+
+    <color name="shadowLayerThicker1">#00A3A3A3</color>
+    <color name="shadowLayerThicker2">#04A3A3A3</color>
+    <color name="shadowLayerThicker3">#08A3A3A3</color>
+    <color name="shadowLayerThicker4">#0CA3A3A3</color>
+    <color name="shadowLayerThicker5">#10A3A3A3</color>
+    <color name="shadowLayerThicker6">#14A3A3A3</color>
+    <color name="shadowLayerThicker7">#18A3A3A3</color>
+    <color name="shadowLayerThicker8">#1CA3A3A3</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="semiBlack">#262626</color>
+    <color name="gray">#D3D3D3</color>
+    <color name="lightGray">#EEEEEE</color>
+    <color name="lightGray1">#E1E1E1</color>
+    <color name="lightGray2">#CCD4D4D4</color>
+    <color name="lightRed">#EF4121</color>
+    <color name="lighterLightGray">#E9E9E9</color>
+    <color name="semiLightGray">#D6D6D6</color>
+    <color name="darkGray">#A9A9A9</color>
+    <color name="darkLightGray">#696969</color>
+    <color name="transparencyGray">#80E0E0E0</color>
+    <color name="darkAmber">#EDB100</color>
+    <color name="transparent">#00000000</color>
+
+
+    <!--DataMaterial Color List-->
+    <color name="red_500">#F44336</color>
+    <color name="amber_500">#FFC107</color>
+
+    <color name="red_A700">#D50000</color>
+    <color name="pink_A700">#C51162</color>
+    <color name="purple_500">#9C27B0</color>
+    <color name="deepPurple_500">#673AB7</color>
+    <color name="indigo_500">#3F51B5</color>
+    <color name="cyan_500">#00BCD4</color>
+    <color name="cyan_A700">#00B8D4</color>
+    <color name="teal_500">#009688</color>
+    <color name="teal_A700">#00BFA5</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="lightGreen_800">#558B2F</color>
+    <color name="yellow_800">#F9A825</color>
+    <color name="amber_800">#FF8F00</color>
+    <color name="orange_800">#EF6C00</color>
+    <color name="brown_500">#795548</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="blueGray_500">#607D8B</color>
+
+    <array name="material_color">
+        <item>@color/red_A700</item>
+        <item>@color/pink_A700</item>
+        <item>@color/purple_500</item>
+        <item>@color/deepPurple_500</item>
+        <item>@color/indigo_500</item>
+        <item>@color/cyan_500</item>
+        <item>@color/cyan_A700</item>
+        <item>@color/teal_500</item>
+        <item>@color/teal_A700</item>
+        <item>@color/green_500</item>
+        <item>@color/lightGreen_800</item>
+        <item>@color/yellow_800</item>
+        <item>@color/amber_800</item>
+        <item>@color/orange_800</item>
+        <item>@color/brown_500</item>
+        <item>@color/green_500</item>
+        <item>@color/blueGray_500</item>
+    </array>
+
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/category_select_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/default_font_size_24m"
+                style="@style/SourceSansPro_Regular" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_16m"
+                android:padding="@dimen/default_padding_16m"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.rey.material.widget.Spinner
+                    android:id="@+id/category_subject_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:spn_label="Mata Pelajaran"
+                    app:spn_labelEnable="true"
+                    app:spn_labelTextColor="@color/colorPrimary"
+                    app:spn_labelTextSize="@dimen/default_font_size_14m"
+                    app:spn_labelPadding="@dimen/default_padding_8m"
+                    app:spn_arrowColor="@color/colorPrimary"
+                    app:spn_arrowSize="@dimen/spinner_arrow_default_size"
+                    app:spn_arrowSwitchMode="true"
+                    app:spn_dividerColor="@color/colorPrimary"
+                    app:rd_style="@style/Material.Drawable.Ripple.Wave"
+                    style="@style/Material.Widget.Spinner" />
+
+                <com.rey.material.widget.Spinner
+                    android:id="@+id/category_material_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_16m"
+                    app:spn_label="Materi"
+                    app:spn_labelEnable="true"
+                    app:spn_labelTextColor="@color/colorPrimary"
+                    app:spn_labelTextSize="@dimen/default_font_size_14m"
+                    app:spn_labelPadding="@dimen/default_padding_8m"
+                    app:spn_arrowColor="@color/colorPrimary"
+                    app:spn_arrowSize="@dimen/spinner_arrow_default_size"
+                    app:spn_arrowSwitchMode="true"
+                    app:spn_dividerColor="@color/colorPrimary"
+                    app:rd_style="@style/Material.Drawable.Ripple.Wave"
+                    style="@style/Material.Widget.Spinner" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/category_material_fill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m"
+                    android:hint="Nama Materi (Wajib)..."
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:imeOptions="actionDone"
+                    android:visibility="gone"
+                    style="@style/SourceSansPro_Regular" />
+
+                <Button
+                    android:id="@+id/category_question_sheet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_20m"
+                    android:text="LANJUT"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_font_size_16m"
+                    android:stateListAnimator="@null"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_default_elevation"
+        android:background="@drawable/custom_shadow" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/history_redeem_balance_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardElevation="@dimen/card_default_elevation"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:contentPadding="@dimen/default_padding_12m">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/history_redeem_balance_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_32m"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:id="@+id/history_redeem_balance_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/default_margin_minus"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_16m"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:id="@+id/history_redeem_balance_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/default_margin_minus"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_16m"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/divider_default_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/default_margin_12m"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_12m"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No. Tebusan"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_16m"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text=":"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_16m"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:id="@+id/history_redeem_balance_code"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_16m"
+                        android:maxLines="1"
+                        style="@style/SourceSansPro_Regular" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_4m"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Jumlah Tebusan"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_16m"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text=":"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_16m"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:id="@+id/history_redeem_balance_balance"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_16m"
+                        android:maxLines="1"
+                        style="@style/SourceSansPro_Regular" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_4m"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Status"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_16m"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text=":"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_16m"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:id="@+id/history_redeem_balance_status"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/default_padding_4m"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/default_font_size_16m"
+                        android:maxLines="1"
+                        style="@style/SourceSansPro_Regular" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/history_redeem_balance_date_approved_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_4m"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/history_redeem_balance_action_result_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_16m"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text=":"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_16m"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:id="@+id/history_redeem_balance_date_approved"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_16m"
+                        style="@style/SourceSansPro_Regular" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

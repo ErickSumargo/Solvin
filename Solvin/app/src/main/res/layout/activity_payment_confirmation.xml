@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/default_padding_16m"
+        android:paddingTop="@dimen/default_padding_16m"
+        android:paddingRight="@dimen/default_padding_16m">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Konfirmasi Pembayaran"
+            android:textColor="@color/colorHeader"
+            android:textSize="@dimen/default_font_size_22m"
+            style="@style/SourceSansPro_Regular" />
+
+        <TextView
+            android:id="@+id/payment_confirmation_transaction_code_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_16m"
+            android:text="No. Transaksi"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/default_font_size_12m"
+            style="@style/SourceSansPro_Regular" />
+
+        <AutoCompleteTextView
+            android:id="@+id/payment_confirmation_transaction_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_8m"
+            android:paddingLeft="@dimen/default_padding_8m"
+            android:paddingTop="@dimen/default_padding_4m"
+            android:paddingRight="@dimen/default_padding_8m"
+            android:paddingBottom="@dimen/default_padding_4m"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_font_size_18m"
+            android:maxLines="1"
+            android:background="@drawable/custom_admin_email"
+            android:enabled="false"
+            style="@style/SourceSansPro_Regular" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_12m">
+
+            <LinearLayout
+                android:id="@+id/payment_confirmation_bank_account_user_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/payment_confirmation_bank_account_user_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A/N Rekening"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/default_font_size_12m"
+                    style="@style/SourceSansPro_Regular" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/payment_confirmation_bank_account_user_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorTextAppearance="@style/TextInputErrorTextAppearance"
+                    app:hintEnabled="false">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/payment_confirmation_bank_account_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="mis: Erick Sumargo"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_18m"
+                        android:maxLines="1"
+                        android:inputType="text"
+                        android:imeOptions="actionDone"
+                        style="@style/SourceSansPro_Regular" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/payment_confirmation_mobile_number_user_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/payment_confirmation_mobile_number_user_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No. Handphone"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/default_font_size_12m"
+                    style="@style/SourceSansPro_Regular" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/payment_confirmation_mobile_number_user_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorTextAppearance="@style/TextInputErrorTextAppearance"
+                    app:hintEnabled="false">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/payment_confirmation_mobile_number_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_18m"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        style="@style/SourceSansPro_Regular" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/payment_confirmation_bank_spinner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_8m"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/payment_confirmation_bank_spinner_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rekening Bank"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/default_font_size_12m"
+                style="@style/SourceSansPro_Regular" />
+
+            <com.rey.material.widget.Spinner
+                android:id="@+id/payment_confirmation_bank_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_4m"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:layout_marginRight="@dimen/default_margin_4m"
+                app:spn_arrowColor="@color/colorPrimary"
+                app:spn_arrowSize="@dimen/spinner_arrow_default_size"
+                app:spn_arrowSwitchMode="true"
+                app:spn_dividerColor="@color/darkGray"
+                app:spn_dividerHeight="@dimen/spinner_divider_default_height"
+                app:rd_style="@style/Material.Drawable.Ripple.Wave"
+                style="@style/Material.Widget.Spinner" />
+
+            <AutoCompleteTextView
+                android:id="@+id/payment_confirmation_bank_fill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:hint="Nama Bank (Wajib)..."
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/default_font_size_18m"
+                android:maxLines="1"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:visibility="gone"
+                style="@style/SourceSansPro_Regular" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/payment_confirmation_upload_struct_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_16m"
+            android:text="Upload Bukti Struk Transfer"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/default_font_size_12m"
+            style="@style/SourceSansPro_Regular" />
+
+        <ProgressBar
+            android:id="@+id/payment_confirmation_image_progress"
+            android:layout_width="@dimen/struct_attached_default_width"
+            android:layout_height="@dimen/progress_bar_default_height"
+            android:layout_marginLeft="@dimen/default_margin_4m"
+            android:layout_marginTop="@dimen/default_margin_16m"
+            android:layout_marginRight="@dimen/default_margin_4m"
+            android:progressDrawable="@drawable/custom_progress_bar"
+            android:visibility="invisible"
+            style="?android:attr/progressBarStyleHorizontal" />
+
+        <RelativeLayout
+            android:id="@+id/payment_confirmation_image_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_margin_4m"
+            android:layout_marginRight="@dimen/default_margin_4m">
+
+            <ImageView
+                android:id="@+id/payment_confirmation_image"
+                android:layout_width="@dimen/struct_attached_default_width"
+                android:layout_height="@dimen/struct_attached_default_height"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:id="@+id/payment_confirmation_upload_space"
+                android:layout_width="@dimen/struct_attached_default_width"
+                android:layout_height="@dimen/struct_attached_default_height"
+                android:background="@drawable/custom_background_dashed">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_add_primary_trim" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/payment_confirmation_image_foreground"
+                android:layout_width="@dimen/struct_attached_default_width"
+                android:layout_height="@dimen/struct_attached_default_height"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground">
+
+                <TextView
+                    android:id="@+id/payment_confirmation_upload_status"
+                    android:layout_width="@dimen/struct_attached_default_width"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="@dimen/default_padding_4m"
+                    android:paddingBottom="@dimen/default_padding_4m"
+                    android:text="Terunggah"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_font_size_14m"
+                    android:background="#80000000"
+                    android:visibility="gone"
+                    style="@style/SourceSansPro_Regular" />
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/payment_confirmation_image_remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/default_padding_8m"
+                android:clickable="true"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_cancel_dark"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/payment_confirmation_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_24m"
+            android:paddingLeft="@dimen/default_padding_4m"
+            android:text="Saya menyatakan bahwa segala informasi yang dimasukkan di atas adalah valid dan dapat dipertanggungjawabkan sesuai pada kebijakan aplikasi"
+            android:textColor="@color/colorHeader"
+            android:textSize="@dimen/default_font_size_14m"
+            app:cbd_animDuration="300"
+            style="@style/SourceSansPro_Regular" />
+
+    </LinearLayout>
+
+</ScrollView>

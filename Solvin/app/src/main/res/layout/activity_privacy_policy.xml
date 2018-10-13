@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    android:fitsSystemWindows="true"
+    tools:context="id.solvin.dev.view.activities.ActivityPrivacyPolicy">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_default_height"
+            android:minHeight="@dimen/action_bar_default_height"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextAppearance="@style/ToolbarTextStyle" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/default_padding_16m"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/privacy_policy_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/InfoTextAppearance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_16m"
+                android:text="Definisi"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/default_font_size_18m"
+                style="@style/Montserrat_Bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:background="@color/colorPrimary" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_12m"
+                android:shrinkColumns="1,2">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="1."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/privacy_policy_definition_system"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="2."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/privacy_policy_definition_application"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="3"
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/privacy_policy_definition_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="4."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/privacy_policy_definition_we"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="5."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/privacy_policy_definition_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_16m"
+                android:text="Jenis Informasi yang Kami Kumpulkan"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/default_font_size_18m"
+                style="@style/Montserrat_Bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/privacy_policy_information_type_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_12m"
+                style="@style/InfoTextAppearance" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:shrinkColumns="1,2">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="a."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/privacy_policy_information_type_point_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="b."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/privacy_policy_information_type_point_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="c."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/privacy_policy_information_type_point_c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_16m"
+                android:text="Melindungi Informasi yang Kami Kumpulkan"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/default_font_size_18m"
+                style="@style/Montserrat_Bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/privacy_policy_protecting_information_part_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_12m"
+                style="@style/InfoTextAppearance" />
+
+            <TextView
+                android:id="@+id/privacy_policy_protecting_information_part_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                style="@style/InfoTextAppearance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_16m"
+                android:text="Menggunakan Informasi yang Kami Kumpulkan"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/default_font_size_18m"
+                style="@style/Montserrat_Bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/privacy_policy_using_information_part_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_12m"
+                style="@style/InfoTextAppearance" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:shrinkColumns="1,2">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="a."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/privacy_policy_using_information_point_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="b."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/privacy_policy_using_information_point_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="c."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/privacy_policy_using_information_point_c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/privacy_policy_using_information_part_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                style="@style/InfoTextAppearance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_16m"
+                android:text="Bentuk Pelanggaran \u0026 Konsekuensi"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/default_font_size_18m"
+                style="@style/Montserrat_Bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/privacy_policy_violation_consequences_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_12m"
+                style="@style/InfoTextAppearance" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:shrinkColumns="1,2">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="a."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/privacy_policy_violation_consequences_point_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="b."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/privacy_policy_violation_consequences_point_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="c."
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/privacy_policy_violation_consequences_point_c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:text="Keterangan (*/**/***):"
+                style="@style/InfoTextAppearance" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:shrinkColumns="3,4">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="-"
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="Level 1"
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="="
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/privacy_policy_violation_consequences_description_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="-"
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="Level 2"
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="="
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/privacy_policy_violation_consequences_description_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_8m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="-"
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="Level 3"
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="="
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/privacy_policy_violation_consequences_description_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_16m"
+                android:text="Hubungi Kami"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/default_font_size_18m"
+                style="@style/Montserrat_Bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/privacy_policy_call_us_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_12m"
+                style="@style/InfoTextAppearance" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:shrinkColumns="2,3">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text="Email"
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/default_margin_8m"
+                        android:text=":"
+                        style="@style/InfoTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/privacy_policy_call_us_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/InfoTextAppearance" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/privacy_policy_latest_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_24m"
+                style="@style/InfoTextAppearance" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

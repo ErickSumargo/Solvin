@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6c7e7174-7f21-4983-87c2-1878721c81e7" name="Default" comment="" />
+    <ignored path="re-solvin.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="re-solvin" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="APMain.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/APMain.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="12223">
+              <caret line="736" column="18" selection-start-line="736" selection-start-column="18" selection-end-line="736" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Firebase.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Classes/Firebase.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="84" column="37" lean-forward="true" selection-start-line="84" selection-start-column="37" selection-end-line="84" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseConfig.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Classes/BaseConfig.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3808">
+              <caret line="241" column="48" selection-start-line="241" selection-start-column="48" selection-end-line="241" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Student.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Models/Student.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>orderB</find>
+      <find>update</find>
+      <find>sc</find>
+      <find>BalanceB</find>
+      <find>BalanceBo</find>
+      <find>BalanceBon</find>
+      <find>BalanceBonus</find>
+      <find>redeem</find>
+      <find>login</find>
+      <find>bal</find>
+      <find>ba</find>
+      <find>b</find>
+      <find>t</find>
+      <find>tot</find>
+      <find>summary</find>
+      <find>mentorP</find>
+      <find>totalBalance</find>
+      <find>env</find>
+      <find>choose</find>
+      <find>ne</find>
+      <find>new Balance</find>
+      <find>Helper</find>
+      <find>S</find>
+      <find>SID</find>
+      <find>SID_</find>
+      <find>SID_S</find>
+      <find>SID_SM</find>
+      <find>SID_SMS</find>
+      <find>credit_expired</find>
+      <find>createQues</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/Models/Feedback.php" />
+        <option value="$PROJECT_DIR$/app/Models/FreeCredit.php" />
+        <option value="$PROJECT_DIR$/app/Models/Solution.php" />
+        <option value="$PROJECT_DIR$/app/Models/Comment.php" />
+        <option value="$PROJECT_DIR$/app/Models/Question.php" />
+        <option value="$PROJECT_DIR$/app/Models/RedeemBalance.php" />
+        <option value="$PROJECT_DIR$/database/seeds/PackageAndBankDummy.php" />
+        <option value="$PROJECT_DIR$/app/Classes/Logging.php" />
+        <option value="C:/Windows/System32/drivers/etc/hosts" />
+        <option value="$PROJECT_DIR$/public/log.txt" />
+        <option value="$PROJECT_DIR$/public/abc.html" />
+        <option value="$PROJECT_DIR$/.env.example" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/app/Classes/Token.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/CheckTokenValidate.php" />
+        <option value="$PROJECT_DIR$/app/Classes/MCrypt.php" />
+        <option value="$PROJECT_DIR$/app/Classes/SCrypt.php" />
+        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Scheduling/Schedule.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_02_26_093254_create_table_free_credit.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/Models/Mentor.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_02_02_071151_create_table_mentor.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/APPrimary.php" />
+        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/BalanceBonus.php" />
+        <option value="$PROJECT_DIR$/app/Console/Kernel.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/APReport.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/APDetail.php" />
+        <option value="$PROJECT_DIR$/app/Models/ResetPassword.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_04_12_114623_create_table_reset_password.php" />
+        <option value="$PROJECT_DIR$/app/Models/BalanceBonus.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_04_09_154839_create_table_balance_bonus.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/FreeCreditBeta.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" />
+        <option value="$PROJECT_DIR$/config/database.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/BalanceBonusJob.php" />
+        <option value="$PROJECT_DIR$/vendor/twilio/sdk/Twilio/Http/CurlClient.php" />
+        <option value="$PROJECT_DIR$/app/Classes/Helper.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/ExpiredTransaction.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Classes/BaseConfig.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ApplicationController.php" />
+        <option value="$PROJECT_DIR$/app/Models/Bank.php" />
+        <option value="$PROJECT_DIR$/app/Models/MobileNetwork.php" />
+        <option value="$PROJECT_DIR$/app/Models/TransactionConfirm.php" />
+        <option value="$PROJECT_DIR$/app/Models/Transaction.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/TransactionController.php" />
+        <option value="$PROJECT_DIR$/app/Classes/Firebase.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/APMain.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+      </GulpfileState>
+    </gulpfiles>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="re-solvin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="solvin_server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="re-solvin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="solvin_server" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="re-solvin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="solvin_server" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="re-solvin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="solvin_server" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="re-solvin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="solvin_server" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="re-solvin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="solvin_server" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="re-solvin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="solvin_server" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="re-solvin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="solvin_server" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="Question&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Http/Controllers/QuestionController.php&#10;Qu&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Http/Controllers/QuestionController.php&#10;Base&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Classes/BaseConfig.php&#10;Auth&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Http/Controllers/AuthController.php&#10;route&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Http/routes.php&#10;Firebase&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Classes/Firebase.php&#10;Questi&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Http/Controllers/QuestionController.php&#10;Au&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Http/Controllers/AuthController.php&#10;AuthC&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Http/Controllers/AuthController.php&#10;Ques&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Http/Controllers/QuestionController.php&#10;Transa&#9;null&#9;null&#10;App&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/config/app.php&#10;tra&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Http/Controllers/TransactionController.php&#10;free&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Models/FreeCredit.php&#10;APMa&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Http/Controllers/APMain.php&#10;Tra&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Http/Controllers/TransactionController.php&#10;da&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/config/database.php&#10;a&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/config/app.php&#10;databas&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/config/database.php&#10;app.&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/config/app.php&#10;Toke&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Classes/Token.php&#10;QuestionC&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Http/Controllers/QuestionController.php&#10;AuthController&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Http/Controllers/AuthController.php&#10;routes&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Http/routes.php&#10;Token&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Classes/Token.php&#10;Que&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Http/Controllers/QuestionController.php&#10;Stude&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Models/Student.php&#10;R&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Models/ResetPassword.php&#10;Bas&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Classes/BaseConfig.php&#10;BaseCO&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Classes/BaseConfig.php&#10;Q&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Http/Controllers/QuestionController.php&#10;rou&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Http/routes.php&#10;Adm&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/database/migrations/2017_02_26_093244_create_table_admin.php&#10;U&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Http/Controllers/AuthController.php&#10;bank&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/database/seeds/PackageAndBankDummy.php&#10;Bank&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Models/Bank.php&#10;tran&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Http/Controllers/TransactionController.php&#10;sec&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Models/SecurityCode.php&#10;rede&#9;null&#9;null&#10;Transac&#9;null&#9;null&#10;ment&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/database/migrations/2017_02_02_071151_create_table_mentor.php&#10;mentore&#9;null&#9;null&#10;Ment&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Models/Mentor.php&#10;stude&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Models/Student.php&#10;ques&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Models/Question.php&#10;base&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Classes/BaseConfig.php&#10;TOken&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Classes/Token.php&#10;Comment&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Models/Comment.php&#10;Quest&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/app/Models/Question.php&#10;BUi&#9;FILE&#9;file://D:/umum/code/web/karizal.web.dev/labs/re-solvin/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\solvin_dev\app\Models" />
+      <recent name="C:\xampp\htdocs\solvin_production\app\Models" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6c7e7174-7f21-4983-87c2-1878721c81e7" name="Default" comment="" />
+      <created>1485678397465</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1485678397465</updated>
+      <workItem from="1488710383052" duration="116000" />
+      <workItem from="1488711611294" duration="178000" />
+      <workItem from="1488767465178" duration="3970000" />
+      <workItem from="1488776653109" duration="5927000" />
+      <workItem from="1488809025443" duration="2901000" />
+      <workItem from="1488857624832" duration="7803000" />
+      <workItem from="1488885246265" duration="12644000" />
+      <workItem from="1488944871602" duration="8482000" />
+      <workItem from="1488979954259" duration="4515000" />
+      <workItem from="1489030429419" duration="6763000" />
+      <workItem from="1489118357004" duration="3816000" />
+      <workItem from="1489156618038" duration="7559000" />
+      <workItem from="1489313373758" duration="513000" />
+      <workItem from="1489379419104" duration="1360000" />
+      <workItem from="1489412307971" duration="7020000" />
+      <workItem from="1489459944879" duration="7547000" />
+      <workItem from="1489503337675" duration="4449000" />
+      <workItem from="1489543866839" duration="1439000" />
+      <workItem from="1489984755339" duration="3162000" />
+      <workItem from="1490068465244" duration="2829000" />
+      <workItem from="1490109155923" duration="7384000" />
+      <workItem from="1490153769945" duration="4885000" />
+      <workItem from="1490186621648" duration="14365000" />
+      <workItem from="1490234378056" duration="9408000" />
+      <workItem from="1490257411950" duration="1979000" />
+      <workItem from="1490278155163" duration="1345000" />
+      <workItem from="1490282520559" duration="91000" />
+      <workItem from="1490282869873" duration="191000" />
+      <workItem from="1490283357247" duration="195000" />
+      <workItem from="1490449060674" duration="4231000" />
+      <workItem from="1490582300897" duration="4249000" />
+      <workItem from="1490760488113" duration="3904000" />
+      <workItem from="1490773044167" duration="598000" />
+      <workItem from="1490797995601" duration="8613000" />
+      <workItem from="1490843559305" duration="15338000" />
+      <workItem from="1490882310614" duration="11216000" />
+      <workItem from="1490931595796" duration="2685000" />
+      <workItem from="1491034330067" duration="3501000" />
+      <workItem from="1491726374566" duration="4510000" />
+      <workItem from="1491743503314" duration="2107000" />
+      <workItem from="1491752450169" duration="1467000" />
+      <workItem from="1491835732668" duration="680000" />
+      <workItem from="1491883813897" duration="6859000" />
+      <workItem from="1491892885785" duration="190000" />
+      <workItem from="1491893710858" duration="2676000" />
+      <workItem from="1491910758601" duration="1672000" />
+      <workItem from="1491916222926" duration="828000" />
+      <workItem from="1491971320148" duration="5379000" />
+      <workItem from="1492352025859" duration="6504000" />
+      <workItem from="1492406716225" duration="2769000" />
+      <workItem from="1492424679468" duration="231000" />
+      <workItem from="1492425081903" duration="2896000" />
+      <workItem from="1492511790865" duration="70000" />
+      <workItem from="1492576474231" duration="194000" />
+      <workItem from="1493096034897" duration="1903000" />
+      <workItem from="1493113030164" duration="2498000" />
+      <workItem from="1493645573670" duration="1366000" />
+      <workItem from="1494214367927" duration="591000" />
+      <workItem from="1494301923396" duration="6924000" />
+      <workItem from="1494341493023" duration="1154000" />
+      <workItem from="1494653993264" duration="704000" />
+      <workItem from="1494735691659" duration="4053000" />
+      <workItem from="1494746473474" duration="3028000" />
+      <workItem from="1530945590353" duration="2106000" />
+      <workItem from="1536505976354" duration="1331000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="252974000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32973805" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.33679524" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.31602374" />
+      <window_info id="Gulp" order="4" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4816587" visible="true" weight="0.24450952" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" weight="0.329429" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25988287" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="3" sideWeight="0.5183413" side_tool="true" weight="0.30332828" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32956383" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="14" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/database/seeds/MaterialTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="108" column="1" selection-start-line="108" selection-start-column="1" selection-end-line="108" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/SubjectTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/AdminTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/Core_d.php" />
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="13" column="47" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/FreeCredit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Controller.php" />
+    <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/APDetail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8058">
+          <caret line="485" column="28" selection-start-line="485" selection-start-column="28" selection-end-line="485" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/Success.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2017_02_02_071151_create_table_mentor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="28" column="61" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2017_02_02_071118_create_table_comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="40" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2017_02_02_071224_create_table_registertmp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/RegisterTmp.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/RedeemBalance.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2017_04_12_114623_create_table_reset_password.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2017_04_09_154839_create_table_balance_bonus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/BalanceBonus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="55" lean-forward="true" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/ResetPassword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/FreeCreditBeta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="49" column="11" lean-forward="true" selection-start-line="41" selection-start-column="10" selection-end-line="49" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="60" column="27" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/mentor/1491540823-1-erick_sumargo.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/question/1491481960-2-41.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/question/1491481893-2-1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/APReport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="431" column="34" lean-forward="true" selection-start-line="431" selection-start-column="34" selection-end-line="431" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Balance.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/twilio/sdk/composer.json" />
+    <entry file="file://$PROJECT_DIR$/vendor/twilio/sdk/Twilio/Rest/Client.php" />
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/twilio/sdk/Twilio/Http/CurlClient.php" />
+    <entry file="file://$PROJECT_DIR$/app/Classes/Helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/BalanceBonusJob.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/ExpiredTransaction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/app/Http/Controllers/AuthController.php" />
+    <entry file="file://$USER_HOME$/app/Classes/Helper.php" />
+    <entry file="file://$PROJECT_DIR$/app/Models/Bank.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="12" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Notification.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="35" column="61" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/MobileNetwork.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Transaction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/TransactionConfirm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApplicationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="48" column="71" selection-start-line="48" selection-start-column="71" selection-end-line="48" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TransactionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="581" column="58" selection-start-line="581" selection-start-column="58" selection-end-line="581" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/APMain.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12223">
+          <caret line="736" column="18" selection-start-line="736" selection-start-column="18" selection-end-line="736" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2017_02_02_071239_create_table_student.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Student.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3808">
+          <caret line="241" column="48" selection-start-line="241" selection-start-column="48" selection-end-line="241" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Classes/Firebase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="84" column="37" lean-forward="true" selection-start-line="84" selection-start-column="37" selection-end-line="84" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Classes/BaseConfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

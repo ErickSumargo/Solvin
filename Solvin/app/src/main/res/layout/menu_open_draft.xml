@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/action_button_default_width"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/open_file_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/actionBarItemBackground"
+        android:src="@drawable/ic_folder_open_light" />
+
+    <LinearLayout
+        android:id="@+id/draft_indicator"
+        android:layout_width="@dimen/badge_default_small_radius"
+        android:layout_height="@dimen/badge_default_small_radius"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/badge_default_extra_margin_right"
+        android:layout_marginBottom="@dimen/badge_default_extra_margin_right"
+        android:background="@drawable/draft_opened"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+
+</RelativeLayout>

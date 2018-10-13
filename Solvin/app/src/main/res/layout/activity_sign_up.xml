@@ -1,0 +1,217 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_up_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.solvin.dev.view.fragments.FragmentSignUp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/default_margin_32m"
+                android:text="DAFTAR"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/montserrat_default_font_size"
+                style="@style/Montserrat_Bold" />
+
+            <View
+                android:layout_width="@dimen/primary_line_default_width"
+                android:layout_height="@dimen/primary_line_default_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/default_margin_8m"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_24m">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/step_line_default_height"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/step3" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_24m"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/sign_up_email_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false"
+                    app:errorTextAppearance="@style/TextInputErrorTextAppearance">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/sign_up_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_email_primary"
+                        android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                        android:hint="Email"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_18m"
+                        android:maxLines="1"
+                        android:inputType="textEmailAddress"
+                        android:imeOptions="actionNext"
+                        style="@style/SourceSansPro_Light" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/sign_up_name_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false"
+                    app:errorTextAppearance="@style/TextInputErrorTextAppearance">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/sign_up_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_person_primary"
+                        android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                        android:hint="Nama Lengkap"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_18m"
+                        android:maxLines="1"
+                        android:inputType="textPersonName"
+                        android:imeOptions="actionNext"
+                        style="@style/SourceSansPro_Light" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/sign_up_password_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false"
+                        app:errorTextAppearance="@style/TextInputErrorTextAppearance"
+                        app:passwordToggleEnabled="false">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/sign_up_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="@dimen/password_default_padding"
+                            android:drawableLeft="@drawable/ic_lock_primary"
+                            android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                            android:hint="Password"
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/default_font_size_18m"
+                            android:maxLines="1"
+                            android:inputType="textPassword"
+                            android:imeOptions="actionNext"
+                            style="@style/SourceSansPro_Light" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <ImageButton
+                        android:id="@+id/sign_up_toggle_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_visibility"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/sign_up_membership_code_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false"
+                    app:errorTextAppearance="@style/TextInputErrorTextAppearance">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/sign_up_membership_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_card_membership_primary"
+                        android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                        android:hint="Kode Membership (opsional)"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_18m"
+                        android:maxLines="1"
+                        android:inputType="text"
+                        android:imeOptions="actionDone"
+                        style="@style/SourceSansPro_Light" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/sign_up_membership_code_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_margin_4m"
+                    android:text="*Kosongkan bila anda tidak mendapatkan kode membership dari anggota Solvin yang lain"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/default_font_size_12m"
+                    style="@style/SourceSansPro_Regular" />
+
+                <Button
+                    android:id="@+id/sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_20m"
+                    android:padding="@dimen/default_padding_0m"
+                    android:text="SELESAI"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_font_size_16m"
+                    android:background="@drawable/primary_button"
+                    android:stateListAnimator="@null"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

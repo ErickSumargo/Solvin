@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/feed_user_photo_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/default_margin_12m"
+        android:layout_marginTop="@dimen/default_margin_12m"
+        android:layout_marginBottom="@dimen/default_margin_12m">
+
+        <ImageView
+            android:id="@+id/notification_builder_photo"
+            android:layout_width="@dimen/circle_image_view_radius"
+            android:layout_height="@dimen/circle_image_view_radius"
+            android:background="@drawable/circle" />
+
+        <RelativeLayout
+            android:id="@+id/notification_builder_avatar_layout"
+            android:layout_width="@dimen/circle_image_view_radius"
+            android:layout_height="@dimen/circle_image_view_radius"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/circle">
+
+            <TextView
+                android:id="@+id/notification_builder_avatar_initial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_font_size_20m"
+                style="@style/SourceSansPro_Regular" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/default_margin_4m"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/notification_builder_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/default_font_size_16m"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/notification_builder_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/default_font_size_14m"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</LinearLayout>

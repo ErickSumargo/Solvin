@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape>
+            <solid android:color="@color/white" />
+            <corners android:radius="@dimen/feed_notification_default_radius" />
+            <padding android:left="@dimen/default_padding_4m" android:right="@dimen/default_padding_4m" />
+        </shape>
+    </item>
+</layer-list>

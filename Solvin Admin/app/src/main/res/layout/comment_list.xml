@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/comment_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:clickable="false"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="@dimen/card_default_elevation"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_16rs">
+
+            <RelativeLayout
+                android:id="@+id/comment_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/comment_time_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/comment_attr_container"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/comment_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_14rs"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:id="@+id/comment_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/comment_time"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_14rs"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        style="@style/SourceSansPro_Regular" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/comment_attr_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/comment_attachment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:layout_marginTop="@dimen/margin_8rs"
+                android:layout_marginBottom="@dimen/margin_8rs"
+                android:background="@color/darkGray" />
+
+            <TextView
+                android:id="@+id/comment_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_8rs"
+                android:paddingTop="@dimen/padding_6rs"
+                android:paddingRight="@dimen/padding_6rs"
+                android:paddingBottom="@dimen/padding_6rs"
+                android:textColor="@color/colorHeader"
+                android:textSize="@dimen/text_size_16rs"
+                android:maxLines="3"
+                android:ellipsize="end"
+                style="@style/SourceSansPro_Regular" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8rs">
+
+                <TextView
+                    android:id="@+id/comment_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_8rs"
+                    android:paddingTop="@dimen/padding_4rs"
+                    android:paddingRight="@dimen/padding_8rs"
+                    android:paddingBottom="@dimen/padding_4rs"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12rs"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:id="@+id/comment_material"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/comment_subject"
+                    android:layout_marginLeft="@dimen/margin_8rs"
+                    android:paddingLeft="@dimen/padding_8rs"
+                    android:paddingTop="@dimen/padding_4rs"
+                    android:paddingRight="@dimen/padding_8rs"
+                    android:paddingBottom="@dimen/padding_4rs"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12rs"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    style="@style/SourceSansPro_Regular" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/comment_action_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_12rs"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/comment_block"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/padding_8rs"
+                android:paddingBottom="@dimen/padding_8rs"
+                android:gravity="center"
+                android:background="@drawable/custom_background_borderless_selected"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_block_primary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_4rs"
+                    android:text="Blok"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_16rs"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/margin_2rs"
+                android:layout_height="match_parent"
+                android:background="@color/lightGray2" />
+
+            <LinearLayout
+                android:id="@+id/comment_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/padding_8rs"
+                android:paddingBottom="@dimen/padding_8rs"
+                android:gravity="center"
+                android:background="@drawable/custom_background_borderless_selected"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_create_primary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_4rs"
+                    android:text="Edit"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_16rs"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

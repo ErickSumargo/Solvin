@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/draft_solution_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/default_margin_12m"
+    android:padding="@dimen/default_padding_8m"
+    android:clickable="true"
+    android:background="@drawable/custom_background_pressed">
+
+    <RadioGroup
+        android:id="@+id/draft_solution_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingTop="@dimen/default_padding_4m"
+        android:paddingBottom="@dimen/default_padding_4m">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/draft_solution_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:clickable="false"
+                android:paddingLeft="@dimen/default_padding_8m"
+                app:buttonTint="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/draft_solution_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/draft_solution_attachment"
+                        android:text="Title"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_18m"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <ImageView
+                        android:id="@+id/draft_solution_attachment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_attach_file_dark"
+                        android:scaleType="centerCrop" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_today_primary_mini" />
+
+                    <TextView
+                        android:id="@+id/draft_solution_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/default_margin_4m"
+                        android:text="Sen, 1 Januari 2017 pada 00:00 WIB"
+                        android:textColor="@color/colorSubHeader"
+                        android:textSize="@dimen/default_font_size_14m"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        style="@style/SourceSansPro_Regular" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RadioGroup>
+
+</RelativeLayout>

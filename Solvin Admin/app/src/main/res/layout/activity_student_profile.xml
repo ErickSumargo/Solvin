@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_16rs"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/student_profile_photo_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/student_profile_photo"
+                        android:layout_width="@dimen/circle_image_view_radius"
+                        android:layout_height="@dimen/circle_image_view_radius" />
+
+                    <RelativeLayout
+                        android:id="@+id/student_profile_avatar_layout"
+                        android:layout_width="@dimen/circle_image_view_radius"
+                        android:layout_height="@dimen/circle_image_view_radius"
+                        android:gravity="center"
+                        android:background="@drawable/circle">
+
+                        <TextView
+                            android:id="@+id/student_profile_avatar_initial"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_20rs"
+                            style="@style/SourceSansPro_Regular" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/student_profile_photo_container"
+                    android:layout_marginLeft="@dimen/margin_12rs">
+
+                    <TextView
+                        android:id="@+id/student_profile_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/text_size_16rs"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:id="@+id/student_profile_join_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/student_profile_name"
+                        android:textColor="@color/colorSubHeader"
+                        android:textSize="@dimen/text_size_14rs"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        style="@style/SourceSansPro_Regular" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/student_profile_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_24rs"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Info Pribadi"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_18rs" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:background="@color/colorPrimary" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/student_profile_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_12rs"
+                    android:drawableLeft="@drawable/ic_email_primary"
+                    android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:hint="Email"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_18rs"
+                    android:inputType="textEmailAddress|textMultiLine"
+                    android:background="@color/transparent"
+                    style="@style/SourceSansPro_Regular" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:background="@color/semiLightGray" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/student_profile_membership_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:drawableLeft="@drawable/ic_card_membership_primary"
+                    android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:hint="Kode Membership"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_18rs"
+                    android:inputType="textMultiLine"
+                    android:background="@color/transparent"
+                    style="@style/SourceSansPro_Regular" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:background="@color/semiLightGray" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/student_profile_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:drawableLeft="@drawable/ic_call_primary"
+                    android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:hint="No. HP"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_18rs"
+                    android:inputType="phone|textMultiLine"
+                    android:background="@color/transparent"
+                    style="@style/SourceSansPro_Regular" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:background="@color/semiLightGray" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/student_profile_device_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:drawableLeft="@drawable/ic_cellphone_primary"
+                    android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:hint="ID Perangkat"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_18rs"
+                    android:inputType="textMultiLine"
+                    android:background="@color/transparent"
+                    style="@style/SourceSansPro_Regular" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:background="@color/semiLightGray" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/student_profile_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:drawableLeft="@drawable/ic_cake_primary"
+                    android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:hint="Usia"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_18rs"
+                    android:inputType="textMultiLine"
+                    android:background="@color/transparent"
+                    style="@style/SourceSansPro_Regular" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:background="@color/semiLightGray" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/student_profile_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:drawableLeft="@drawable/ic_person_pin_circle_primary"
+                    android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:hint="Alamat Tinggal (opsional)"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_18rs"
+                    android:inputType="textMultiLine"
+                    android:background="@color/transparent"
+                    style="@style/SourceSansPro_Regular" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:background="@color/semiLightGray" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/student_profile_school"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:drawableLeft="@drawable/ic_school_primary"
+                    android:drawablePadding="@dimen/auto_complete_text_view_default_drawable_padding"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:hint="Sekolah (opsional)"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_18rs"
+                    android:inputType="textMultiLine"
+                    android:background="@color/transparent"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_24rs"
+                    android:text="Aktivitas"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_18rs" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_8rs"
+                    android:background="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16rs"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="SKT"
+                                    android:textColor="@color/colorHeader"
+                                    android:textSize="@dimen/text_size_32rs"
+                                    style="@style/SourceSansPro_Regular" />
+
+                                <TextView
+                                    android:id="@+id/student_profile_credit"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="@dimen/text_size_32rs"
+                                    style="@style/SourceSansPro_Regular" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/student_profile_credit_timelife"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_14rs"
+                                style="@style/SourceSansPro_Light" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/divider_default_width"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_8rs"
+                        android:layout_marginRight="@dimen/margin_8rs"
+                        android:background="@color/darkGray" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bonus SKT"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_24rs"
+                                style="@style/SourceSansPro_Regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kode Membership"
+                                android:textColor="@color/colorHeader"
+                                android:textSize="@dimen/text_size_14rs"
+                                style="@style/SourceSansPro_Light" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/student_profile_total_free_credit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size_32rs"
+                            style="@style/SourceSansPro_Regular" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_12rs"
+                    android:background="@color/semiLightGray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_12rs"
+                    android:text="Total Pertanyaan"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_18rs"
+                    style="@style/SourceSansPro_Regular" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_4rs"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pending" />
+
+                        <TextView
+                            android:id="@+id/student_profile_total_question_pending"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_4rs"
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/text_size_22rs"
+                            style="@style/SourceSansPro_Regular" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_discussion" />
+
+                        <TextView
+                            android:id="@+id/student_profile_total_question_discuss"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_4rs"
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/text_size_22rs"
+                            style="@style/SourceSansPro_Regular" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_complete" />
+
+                        <TextView
+                            android:id="@+id/student_profile_total_question_complete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_4rs"
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/text_size_22rs"
+                            style="@style/SourceSansPro_Regular" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_12rs"
+                    android:background="@color/semiLightGray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_12rs"
+                    android:text="Total Transaksi"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_18rs"
+                    style="@style/SourceSansPro_Regular" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_4rs"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/transaction_status_radius"
+                            android:layout_height="@dimen/transaction_status_radius"
+                            android:background="@drawable/circle_1" />
+
+                        <TextView
+                            android:id="@+id/student_profile_total_transaction_pending"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_8rs"
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/text_size_22rs"
+                            style="@style/SourceSansPro_Regular" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/transaction_status_radius"
+                            android:layout_height="@dimen/transaction_status_radius"
+                            android:background="@drawable/circle_2" />
+
+                        <TextView
+                            android:id="@+id/student_profile_total_transaction_success"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_8rs"
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/text_size_22rs"
+                            style="@style/SourceSansPro_Regular" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/transaction_status_radius"
+                            android:layout_height="@dimen/transaction_status_radius"
+                            android:background="@drawable/circle_0" />
+
+                        <TextView
+                            android:id="@+id/student_profile_total_transaction_canceled"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_8rs"
+                            android:textColor="@color/colorHeader"
+                            android:textSize="@dimen/text_size_22rs"
+                            style="@style/SourceSansPro_Regular" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_default_height"
+                    android:layout_marginTop="@dimen/margin_12rs"
+                    android:background="@color/semiLightGray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_12rs"
+                    android:text="Total Komentar"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/text_size_18rs"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:id="@+id/student_profile_total_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_4rs"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_28rs"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/loading_view" android:id="@+id/loading_view_container" />
+
+    <View
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_default_elevation"
+        android:background="@drawable/custom_shadow" />
+
+</android.support.design.widget.CoordinatorLayout>

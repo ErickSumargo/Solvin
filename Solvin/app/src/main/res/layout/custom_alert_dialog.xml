@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/default_padding_16m"
+    android:paddingTop="@dimen/default_padding_16m"
+    android:paddingRight="@dimen/default_padding_16m"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/custom_alert_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorHeader"
+        android:textSize="@dimen/default_font_size_20m"
+        style="@style/SourceSansPro_Regular" />
+
+    <TextView
+        android:id="@+id/custom_alert_dialog_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_16m"
+        android:textColor="@color/colorHeader"
+        android:textSize="@dimen/default_font_size_16m"
+        style="@style/SourceSansPro_Regular" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_16m"
+        android:layout_marginBottom="@dimen/default_margin_16m"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/custom_alert_dialog_negative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/default_margin_8m"
+            android:background="@drawable/custom_button_dialog_pressed"
+            android:gravity="center_horizontal"
+            android:minWidth="@dimen/button_dialog_default_min_width"
+            android:padding="@dimen/default_padding_8m"
+            android:text="Tidak"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/default_font_size_14m"
+            style="@style/SourceSansPro_Regular" />
+
+        <TextView
+            android:id="@+id/custom_alert_dialog_positive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_dialog_pressed"
+            android:gravity="center_horizontal"
+            android:minWidth="@dimen/button_dialog_default_min_width"
+            android:padding="@dimen/default_padding_8m"
+            android:text="Ya"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/default_font_size_14m"
+            style="@style/SourceSansPro_Regular" />
+
+    </LinearLayout>
+
+</LinearLayout>

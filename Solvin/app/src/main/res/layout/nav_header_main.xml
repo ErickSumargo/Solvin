@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/design_navigation_separator_vertical_padding"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/drawer_background"
+            android:layout_alignLeft="@+id/nav_header_profile_summary"
+            android:layout_alignTop="@+id/nav_header_profile_summary"
+            android:layout_alignRight="@+id/nav_header_profile_summary"
+            android:layout_alignBottom="@+id/nav_header_profile_summary"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:id="@+id/nav_header_profile_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/navigation_drawer_vertical_padding"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_24m"
+                android:gravity="center_horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/nav_user_photo"
+                    android:layout_width="@dimen/circle_image_view_big_radius"
+                    android:layout_height="@dimen/circle_image_view_big_radius" />
+
+                <RelativeLayout
+                    android:id="@+id/nav_avatar_layout"
+                    android:layout_width="@dimen/circle_image_view_big_radius"
+                    android:layout_height="@dimen/circle_image_view_big_radius"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/circle">
+
+                    <TextView
+                        android:id="@+id/nav_avatar_initial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/initial_name_big_default_font_size"
+                        style="@style/SourceSansPro_Regular" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_8m"
+                android:layout_marginTop="@dimen/default_margin_16m"
+                android:layout_marginRight="@dimen/default_margin_8m"
+                android:layout_marginBottom="@dimen/default_margin_16m"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nav_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="@dimen/default_font_size_20m"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:id="@+id/nav_membership_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_font_size_16m"
+                    style="@style/SourceSansPro_Light" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/nav_user_credit_status_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/default_padding_16m"
+                android:paddingTop="@dimen/default_padding_16m"
+                android:paddingRight="@dimen/default_padding_16m"
+                android:paddingBottom="@dimen/default_padding_8m"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/nav_colon_credit"
+                        android:paddingRight="@dimen/default_padding_8m"
+                        android:text="Sisa Kredit Tanya"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_20m"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:id="@+id/nav_colon_credit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/nav_user_credit"
+                        android:paddingLeft="@dimen/default_padding_32m"
+                        android:paddingRight="@dimen/default_padding_24m"
+                        android:text=":"
+                        android:textColor="@color/colorHeader"
+                        android:textSize="@dimen/default_font_size_32m"
+                        style="@style/SourceSansPro_Regular" />
+
+                    <TextView
+                        android:id="@+id/nav_user_credit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/default_padding_16m"
+                        android:paddingRight="@dimen/default_padding_16m"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/default_font_size_40m"
+                        style="@style/SourceSansPro_Regular" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nav_user_date_activation_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/default_padding_16m"
+                android:paddingRight="@dimen/default_padding_16m"
+                android:paddingBottom="@dimen/default_padding_16m"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masa Berlaku Paket Tanya (s/d):"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_16m"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:id="@+id/nav_user_date_activation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/default_font_size_16m"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav_mentor_record_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/default_padding_16m"
+                android:paddingTop="@dimen/default_padding_16m"
+                android:paddingRight="@dimen/default_padding_16m"
+                android:paddingBottom="@dimen/default_padding_8m"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Sisa Saldo:"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_20m"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:id="@+id/nav_mentor_balance_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/default_font_size_32m"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/default_padding_16m"
+                android:paddingRight="@dimen/default_padding_16m"
+                android:paddingBottom="@dimen/default_padding_8m"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Total Solusi Terbaik/Diajukan:"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_16m"
+                    style="@style/SourceSansPro_Regular" />
+
+                <TextView
+                    android:id="@+id/nav_mentor_total_solution"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/default_font_size_24m"
+                    style="@style/SourceSansPro_Regular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_drawer_divider_default_height"
+        android:background="@color/colorPrimary" />
+
+</LinearLayout>

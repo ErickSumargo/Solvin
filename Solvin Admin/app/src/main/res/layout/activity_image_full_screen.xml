@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/semiBlack">
+
+    <id.solvinap.dev.view.widget.CustomTouchImageView
+        android:id="@+id/full_screen_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/full_screen_save_foreground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_16rs"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/padding_8rs"
+        android:clickable="true"
+        android:background="@drawable/custom_full_screen_button"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_download_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14rs"
+            style="@style/SourceSansPro_Regular" />
+
+    </LinearLayout>
+
+</RelativeLayout>

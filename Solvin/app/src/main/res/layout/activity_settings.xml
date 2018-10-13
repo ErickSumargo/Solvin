@@ -1,0 +1,281 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".view.activities.ActivitySettings">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_default_height"
+            android:minHeight="@dimen/action_bar_default_height"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextAppearance="@style/ToolbarTextStyle" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/app_version_container_default_height"
+        android:scrollbars="vertical"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_16m"
+                android:layout_marginTop="@dimen/default_margin_16m"
+                android:layout_marginRight="@dimen/default_margin_16m"
+                android:text="Notifikasi"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/default_font_size_18m"
+                style="@style/SourceSansPro_Regular" />
+
+            <LinearLayout
+                android:id="@+id/settings_notification_receive_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_padding_16m"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:text="Terima notifikasi baru"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/settings_notification_receive_switch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:thumb="@drawable/thumb"
+                    android:background="@color/transparent" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/settings_notification_sound_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_padding_16m"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:text="Bunyi"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/settings_notification_sound_switch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:thumb="@drawable/thumb"
+                    android:background="@color/transparent" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/settings_notification_vibration_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_padding_16m"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:text="Vibrasi"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/settings_notification_vibration_switch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:thumb="@drawable/thumb"
+                    android:background="@color/transparent" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:background="@color/gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_16m"
+                android:layout_marginTop="@dimen/default_margin_16m"
+                android:layout_marginRight="@dimen/default_margin_16m"
+                android:text="Info"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/default_font_size_18m"
+                style="@style/SourceSansPro_Regular" />
+
+            <LinearLayout
+                android:id="@+id/settings_info_privacy_policy_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_padding_16m"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Kebijakan Privasi"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/settings_info_terms_condition_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_padding_16m"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Syarat \u0026 Ketentuan"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/settings_info_rate_us_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_padding_16m"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Rate Solvin!"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/default_font_size_18m" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/settings_info_log_out_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_padding_16m"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Keluar"
+                    android:textColor="@color/colorHeader"
+                    android:textSize="@dimen/default_font_size_18m" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_default_height"
+                android:background="@color/gray"
+                android:layout_gravity="bottom"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_version_container_default_height"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Versi aplikasi 1.0 (Beta) - Solvin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_font_size_16m"
+            style="@style/SourceSansPro_Regular" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

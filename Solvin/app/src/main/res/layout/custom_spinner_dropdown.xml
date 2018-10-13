@@ -1,0 +1,8 @@
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/spinner_dropdown"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/default_padding_12m"
+    android:maxLines="1"
+    android:ellipsize="marquee"
+    style="@style/SpinnerTextViewItem" />

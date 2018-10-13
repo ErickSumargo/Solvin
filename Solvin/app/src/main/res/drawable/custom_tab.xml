@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- pressed state -->
+    <item android:state_pressed="true">
+        <inset xmlns:android="http://schemas.android.com/apk/res/android">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/halfPrimary" />
+            </shape>
+        </inset>
+    </item>
+
+    <!-- normal state -->
+    <item>
+        <inset xmlns:android="http://schemas.android.com/apk/res/android">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/colorPrimary" />
+            </shape>
+        </inset>
+    </item>
+</selector>
